@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated FixRepository2016 -->
+      <package
+            uri="http://fixprotocol.io/2016/fixrepository"
+            class="io.fixprotocol._2016.fixrepository.FixrepositoryPackage"
+            genModel="model/FixRepository2016.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated FixRepository2016 -->
+      <parser
+            type="fixrepository"
+            class="io.fixprotocol._2016.fixrepository.util.FixrepositoryResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated FixRepository2016 -->
+      <package
+            uri="http://purl.org/dc/terms/"
+            class="org.purl.dc.terms.TermsPackage"
+            genModel="model/FixRepository2016.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated FixRepository2016 -->
+      <parser
+            type="terms"
+            class="org.purl.dc.terms.util.TermsResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated FixRepository2016 -->
+      <package
+            uri="http://purl.org/dc/elements/1.1/"
+            class="org.purl.dc.elements._1._1._1Package"
+            genModel="model/FixRepository2016.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated FixRepository2016 -->
+      <parser
+            type="_1"
+            class="org.purl.dc.elements._1._1.util._1ResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated FixRepository2016 -->
+      <package
+            uri="http://purl.org/dc/dcmitype/"
+            class="org.purl.dc.dcmitype.DcmitypePackage"
+            genModel="model/FixRepository2016.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated FixRepository2016 -->
+      <parser
+            type="dcmitype"
+            class="org.purl.dc.dcmitype.util.DcmitypeResourceFactoryImpl"/>
+   </extension>
+
+</plugin>
