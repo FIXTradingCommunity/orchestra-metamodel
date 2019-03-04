@@ -29,243 +29,249 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  */
 public class TriggerTypeImpl extends MinimalEObjectImpl.Container implements TriggerType {
   /**
-   * The default value of the '{@link #getActor() <em>Actor</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getActor() <em>Actor</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getActor()
-   * @generated
-   * @ordered
-   */
+	 * @see #getActor()
+	 * @generated
+	 * @ordered
+	 */
   protected static final String ACTOR_EDEFAULT = null;
 
   /**
-   * The cached value of the '{@link #getActor() <em>Actor</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getActor() <em>Actor</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getActor()
-   * @generated
-   * @ordered
-   */
+	 * @see #getActor()
+	 * @generated
+	 * @ordered
+	 */
   protected String actor = ACTOR_EDEFAULT;
 
   /**
-   * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getName()
-   * @generated
-   * @ordered
-   */
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
   protected static final String NAME_EDEFAULT = null;
 
   /**
-   * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getName()
-   * @generated
-   * @ordered
-   */
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
   protected String name = NAME_EDEFAULT;
 
   /**
-   * The default value of the '{@link #getStateMachine() <em>State Machine</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getStateMachine() <em>State Machine</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getStateMachine()
-   * @generated
-   * @ordered
-   */
+	 * @see #getStateMachine()
+	 * @generated
+	 * @ordered
+	 */
   protected static final String STATE_MACHINE_EDEFAULT = null;
 
   /**
-   * The cached value of the '{@link #getStateMachine() <em>State Machine</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getStateMachine() <em>State Machine</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getStateMachine()
-   * @generated
-   * @ordered
-   */
+	 * @see #getStateMachine()
+	 * @generated
+	 * @ordered
+	 */
   protected String stateMachine = STATE_MACHINE_EDEFAULT;
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected TriggerTypeImpl() {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass() {
-    return FixrepositoryPackage.eINSTANCE.getTriggerType();
-  }
+		return FixrepositoryPackage.eINSTANCE.getTriggerType();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
-  public String getActor() {
-    return actor;
-  }
+	 * @generated
+	 */
+  @Override
+		public String getActor() {
+		return actor;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
-  public void setActor(String newActor) {
-    String oldActor = actor;
-    actor = newActor;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, FixrepositoryPackage.TRIGGER_TYPE__ACTOR, oldActor, actor));
-  }
+	 * @generated
+	 */
+  @Override
+		public void setActor(String newActor) {
+		String oldActor = actor;
+		actor = newActor;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, FixrepositoryPackage.TRIGGER_TYPE__ACTOR, oldActor, actor));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
-  public String getName() {
-    return name;
-  }
+	 * @generated
+	 */
+  @Override
+		public String getName() {
+		return name;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
-  public void setName(String newName) {
-    String oldName = name;
-    name = newName;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, FixrepositoryPackage.TRIGGER_TYPE__NAME, oldName, name));
-  }
+	 * @generated
+	 */
+  @Override
+		public void setName(String newName) {
+		String oldName = name;
+		name = newName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, FixrepositoryPackage.TRIGGER_TYPE__NAME, oldName, name));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
-  public String getStateMachine() {
-    return stateMachine;
-  }
+	 * @generated
+	 */
+  @Override
+		public String getStateMachine() {
+		return stateMachine;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
-  public void setStateMachine(String newStateMachine) {
-    String oldStateMachine = stateMachine;
-    stateMachine = newStateMachine;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, FixrepositoryPackage.TRIGGER_TYPE__STATE_MACHINE, oldStateMachine, stateMachine));
-  }
+	 * @generated
+	 */
+  @Override
+		public void setStateMachine(String newStateMachine) {
+		String oldStateMachine = stateMachine;
+		stateMachine = newStateMachine;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, FixrepositoryPackage.TRIGGER_TYPE__STATE_MACHINE, oldStateMachine, stateMachine));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType) {
-    switch (featureID) {
-      case FixrepositoryPackage.TRIGGER_TYPE__ACTOR:
-        return getActor();
-      case FixrepositoryPackage.TRIGGER_TYPE__NAME:
-        return getName();
-      case FixrepositoryPackage.TRIGGER_TYPE__STATE_MACHINE:
-        return getStateMachine();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case FixrepositoryPackage.TRIGGER_TYPE__ACTOR:
+				return getActor();
+			case FixrepositoryPackage.TRIGGER_TYPE__NAME:
+				return getName();
+			case FixrepositoryPackage.TRIGGER_TYPE__STATE_MACHINE:
+				return getStateMachine();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void eSet(int featureID, Object newValue) {
-    switch (featureID) {
-      case FixrepositoryPackage.TRIGGER_TYPE__ACTOR:
-        setActor((String)newValue);
-        return;
-      case FixrepositoryPackage.TRIGGER_TYPE__NAME:
-        setName((String)newValue);
-        return;
-      case FixrepositoryPackage.TRIGGER_TYPE__STATE_MACHINE:
-        setStateMachine((String)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case FixrepositoryPackage.TRIGGER_TYPE__ACTOR:
+				setActor((String)newValue);
+				return;
+			case FixrepositoryPackage.TRIGGER_TYPE__NAME:
+				setName((String)newValue);
+				return;
+			case FixrepositoryPackage.TRIGGER_TYPE__STATE_MACHINE:
+				setStateMachine((String)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void eUnset(int featureID) {
-    switch (featureID) {
-      case FixrepositoryPackage.TRIGGER_TYPE__ACTOR:
-        setActor(ACTOR_EDEFAULT);
-        return;
-      case FixrepositoryPackage.TRIGGER_TYPE__NAME:
-        setName(NAME_EDEFAULT);
-        return;
-      case FixrepositoryPackage.TRIGGER_TYPE__STATE_MACHINE:
-        setStateMachine(STATE_MACHINE_EDEFAULT);
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case FixrepositoryPackage.TRIGGER_TYPE__ACTOR:
+				setActor(ACTOR_EDEFAULT);
+				return;
+			case FixrepositoryPackage.TRIGGER_TYPE__NAME:
+				setName(NAME_EDEFAULT);
+				return;
+			case FixrepositoryPackage.TRIGGER_TYPE__STATE_MACHINE:
+				setStateMachine(STATE_MACHINE_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public boolean eIsSet(int featureID) {
-    switch (featureID) {
-      case FixrepositoryPackage.TRIGGER_TYPE__ACTOR:
-        return ACTOR_EDEFAULT == null ? actor != null : !ACTOR_EDEFAULT.equals(actor);
-      case FixrepositoryPackage.TRIGGER_TYPE__NAME:
-        return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-      case FixrepositoryPackage.TRIGGER_TYPE__STATE_MACHINE:
-        return STATE_MACHINE_EDEFAULT == null ? stateMachine != null : !STATE_MACHINE_EDEFAULT.equals(stateMachine);
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case FixrepositoryPackage.TRIGGER_TYPE__ACTOR:
+				return ACTOR_EDEFAULT == null ? actor != null : !ACTOR_EDEFAULT.equals(actor);
+			case FixrepositoryPackage.TRIGGER_TYPE__NAME:
+				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			case FixrepositoryPackage.TRIGGER_TYPE__STATE_MACHINE:
+				return STATE_MACHINE_EDEFAULT == null ? stateMachine != null : !STATE_MACHINE_EDEFAULT.equals(stateMachine);
+		}
+		return super.eIsSet(featureID);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public String toString() {
-    if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (actor: ");
-    result.append(actor);
-    result.append(", name: ");
-    result.append(name);
-    result.append(", stateMachine: ");
-    result.append(stateMachine);
-    result.append(')');
-    return result.toString();
-  }
+		StringBuilder result = new StringBuilder(super.toString());
+		result.append(" (actor: ");
+		result.append(actor);
+		result.append(", name: ");
+		result.append(name);
+		result.append(", stateMachine: ");
+		result.append(stateMachine);
+		result.append(')');
+		return result.toString();
+	}
 
 } //TriggerTypeImpl

@@ -21,30 +21,30 @@ import org.purl.dc.elements._1._1._1Package;
 public class _1XMLProcessor extends XMLProcessor {
 
   /**
-   * Public constructor to instantiate the helper.
-   * <!-- begin-user-doc -->
+	 * Public constructor to instantiate the helper.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public _1XMLProcessor() {
-    super((EPackage.Registry.INSTANCE));
-    _1Package.eINSTANCE.eClass();
-  }
+		super((EPackage.Registry.INSTANCE));
+		_1Package.eINSTANCE.eClass();
+	}
   
   /**
-   * Register for "*" and "xml" file extensions the _1ResourceFactoryImpl factory.
-   * <!-- begin-user-doc -->
+	 * Register for "*" and "xml" file extensions the _1ResourceFactoryImpl factory.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected Map<String, Resource.Factory> getRegistrations() {
-    if (registrations == null) {
-      super.getRegistrations();
-      registrations.put(XML_EXTENSION, new _1ResourceFactoryImpl());
-      registrations.put(STAR_EXTENSION, new _1ResourceFactoryImpl());
-    }
-    return registrations;
-  }
+		if (registrations == null) {
+			super.getRegistrations();
+			registrations.put(XML_EXTENSION, new _1ResourceFactoryImpl());
+			registrations.put(STAR_EXTENSION, new _1ResourceFactoryImpl());
+		}
+		return registrations;
+	}
 
 } //_1XMLProcessor

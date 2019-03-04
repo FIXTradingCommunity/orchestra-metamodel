@@ -35,118 +35,119 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public class UniqueTypeImpl extends MinimalEObjectImpl.Container implements UniqueType {
   /**
-   * The cached value of the '{@link #getFieldRef() <em>Field Ref</em>}' containment reference list.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getFieldRef() <em>Field Ref</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getFieldRef()
-   * @generated
-   * @ordered
-   */
+	 * @see #getFieldRef()
+	 * @generated
+	 * @ordered
+	 */
   protected EList<FieldRefType> fieldRef;
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected UniqueTypeImpl() {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass() {
-    return FixrepositoryPackage.eINSTANCE.getUniqueType();
-  }
+		return FixrepositoryPackage.eINSTANCE.getUniqueType();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
-  public EList<FieldRefType> getFieldRef() {
-    if (fieldRef == null) {
-      fieldRef = new EObjectContainmentEList<FieldRefType>(FieldRefType.class, this, FixrepositoryPackage.UNIQUE_TYPE__FIELD_REF);
-    }
-    return fieldRef;
-  }
+	 * @generated
+	 */
+  @Override
+		public EList<FieldRefType> getFieldRef() {
+		if (fieldRef == null) {
+			fieldRef = new EObjectContainmentEList<FieldRefType>(FieldRefType.class, this, FixrepositoryPackage.UNIQUE_TYPE__FIELD_REF);
+		}
+		return fieldRef;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-    switch (featureID) {
-      case FixrepositoryPackage.UNIQUE_TYPE__FIELD_REF:
-        return ((InternalEList<?>)getFieldRef()).basicRemove(otherEnd, msgs);
-    }
-    return super.eInverseRemove(otherEnd, featureID, msgs);
-  }
+		switch (featureID) {
+			case FixrepositoryPackage.UNIQUE_TYPE__FIELD_REF:
+				return ((InternalEList<?>)getFieldRef()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType) {
-    switch (featureID) {
-      case FixrepositoryPackage.UNIQUE_TYPE__FIELD_REF:
-        return getFieldRef();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case FixrepositoryPackage.UNIQUE_TYPE__FIELD_REF:
+				return getFieldRef();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @SuppressWarnings("unchecked")
   @Override
   public void eSet(int featureID, Object newValue) {
-    switch (featureID) {
-      case FixrepositoryPackage.UNIQUE_TYPE__FIELD_REF:
-        getFieldRef().clear();
-        getFieldRef().addAll((Collection<? extends FieldRefType>)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case FixrepositoryPackage.UNIQUE_TYPE__FIELD_REF:
+				getFieldRef().clear();
+				getFieldRef().addAll((Collection<? extends FieldRefType>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void eUnset(int featureID) {
-    switch (featureID) {
-      case FixrepositoryPackage.UNIQUE_TYPE__FIELD_REF:
-        getFieldRef().clear();
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case FixrepositoryPackage.UNIQUE_TYPE__FIELD_REF:
+				getFieldRef().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public boolean eIsSet(int featureID) {
-    switch (featureID) {
-      case FixrepositoryPackage.UNIQUE_TYPE__FIELD_REF:
-        return fieldRef != null && !fieldRef.isEmpty();
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case FixrepositoryPackage.UNIQUE_TYPE__FIELD_REF:
+				return fieldRef != null && !fieldRef.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
 } //UniqueTypeImpl

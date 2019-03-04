@@ -20,98 +20,102 @@ import org.purl.dc.elements._1._1.*;
  */
 public class _1FactoryImpl extends EFactoryImpl implements _1Factory {
   /**
-   * Creates the default factory implementation.
-   * <!-- begin-user-doc -->
+	 * Creates the default factory implementation.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public static _1Factory init() {
-    try {
-      _1Factory the_1Factory = (_1Factory)EPackage.Registry.INSTANCE.getEFactory(_1Package.eNS_URI);
-      if (the_1Factory != null) {
-        return the_1Factory;
-      }
-    }
-    catch (Exception exception) {
-      EcorePlugin.INSTANCE.log(exception);
-    }
-    return new _1FactoryImpl();
-  }
+		try {
+			_1Factory the_1Factory = (_1Factory)EPackage.Registry.INSTANCE.getEFactory(_1Package.eNS_URI);
+			if (the_1Factory != null) {
+				return the_1Factory;
+			}
+		}
+		catch (Exception exception) {
+			EcorePlugin.INSTANCE.log(exception);
+		}
+		return new _1FactoryImpl();
+	}
 
   /**
-   * Creates an instance of the factory.
-   * <!-- begin-user-doc -->
+	 * Creates an instance of the factory.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public _1FactoryImpl() {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public EObject create(EClass eClass) {
-    switch (eClass.getClassifierID()) {
-      case _1Package.ELEMENT_CONTAINER: return createElementContainer();
-      case _1Package.SIMPLE_LITERAL: return createSimpleLiteral();
-      case _1Package.DOCUMENT_ROOT: return createDocumentRoot();
-      default:
-        throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
-    }
-  }
+		switch (eClass.getClassifierID()) {
+			case _1Package.ELEMENT_CONTAINER: return createElementContainer();
+			case _1Package.SIMPLE_LITERAL: return createSimpleLiteral();
+			case _1Package.DOCUMENT_ROOT: return createDocumentRoot();
+			default:
+				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
+		}
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
-  public ElementContainer createElementContainer() {
-    ElementContainerImpl elementContainer = new ElementContainerImpl();
-    return elementContainer;
-  }
+	 * @generated
+	 */
+  @Override
+		public ElementContainer createElementContainer() {
+		ElementContainerImpl elementContainer = new ElementContainerImpl();
+		return elementContainer;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
-  public SimpleLiteral createSimpleLiteral() {
-    SimpleLiteralImpl simpleLiteral = new SimpleLiteralImpl();
-    return simpleLiteral;
-  }
+	 * @generated
+	 */
+  @Override
+		public SimpleLiteral createSimpleLiteral() {
+		SimpleLiteralImpl simpleLiteral = new SimpleLiteralImpl();
+		return simpleLiteral;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
-  public DocumentRoot createDocumentRoot() {
-    DocumentRootImpl documentRoot = new DocumentRootImpl();
-    return documentRoot;
-  }
+	 * @generated
+	 */
+  @Override
+		public DocumentRoot createDocumentRoot() {
+		DocumentRootImpl documentRoot = new DocumentRootImpl();
+		return documentRoot;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
-  public _1Package get_1Package() {
-    return (_1Package)getEPackage();
-  }
+	 * @generated
+	 */
+  @Override
+		public _1Package get_1Package() {
+		return (_1Package)getEPackage();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @deprecated
-   * @generated
-   */
+	 * @deprecated
+	 * @generated
+	 */
   @Deprecated
   public static _1Package getPackage() {
-    return _1Package.eINSTANCE;
-  }
+		return _1Package.eINSTANCE;
+	}
 
 } //_1FactoryImpl

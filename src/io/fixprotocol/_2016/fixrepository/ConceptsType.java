@@ -24,20 +24,20 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface ConceptsType extends EObject {
   /**
-   * Returns the value of the '<em><b>Concept</b></em>' containment reference list.
-   * The list contents are of type {@link io.fixprotocol._2016.fixrepository.ConceptType}.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Concept</b></em>' containment reference list.
+	 * The list contents are of type {@link io.fixprotocol._2016.fixrepository.ConceptType}.
+	 * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Concept</em>' containment reference list isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Concept</em>' containment reference list.
-   * @see io.fixprotocol._2016.fixrepository.FixrepositoryPackage#getConceptsType_Concept()
-   * @model containment="true" required="true"
-   *        extendedMetaData="kind='element' name='concept' namespace='##targetNamespace'"
-   * @generated
-   */
+	 * @return the value of the '<em>Concept</em>' containment reference list.
+	 * @see io.fixprotocol._2016.fixrepository.FixrepositoryPackage#getConceptsType_Concept()
+	 * @model containment="true" required="true"
+	 *        extendedMetaData="kind='element' name='concept' namespace='##targetNamespace'"
+	 * @generated
+	 */
   EList<ConceptType> getConcept();
 
 } // ConceptsType

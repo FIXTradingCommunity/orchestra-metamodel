@@ -6,7 +6,9 @@ This project provides a UML meta-model of FIX Orchestra. Users may use the model
 The model was generated from the Orchestra XML schema by Eclipse Modeling Framework (EMF). 
 
 ### Source Schema
-The XML schema upon which this project is based is in project [fix-orchestra](https://github.com/FIXTradingCommunity/fix-orchestra). The initial implementation is based on Orchestra Release Candidate 3.
+The XML schema upon which this project is based is in project [fix-orchestra](https://github.com/FIXTradingCommunity/fix-orchestra). 
+
+The initial implementation was updated in March 2019 for Orchestra Release Candidate 4.
 
 ### Eclipse Modeling Project
 The only prerequisite to use this project is installation of Eclipse Modeling Framework and XML Schema plug-ins for Eclipse.
@@ -21,7 +23,7 @@ The model is in Ecore, an implementation of OMG's [Meta Object Facility](https:/
 set of metadata services to enable the development and interoperability of model and metadata driven systems.
 
 ## License
-© Copyright 2018 FIX Protocol Limited
+© Copyright 2018-2019 FIX Protocol Limited
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

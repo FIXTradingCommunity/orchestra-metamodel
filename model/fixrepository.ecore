@@ -3,7 +3,7 @@
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="fixrepository" nsURI="http://fixprotocol.io/2016/fixrepository"
     nsPrefix="fixrepository">
   <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-    <details key="documentation" value="&#xA;&#x9;&#x9;&#x9;FIX Repository standard structure of messages with workflow&#xA;&#x9;&#x9;&#x9;© Copyright 2016-2018 FIX Protocol Limited&#xA;&#x9;&#x9;&#x9;Creative Commons Attribution-NoDerivatives 4.0&#xA;&#x9;&#x9;&#x9;International Public License&#xA;&#x9;&#x9;&#xD;&#xA;&#xA;&#x9;&#x9;&#x9;© Copyright 2016-2017 FIX Protocol Limited Creative&#xA;&#x9;&#x9;&#x9;Commons Attribution-NoDerivatives 4.0&#xA;&#x9;&#x9;&#x9;International Public License&#xA;&#x9;&#x9;&#xD;&#xA;&#xA;      DCterms XML Schema&#xA;      XML Schema for http://purl.org/dc/terms/ namespace&#xA; &#xA;      Created 2008-02-11&#xA;&#xA;      Created by &#xA;&#xA;      Tim Cole (t-cole3@uiuc.edu)&#xA;      Tom Habing (thabing@uiuc.edu)&#xA;      Jane Hunter (jane@dstc.edu.au)&#xA;      Pete Johnston (p.johnston@ukoln.ac.uk),&#xA;      Carl Lagoze (lagoze@cs.cornell.edu)&#xA;&#xA;      This schema declares XML elements for the DC elements and&#xA;      DC element refinements from the http://purl.org/dc/terms/ namespace.&#xA;      &#xA;      It reuses the complexType dc:SimpleLiteral, imported from the dc.xsd&#xA;      schema, which permits simple element content, and makes the xml:lang&#xA;      attribute available.&#xA;&#xA;      This complexType permits the derivation of other complexTypes&#xA;      which would permit child elements.&#xA;&#xA;      XML elements corresponding to DC elements are declared as substitutable for the abstract element dc:any, and &#xA;      XML elements corresponding to DC element refinements are defined as substitutable for the base elements &#xA;      which they refine.&#xA;&#xA;      This means that the default type for all XML elements (i.e. corresponding to all DC elements and &#xA;      element refinements) is dc:SimpleLiteral.&#xA;&#xA;      Encoding schemes are defined as complexTypes which are restrictions&#xA;      of the dc:SimpleLiteral complexType. These complexTypes restrict &#xA;      values to an appropriates syntax or format using data typing,&#xA;      regular expressions, or enumerated lists.&#xA;  &#xA;      In order to specify one of these encodings an xsi:type attribute must &#xA;      be used in the instance document.&#xA;&#xA;      Also, note that one shortcoming of this approach is that any type can be &#xA;      applied to any of the elements or refinements.  There is no convenient way&#xA;      to restrict types to specific elements using this approach.&#xA;&#xA;      Changes in 2008-02-11 version:&#xA;      &#xA;      Add element declarations corresponding to 15 new dcterms URIs, and amend use of substitutionGroups.&#xA;      &#xA;      Add compexType definitions corresponding to ISO639-3, RFC4646.&#xA;      &#xA;    &#xD;&#xA;&#xA;      DCMES 1.1 XML Schema&#xA;      XML Schema for http://purl.org/dc/elements/1.1/ namespace&#xA;&#xA;      Created 2008-02-11&#xA;&#xA;      Created by &#xA;&#xA;      Tim Cole (t-cole3@uiuc.edu)&#xA;      Tom Habing (thabing@uiuc.edu)&#xA;      Jane Hunter (jane@dstc.edu.au)&#xA;      Pete Johnston (p.johnston@ukoln.ac.uk),&#xA;      Carl Lagoze (lagoze@cs.cornell.edu)&#xA;&#xA;      This schema declares XML elements for the 15 DC elements from the&#xA;      http://purl.org/dc/elements/1.1/ namespace.&#xA;&#xA;      It defines a complexType SimpleLiteral which permits mixed content &#xA;      and makes the xml:lang attribute available. It disallows child elements by&#xA;      use of minOcccurs/maxOccurs.&#xA;&#xA;      However, this complexType does permit the derivation of other complexTypes&#xA;      which would permit child elements.&#xA;&#xA;      All elements are declared as substitutable for the abstract element any, &#xA;      which means that the default type for all elements is dc:SimpleLiteral.&#xA;&#xA;    &#xD;&#xA;&#xA;   See http://www.w3.org/XML/1998/namespace.html and&#xA;   http://www.w3.org/TR/REC-xml for information about this namespace.&#xA;&#xA;    This schema document describes the XML namespace, in a form&#xA;    suitable for import by other schema documents.  &#xA;&#xA;    Note that local names in this namespace are intended to be defined&#xA;    only by the World Wide Web Consortium or its subgroups.  The&#xA;    following names are currently defined in this namespace and should&#xA;    not be used with conflicting semantics by any Working Group,&#xA;    specification, or document instance:&#xA;&#xA;    base (as an attribute name): denotes an attribute whose value&#xA;         provides a URI to be used as the base for interpreting any&#xA;         relative URIs in the scope of the element on which it&#xA;         appears; its value is inherited.  This name is reserved&#xA;         by virtue of its definition in the XML Base specification.&#xA;&#xA;    lang (as an attribute name): denotes an attribute whose value&#xA;         is a language code for the natural language of the content of&#xA;         any element; its value is inherited.  This name is reserved&#xA;         by virtue of its definition in the XML specification.&#xA;  &#xA;    space (as an attribute name): denotes an attribute whose&#xA;         value is a keyword indicating what whitespace processing&#xA;         discipline is intended for the content of the element; its&#xA;         value is inherited.  This name is reserved by virtue of its&#xA;         definition in the XML specification.&#xA;&#xA;    Father (in any context at all): denotes Jon Bosak, the chair of &#xA;         the original XML Working Group.  This name is reserved by &#xA;         the following decision of the W3C XML Plenary and &#xA;         XML Coordination groups:&#xA;&#xA;             In appreciation for his vision, leadership and dedication&#xA;             the W3C XML Plenary on this 10th day of February, 2000&#xA;             reserves for Jon Bosak in perpetuity the XML name&#xA;             xml:Father&#xA;  &#xD;&#xA;This schema defines attributes and an attribute group&#xA;        suitable for use by&#xA;        schemas wishing to allow xml:base, xml:lang or xml:space attributes&#xA;        on elements they define.&#xA;&#xA;        To enable this, such a schema must import this schema&#xA;        for the XML namespace, e.g. as follows:&#xA;        &lt;schema . . .>&#xA;         . . .&#xA;         &lt;import namespace=&quot;http://www.w3.org/XML/1998/namespace&quot;&#xA;                    schemaLocation=&quot;http://www.w3.org/2001/03/xml.xsd&quot;/>&#xA;&#xA;        Subsequently, qualified reference to any of the attributes&#xA;        or the group defined below will have the desired effect, e.g.&#xA;&#xA;        &lt;type . . .>&#xA;         . . .&#xA;         &lt;attributeGroup ref=&quot;xml:specialAttrs&quot;/>&#xA; &#xA;         will define a type which will schema-validate an instance&#xA;         element with any of those attributes&#xD;&#xA;In keeping with the XML Schema WG's standard versioning&#xA;   policy, this schema document will persist at&#xA;   http://www.w3.org/2001/03/xml.xsd.&#xA;   At the date of issue it can also be found at&#xA;   http://www.w3.org/2001/xml.xsd.&#xA;   The schema document at that URI may however change in the future,&#xA;   in order to remain compatible with the latest version of XML Schema&#xA;   itself.  In other words, if the XML Schema namespace changes, the version&#xA;   of this document at&#xA;   http://www.w3.org/2001/xml.xsd will change&#xA;   accordingly; the version at&#xA;   http://www.w3.org/2001/03/xml.xsd will not change.&#xA;  &#xD;&#xA;&#xA;      DCMI Type Vocabulary XML Schema&#xA;      XML Schema for http://purl.org/dc/dcmitype/ namespace&#xA;&#xA;      Created 2008-02-11&#xA;&#xA;      Created by &#xA;&#xA;      Tim Cole (t-cole3@uiuc.edu)&#xA;      Tom Habing (thabing@uiuc.edu)&#xA;      Jane Hunter (jane@dstc.edu.au)&#xA;      Pete Johnston (p.johnston@ukoln.ac.uk),&#xA;      Carl Lagoze (lagoze@cs.cornell.edu)&#xA;&#xA;      This schema defines a simpleType which enumerates&#xA;      the allowable values for the DCMI Type Vocabulary.&#xA;    "/>
+    <details key="documentation" value="&#xA;&#x9;&#x9;&#x9;FIX Repository standard structure of messages with workflow&#xA;&#x9;&#x9;&#x9;© Copyright 2016-2019 FIX Protocol Limited&#xA;&#x9;&#x9;&#x9;Creative Commons Attribution-NoDerivatives 4.0&#xA;&#x9;&#x9;&#x9;International Public License&#xA;&#x9;&#x9;&#xD;&#xA;&#xA;&#x9;&#x9;&#x9;© Copyright 2016-2019 FIX Protocol Limited Creative&#xA;&#x9;&#x9;&#x9;Commons Attribution-NoDerivatives 4.0&#xA;&#x9;&#x9;&#x9;International Public License&#xA;&#x9;&#x9;&#xD;&#xA;&#xA;      DCterms XML Schema&#xA;      XML Schema for http://purl.org/dc/terms/ namespace&#xA; &#xA;      Created 2008-02-11&#xA;&#xA;      Created by &#xA;&#xA;      Tim Cole (t-cole3@uiuc.edu)&#xA;      Tom Habing (thabing@uiuc.edu)&#xA;      Jane Hunter (jane@dstc.edu.au)&#xA;      Pete Johnston (p.johnston@ukoln.ac.uk),&#xA;      Carl Lagoze (lagoze@cs.cornell.edu)&#xA;&#xA;      This schema declares XML elements for the DC elements and&#xA;      DC element refinements from the http://purl.org/dc/terms/ namespace.&#xA;      &#xA;      It reuses the complexType dc:SimpleLiteral, imported from the dc.xsd&#xA;      schema, which permits simple element content, and makes the xml:lang&#xA;      attribute available.&#xA;&#xA;      This complexType permits the derivation of other complexTypes&#xA;      which would permit child elements.&#xA;&#xA;      XML elements corresponding to DC elements are declared as substitutable for the abstract element dc:any, and &#xA;      XML elements corresponding to DC element refinements are defined as substitutable for the base elements &#xA;      which they refine.&#xA;&#xA;      This means that the default type for all XML elements (i.e. corresponding to all DC elements and &#xA;      element refinements) is dc:SimpleLiteral.&#xA;&#xA;      Encoding schemes are defined as complexTypes which are restrictions&#xA;      of the dc:SimpleLiteral complexType. These complexTypes restrict &#xA;      values to an appropriates syntax or format using data typing,&#xA;      regular expressions, or enumerated lists.&#xA;  &#xA;      In order to specify one of these encodings an xsi:type attribute must &#xA;      be used in the instance document.&#xA;&#xA;      Also, note that one shortcoming of this approach is that any type can be &#xA;      applied to any of the elements or refinements.  There is no convenient way&#xA;      to restrict types to specific elements using this approach.&#xA;&#xA;      Changes in 2008-02-11 version:&#xA;      &#xA;      Add element declarations corresponding to 15 new dcterms URIs, and amend use of substitutionGroups.&#xA;      &#xA;      Add compexType definitions corresponding to ISO639-3, RFC4646.&#xA;      &#xA;    &#xD;&#xA;&#xA;      DCMES 1.1 XML Schema&#xA;      XML Schema for http://purl.org/dc/elements/1.1/ namespace&#xA;&#xA;      Created 2008-02-11&#xA;&#xA;      Created by &#xA;&#xA;      Tim Cole (t-cole3@uiuc.edu)&#xA;      Tom Habing (thabing@uiuc.edu)&#xA;      Jane Hunter (jane@dstc.edu.au)&#xA;      Pete Johnston (p.johnston@ukoln.ac.uk),&#xA;      Carl Lagoze (lagoze@cs.cornell.edu)&#xA;&#xA;      This schema declares XML elements for the 15 DC elements from the&#xA;      http://purl.org/dc/elements/1.1/ namespace.&#xA;&#xA;      It defines a complexType SimpleLiteral which permits mixed content &#xA;      and makes the xml:lang attribute available. It disallows child elements by&#xA;      use of minOcccurs/maxOccurs.&#xA;&#xA;      However, this complexType does permit the derivation of other complexTypes&#xA;      which would permit child elements.&#xA;&#xA;      All elements are declared as substitutable for the abstract element any, &#xA;      which means that the default type for all elements is dc:SimpleLiteral.&#xA;&#xA;    &#xD;&#xA;&#xA;   See http://www.w3.org/XML/1998/namespace.html and&#xA;   http://www.w3.org/TR/REC-xml for information about this namespace.&#xA;&#xA;    This schema document describes the XML namespace, in a form&#xA;    suitable for import by other schema documents.  &#xA;&#xA;    Note that local names in this namespace are intended to be defined&#xA;    only by the World Wide Web Consortium or its subgroups.  The&#xA;    following names are currently defined in this namespace and should&#xA;    not be used with conflicting semantics by any Working Group,&#xA;    specification, or document instance:&#xA;&#xA;    base (as an attribute name): denotes an attribute whose value&#xA;         provides a URI to be used as the base for interpreting any&#xA;         relative URIs in the scope of the element on which it&#xA;         appears; its value is inherited.  This name is reserved&#xA;         by virtue of its definition in the XML Base specification.&#xA;&#xA;    lang (as an attribute name): denotes an attribute whose value&#xA;         is a language code for the natural language of the content of&#xA;         any element; its value is inherited.  This name is reserved&#xA;         by virtue of its definition in the XML specification.&#xA;  &#xA;    space (as an attribute name): denotes an attribute whose&#xA;         value is a keyword indicating what whitespace processing&#xA;         discipline is intended for the content of the element; its&#xA;         value is inherited.  This name is reserved by virtue of its&#xA;         definition in the XML specification.&#xA;&#xA;    Father (in any context at all): denotes Jon Bosak, the chair of &#xA;         the original XML Working Group.  This name is reserved by &#xA;         the following decision of the W3C XML Plenary and &#xA;         XML Coordination groups:&#xA;&#xA;             In appreciation for his vision, leadership and dedication&#xA;             the W3C XML Plenary on this 10th day of February, 2000&#xA;             reserves for Jon Bosak in perpetuity the XML name&#xA;             xml:Father&#xA;  &#xD;&#xA;This schema defines attributes and an attribute group&#xA;        suitable for use by&#xA;        schemas wishing to allow xml:base, xml:lang or xml:space attributes&#xA;        on elements they define.&#xA;&#xA;        To enable this, such a schema must import this schema&#xA;        for the XML namespace, e.g. as follows:&#xA;        &lt;schema . . .>&#xA;         . . .&#xA;         &lt;import namespace=&quot;http://www.w3.org/XML/1998/namespace&quot;&#xA;                    schemaLocation=&quot;http://www.w3.org/2001/03/xml.xsd&quot;/>&#xA;&#xA;        Subsequently, qualified reference to any of the attributes&#xA;        or the group defined below will have the desired effect, e.g.&#xA;&#xA;        &lt;type . . .>&#xA;         . . .&#xA;         &lt;attributeGroup ref=&quot;xml:specialAttrs&quot;/>&#xA; &#xA;         will define a type which will schema-validate an instance&#xA;         element with any of those attributes&#xD;&#xA;In keeping with the XML Schema WG's standard versioning&#xA;   policy, this schema document will persist at&#xA;   http://www.w3.org/2001/03/xml.xsd.&#xA;   At the date of issue it can also be found at&#xA;   http://www.w3.org/2001/xml.xsd.&#xA;   The schema document at that URI may however change in the future,&#xA;   in order to remain compatible with the latest version of XML Schema&#xA;   itself.  In other words, if the XML Schema namespace changes, the version&#xA;   of this document at&#xA;   http://www.w3.org/2001/xml.xsd will change&#xA;   accordingly; the version at&#xA;   http://www.w3.org/2001/03/xml.xsd will not change.&#xA;  &#xD;&#xA;&#xA;      DCMI Type Vocabulary XML Schema&#xA;      XML Schema for http://purl.org/dc/dcmitype/ namespace&#xA;&#xA;      Created 2008-02-11&#xA;&#xA;      Created by &#xA;&#xA;      Tim Cole (t-cole3@uiuc.edu)&#xA;      Tom Habing (thabing@uiuc.edu)&#xA;      Jane Hunter (jane@dstc.edu.au)&#xA;      Pete Johnston (p.johnston@ukoln.ac.uk),&#xA;      Carl Lagoze (lagoze@cs.cornell.edu)&#xA;&#xA;      This schema defines a simpleType which enumerates&#xA;      the allowable values for the DCMI Type Vocabulary.&#xA;    "/>
   </eAnnotations>
   <eClassifiers xsi:type="ecore:EClass" name="AbbreviationsType">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -402,12 +402,6 @@
         <details key="kind" value="element"/>
         <details key="name" value="annotation"/>
         <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="extends" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="attribute"/>
-        <details key="name" value="extends"/>
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="#//NameT">
@@ -990,6 +984,9 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="#//IdT">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Numeric identifier generally must be unique within a file for an element type, e.g. unique field tag"/>
+      </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
         <details key="name" value="id"/>
@@ -1013,15 +1010,6 @@
         <details key="name" value="name"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="oid" eType="#//OidOrUriT">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="An object ID or URI"/>
-      </eAnnotations>
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="attribute"/>
-        <details key="name" value="oid"/>
-      </eAnnotations>
-    </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="replaced" eType="#//VersionT">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
@@ -1038,6 +1026,16 @@
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
         <details key="name" value="replacedEP"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="scenario" eType="#//ScenarioT"
+        defaultValueLiteral="base" unsettable="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The use case of an element, distinguished by workflow, asset class, etc."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="scenario"/>
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="specUrl" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//AnyURI">
@@ -1135,6 +1133,9 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="#//IdT">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Numeric identifier generally must be unique within a file for an element type, e.g. unique field tag"/>
+      </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
         <details key="name" value="id"/>
@@ -1158,15 +1159,6 @@
         <details key="name" value="name"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="oid" eType="#//OidOrUriT">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="An object ID or URI"/>
-      </eAnnotations>
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="attribute"/>
-        <details key="name" value="oid"/>
-      </eAnnotations>
-    </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="replaced" eType="#//VersionT">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
@@ -1183,6 +1175,16 @@
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
         <details key="name" value="replacedEP"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="scenario" eType="#//ScenarioT"
+        defaultValueLiteral="base" unsettable="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The use case of an element, distinguished by workflow, asset class, etc."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="scenario"/>
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="sort" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String">
@@ -1254,12 +1256,6 @@
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="abbrName" eType="#//AbbreviationT">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="attribute"/>
-        <details key="name" value="abbrName"/>
-      </eAnnotations>
-    </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="added" eType="#//VersionT">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
@@ -1292,6 +1288,9 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="#//IdT">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Numeric identifier generally must be unique within a file for an element type, e.g. unique field tag"/>
+      </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
         <details key="name" value="id"/>
@@ -1316,21 +1315,6 @@
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
         <details key="name" value="lastModified"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="#//NameT">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="attribute"/>
-        <details key="name" value="name"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="oid" eType="#//OidOrUriT">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="An object ID or URI"/>
-      </eAnnotations>
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="attribute"/>
-        <details key="name" value="oid"/>
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="presence" eType="#//PresenceT"
@@ -1358,8 +1342,11 @@
         <details key="name" value="replacedEP"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="scenario" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="scenario" eType="#//ScenarioT"
         defaultValueLiteral="base" unsettable="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The use case of an element, distinguished by workflow, asset class, etc."/>
+      </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
         <details key="name" value="scenario"/>
@@ -1390,31 +1377,12 @@
       <details key="name" value="components_._type"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="group" unique="false" upperBound="-1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFeatureMapEntry">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="group"/>
-        <details key="name" value="group:0"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="component" upperBound="-1"
-        eType="#//ComponentType" volatile="true" transient="true" derived="true" containment="true"
-        resolveProxies="false">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="component" lowerBound="1"
+        upperBound="-1" eType="#//ComponentType" containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="component"/>
         <details key="namespace" value="##targetNamespace"/>
-        <details key="group" value="#group:0"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="group1" upperBound="-1"
-        eType="#//GroupType" volatile="true" transient="true" derived="true" containment="true"
-        resolveProxies="false">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="element"/>
-        <details key="name" value="group"/>
-        <details key="namespace" value="##targetNamespace"/>
-        <details key="group" value="#group:0"/>
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="latestEP" eType="#//EPT">
@@ -1462,36 +1430,6 @@
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="fieldRef"/>
-        <details key="namespace" value="##targetNamespace"/>
-        <details key="group" value="#group:0"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="component" upperBound="-1"
-        eType="#//ComponentType" volatile="true" transient="true" derived="true" containment="true"
-        resolveProxies="false">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="element"/>
-        <details key="name" value="component"/>
-        <details key="namespace" value="##targetNamespace"/>
-        <details key="group" value="#group:0"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="group1" upperBound="-1"
-        eType="#//GroupType" volatile="true" transient="true" derived="true" containment="true"
-        resolveProxies="false">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="element"/>
-        <details key="name" value="group"/>
-        <details key="namespace" value="##targetNamespace"/>
-        <details key="group" value="#group:0"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="field" upperBound="-1"
-        eType="#//FieldType" volatile="true" transient="true" derived="true" containment="true"
-        resolveProxies="false">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="element"/>
-        <details key="name" value="field"/>
         <details key="namespace" value="##targetNamespace"/>
         <details key="group" value="#group:0"/>
       </eAnnotations>
@@ -1547,16 +1485,10 @@
         <details key="name" value="deprecatedEP"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="extends" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="If present, refers to another scenario, assuming&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;the same component name&#xA;&#x9;&#x9;&#x9;&#x9;"/>
-      </eAnnotations>
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="attribute"/>
-        <details key="name" value="extends"/>
-      </eAnnotations>
-    </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="#//IdT">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Numeric identifier generally must be unique within a file for an element type, e.g. unique field tag"/>
+      </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
         <details key="name" value="id"/>
@@ -1578,15 +1510,6 @@
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
         <details key="name" value="name"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="oid" eType="#//OidOrUriT">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="An object ID or URI"/>
-      </eAnnotations>
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="attribute"/>
-        <details key="name" value="oid"/>
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="rendering" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String">
@@ -1616,10 +1539,10 @@
         <details key="name" value="replacedEP"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="scenario" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="scenario" eType="#//ScenarioT"
         defaultValueLiteral="base" unsettable="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="The name of one use case of this component. &#xA;&#x9;&#x9;&#x9;&#x9;Each scenario of a component must have a unique numeric id.&#xA;&#x9;&#x9;&#x9;&#x9;The default scenario name is 'base'."/>
+        <details key="documentation" value="The use case of an element, distinguished by workflow, asset class, etc."/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
@@ -1724,12 +1647,6 @@
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
         <details key="name" value="name"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="oid" eType="#//OidOrUriT">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="attribute"/>
-        <details key="name" value="oid"/>
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
@@ -1953,6 +1870,13 @@
         <details key="name" value="changeType"/>
       </eAnnotations>
     </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="contentType" eType="#//MimeT"
+        defaultValueLiteral="text/plain" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="contentType"/>
+      </eAnnotations>
+    </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="deprecated" eType="#//VersionT">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
@@ -2139,6 +2063,15 @@
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="groups" upperBound="-2"
+        eType="#//GroupsType" volatile="true" transient="true" derived="true" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="groups"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="mappedDatatype" upperBound="-2"
         eType="#//MappedDatatypeType" volatile="true" transient="true" derived="true"
         containment="true" resolveProxies="false">
@@ -2204,17 +2137,6 @@
       <details key="name" value="fieldRefType"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="codeSet" eType="#//CodeSetType"
-        containment="true" resolveProxies="false">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="CodeSet may be specified inline or referenced by&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;type attribute, but not both. Not currently enforced by this&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;schema.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Consider XML schema assertion in future.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
-      </eAnnotations>
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="element"/>
-        <details key="name" value="codeSet"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="rule" upperBound="-1" eType="#//FieldRuleType"
         containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -2242,12 +2164,6 @@
         <details key="kind" value="element"/>
         <details key="name" value="annotation"/>
         <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="abbrName" eType="#//AbbreviationT">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="attribute"/>
-        <details key="name" value="abbrName"/>
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="added" eType="#//VersionT">
@@ -2291,6 +2207,9 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="#//IdT">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Numeric identifier generally must be unique within a file for an element type, e.g. unique field tag"/>
+      </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
         <details key="name" value="id"/>
@@ -2368,21 +2287,6 @@
         <details key="name" value="minInclusive"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="#//NameT">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="attribute"/>
-        <details key="name" value="name"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="oid" eType="#//OidOrUriT">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="An object ID or URI"/>
-      </eAnnotations>
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="attribute"/>
-        <details key="name" value="oid"/>
-      </eAnnotations>
-    </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="presence" eType="#//PresenceT"
         defaultValueLiteral="optional" unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -2415,6 +2319,16 @@
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
         <details key="name" value="replacedEP"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="scenario" eType="#//ScenarioT"
+        defaultValueLiteral="base" unsettable="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The use case of an element, distinguished by workflow, asset class, etc."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="scenario"/>
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="supported" eType="#//SupportType"
@@ -2597,17 +2511,6 @@
       <details key="name" value="fieldType"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="codeSet" eType="#//CodeSetType"
-        containment="true" resolveProxies="false">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="CodeSet may be specified inline or referenced by&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;type attribute, but not both. Not currently enforced by this&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;schema.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Consider XML schema assertion in future.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
-      </eAnnotations>
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="element"/>
-        <details key="name" value="codeSet"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="rule" upperBound="-1" eType="#//FieldRuleType"
         containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -2711,6 +2614,9 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="#//IdT">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Numeric identifier generally must be unique within a file for an element type, e.g. unique field tag"/>
+      </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
         <details key="name" value="id"/>
@@ -2791,15 +2697,6 @@
         <details key="name" value="name"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="oid" eType="#//OidOrUriT">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="An object ID or URI"/>
-      </eAnnotations>
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="attribute"/>
-        <details key="name" value="oid"/>
-      </eAnnotations>
-    </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="presence" eType="#//PresenceT"
         defaultValueLiteral="optional" unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -2832,6 +2729,16 @@
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
         <details key="name" value="replacedEP"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="scenario" eType="#//ScenarioT"
+        defaultValueLiteral="base" unsettable="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The use case of an element, distinguished by workflow, asset class, etc."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="scenario"/>
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="supported" eType="#//SupportType"
@@ -2954,11 +2861,139 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="GroupType" eSuperTypes="#//ComponentType">
+  <eClassifiers xsi:type="ecore:EClass" name="GroupsType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="groups_._type"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="group" lowerBound="1" upperBound="-1"
+        eType="#//GroupType" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="group"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="latestEP" eType="#//EPT">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="latestEP"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GroupType">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="A repeating group. Logically, groupType is a subclass of componentType, but to make numInGroup first in the sequence, it cannot be an extension."/>
+    </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="groupType"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="numInGroup" eType="#//FieldRefType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="numInGroup"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="group" unique="false" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFeatureMapEntry">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="group"/>
+        <details key="name" value="group:1"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="componentRef" upperBound="-1"
+        eType="#//ComponentRefType" volatile="true" transient="true" derived="true"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="componentRef"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="group" value="#group:1"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="groupRef" upperBound="-1"
+        eType="#//GroupRefType" volatile="true" transient="true" derived="true" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="groupRef"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="group" value="#group:1"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fieldRef" upperBound="-1"
+        eType="#//FieldRefType" volatile="true" transient="true" derived="true" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="fieldRef"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="group" value="#group:1"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="annotation" eType="#//Annotation"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="annotation"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="abbrName" eType="#//AbbreviationT">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="abbrName"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="added" eType="#//VersionT">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="added"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="addedEP" eType="#//EPT">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="addedEP"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="category" eType="#//CategoryIDT">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="category"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="changeType" eType="#//ChangeTypeT"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="changeType"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="deprecated" eType="#//VersionT">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="deprecated"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="deprecatedEP" eType="#//EPT">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="deprecatedEP"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="#//IdT">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Numeric identifier generally must be unique within a file for an element type, e.g. unique field tag"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="id"/>
+      </eAnnotations>
+    </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="implMaxOccurs" eType="#//UnboundedIntType"
         defaultValueLiteral="unbounded" unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -2972,18 +3007,149 @@
         <details key="name" value="implMinOccurs"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="numInGroupId" lowerBound="1"
-        eType="#//IdT">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="issue" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
-        <details key="name" value="numInGroupId"/>
+        <details key="name" value="issue"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="numInGroupName" lowerBound="1"
-        eType="#//NameT">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lastModified" eType="#//VersionT">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
-        <details key="name" value="numInGroupName"/>
+        <details key="name" value="lastModified"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="#//NameT">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="name"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="rendering" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A hint to processes about how to interpret the element. Not validated."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="rendering"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="replaced" eType="#//VersionT">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="replaced"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="replacedByField" eType="#//IdT">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="replacedByField"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="replacedEP" eType="#//EPT">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="replacedEP"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="scenario" eType="#//ScenarioT"
+        defaultValueLiteral="base" unsettable="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The use case of an element, distinguished by workflow, asset class, etc."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="scenario"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="supported" eType="#//SupportType"
+        defaultValueLiteral="supported" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="supported"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="updated" eType="#//VersionT">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="updated"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="updatedEP" eType="#//EPT">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="updatedEP"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IdentifiersType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="identifiersType"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="group" unique="false" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFeatureMapEntry">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="group"/>
+        <details key="name" value="group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="correlate" upperBound="-1"
+        eType="#//IdentifierType" volatile="true" transient="true" derived="true"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Correlated field IDs between two message types"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="correlate"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="assign" upperBound="-1"
+        eType="#//IdentifierType" volatile="true" transient="true" derived="true"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Field ID assigned"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="assign"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="annotation" eType="#//Annotation"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="annotation"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IdentifierType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="identifierType"/>
+      <details key="kind" value="empty"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="#//IdT">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Field ID assigned or correlated in a message reference"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="id"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sourceId" eType="#//IdT">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Field ID correlated from source message. If not present, assumed to be same tag as 'id'."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="sourceId"/>
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
@@ -3017,33 +3183,22 @@
       <details key="name" value="mappedDatatype_._type"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="mappedDatatype" upperBound="-1"
-        eType="#//MappedDatatypeType" containment="true" resolveProxies="false">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="Nesting supports composite types"/>
-      </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="any" unique="false" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFeatureMapEntry">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="element"/>
-        <details key="name" value="mappedDatatype"/>
-        <details key="namespace" value="##targetNamespace"/>
+        <details key="kind" value="elementWildcard"/>
+        <details key="wildcards" value="##any"/>
+        <details key="name" value=":0"/>
+        <details key="processing" value="skip"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="annotation" eType="#//Annotation"
-        containment="true" resolveProxies="false">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="element"/>
-        <details key="name" value="annotation"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="base" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="base" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
         <details key="name" value="base"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="builtin" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Boolean"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="builtin" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Boolean"
         unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
@@ -3097,8 +3252,25 @@
   <eClassifiers xsi:type="ecore:EClass" name="MessageRefType">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="messageRefType"/>
-      <details key="kind" value="empty"/>
+      <details key="kind" value="elementOnly"/>
     </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="identifiers" eType="#//IdentifiersType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="identifiers"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="#//IdT">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Numeric identifier generally must be unique within a file for an element type, e.g. unique field tag"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="id"/>
+      </eAnnotations>
+    </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="implMaxOccurs" eType="#//UnboundedIntType"
         defaultValueLiteral="unbounded" unsettable="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -3128,8 +3300,11 @@
         <details key="name" value="name"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="scenario" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="scenario" eType="#//ScenarioT"
         defaultValueLiteral="base" unsettable="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The use case of an element, distinguished by workflow, asset class, etc."/>
+      </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
         <details key="name" value="scenario"/>
@@ -3228,15 +3403,6 @@
         <details key="name" value="deprecatedEP"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="extends" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="If present, refers to another scenario, assuming&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;the same message name&#xA;&#x9;&#x9;&#x9;&#x9;"/>
-      </eAnnotations>
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="attribute"/>
-        <details key="name" value="extends"/>
-      </eAnnotations>
-    </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="flow" eType="#//NameT">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
@@ -3244,6 +3410,9 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="#//IdT">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Numeric identifier generally must be unique within a file for an element type, e.g. unique field tag"/>
+      </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
         <details key="name" value="id"/>
@@ -3273,15 +3442,6 @@
         <details key="name" value="name"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="oid" eType="#//OidOrUriT">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="An object ID or URI"/>
-      </eAnnotations>
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="attribute"/>
-        <details key="name" value="oid"/>
-      </eAnnotations>
-    </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="replaced" eType="#//VersionT">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
@@ -3300,10 +3460,10 @@
         <details key="name" value="replacedEP"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="scenario" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="scenario" eType="#//ScenarioT"
         defaultValueLiteral="base" unsettable="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="The name of one use case of this message type. &#xA;&#x9;&#x9;&#x9;&#x9;Each scenario of a message must have a unique numeric id.&#xA;&#x9;&#x9;&#x9;&#x9;The default scenario name is 'base'."/>
+        <details key="documentation" value="The use case of an element, distinguished by workflow, asset class, etc."/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
@@ -3337,6 +3497,16 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="MimeT" instanceClassName="java.lang.String">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Multipurpose Internet Mail Extensions (MIME) media type"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="mime_t"/>
+      <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#string"/>
+      <details key="minLength" value="3"/>
+    </eAnnotations>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EDataType" name="MsgTypeT" instanceClassName="java.lang.String">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="MsgType_t"/>
@@ -3351,35 +3521,38 @@
       <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#string"/>
       <details key="minLength" value="1"/>
       <details key="maxLength" value="255"/>
-      <details key="pattern" value="([A-Z]|[a-z]|_)([0-9]|[A-Z]|[a-z]|_)*"/>
-    </eAnnotations>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EDataType" name="OidOrUriT" instanceClassName="java.lang.String">
-    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-      <details key="name" value="oidOrUri_t"/>
-      <details key="memberTypes" value="http://www.eclipse.org/emf/2003/XMLType#anyURI oid_t"/>
-    </eAnnotations>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EDataType" name="OidT" instanceClassName="java.lang.String">
-    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-      <details key="documentation" value="Object identifier (OID) in ASN.1 or dotted notation"/>
-    </eAnnotations>
-    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-      <details key="name" value="oid_t"/>
-      <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#string"/>
-      <details key="pattern" value="\{?[a-zA-Z0-9()\-\.]+\}?"/>
+      <details key="pattern" value="([A-Z]|[a-z])([0-9]|[A-Z]|[a-z]|_)*"/>
     </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="PresenceT">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="presence_t"/>
     </eAnnotations>
-    <eLiterals name="optional"/>
-    <eLiterals name="required" value="1"/>
-    <eLiterals name="conditional" value="2"/>
-    <eLiterals name="forbidden" value="3"/>
-    <eLiterals name="ignored" value="4"/>
-    <eLiterals name="constant" value="5"/>
+    <eLiterals name="optional">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The field or component MAY be present; it may be conditionally required based on a rule."/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="required" value="1">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The field or component MUST be present."/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="forbidden" value="2">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The field or component MUST NOT be present."/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="ignored" value="3">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The field or component MAY be present but is not validated."/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="constant" value="4">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The field has a constant value; in some encodings it need not be sent on the wire."/>
+      </eAnnotations>
+    </eLiterals>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EDataType" name="PresenceTObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -3508,11 +3681,19 @@
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="components" lowerBound="1"
-        eType="#//ComponentsType" containment="true" resolveProxies="false">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="components" eType="#//ComponentsType"
+        containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="components"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="groups" eType="#//GroupsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="groups"/>
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
@@ -3546,18 +3727,20 @@
         <details key="name" value="applVerId"/>
       </eAnnotations>
     </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="expressionLanguage" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"
+        defaultValueLiteral="Score" unsettable="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The syntax of 'expressionType'"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="expressionLanguage"/>
+      </eAnnotations>
+    </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="guid" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
         <details key="name" value="guid"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="hasComponents" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Boolean"
-        unsettable="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="attribute"/>
-        <details key="name" value="hasComponents"/>
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="latestEP" eType="#//EPT">
@@ -3657,6 +3840,15 @@
         <details key="name" value="sync"/>
       </eAnnotations>
     </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ScenarioT" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="Scenario_t"/>
+      <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#string"/>
+      <details key="minLength" value="1"/>
+      <details key="maxLength" value="255"/>
+      <details key="pattern" value="([A-Z]|[a-z])([0-9]|[A-Z]|[a-z]|_|-)*"/>
+    </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="SectionIDT">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -3946,16 +4138,6 @@
         <details key="name" value="group:0"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="component" upperBound="-1"
-        eType="#//ComponentType" volatile="true" transient="true" derived="true" containment="true"
-        resolveProxies="false">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="element"/>
-        <details key="name" value="component"/>
-        <details key="namespace" value="##targetNamespace"/>
-        <details key="group" value="#group:0"/>
-      </eAnnotations>
-    </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="componentRef" upperBound="-1"
         eType="#//ComponentRefType" volatile="true" transient="true" derived="true"
         containment="true" resolveProxies="false">
@@ -3966,32 +4148,12 @@
         <details key="group" value="#group:0"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="group1" upperBound="-1"
-        eType="#//GroupType" volatile="true" transient="true" derived="true" containment="true"
-        resolveProxies="false">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="element"/>
-        <details key="name" value="group"/>
-        <details key="namespace" value="##targetNamespace"/>
-        <details key="group" value="#group:0"/>
-      </eAnnotations>
-    </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="groupRef" upperBound="-1"
         eType="#//GroupRefType" volatile="true" transient="true" derived="true" containment="true"
         resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="groupRef"/>
-        <details key="namespace" value="##targetNamespace"/>
-        <details key="group" value="#group:0"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="field" upperBound="-1"
-        eType="#//FieldType" volatile="true" transient="true" derived="true" containment="true"
-        resolveProxies="false">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="element"/>
-        <details key="name" value="field"/>
         <details key="namespace" value="##targetNamespace"/>
         <details key="group" value="#group:0"/>
       </eAnnotations>
@@ -4275,30 +4437,6 @@
       <details key="pattern" value="(FIX.2.7)|(FIX.3.0)|(FIX\.4\.[0-4])|(FIX\.5\.0(SP\d{1,2})?(_EP((9[8-9])|([1-9][0-9][0-9])))?)|(FIXT.1.1)|([0-9]+)\.([0-9]+)|(\d{8})"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="VolumeNameT">
-    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-      <details key="name" value="VolumeName_t"/>
-    </eAnnotations>
-    <eLiterals name="Volume1"/>
-    <eLiterals name="Volume2" value="1"/>
-    <eLiterals name="Volume3" value="2"/>
-    <eLiterals name="Volume4" value="3"/>
-    <eLiterals name="Volume5" value="4"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EDataType" name="VolumeNameTObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
-    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-      <details key="name" value="VolumeName_t:Object"/>
-      <details key="baseType" value="VolumeName_t"/>
-    </eAnnotations>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EDataType" name="VolumeNumberT" instanceClassName="java.math.BigInteger">
-    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-      <details key="name" value="VolumeNumber_t"/>
-      <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#nonNegativeInteger"/>
-      <details key="minInclusive" value="1"/>
-      <details key="maxInclusive" value="5"/>
-    </eAnnotations>
-  </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="VolumeT">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="Volume_t"/>
@@ -4310,7 +4448,7 @@
     <eLiterals name="_5" value="4" literal="5"/>
     <eLiterals name="_6" value="5" literal="6"/>
     <eLiterals name="FIXT11" value="6" literal="FIXT.1.1"/>
-    <eLiterals name="_" value="7" literal="?"/>
+    <eLiterals name="_7" value="7" literal="7"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EDataType" name="VolumeTObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">

@@ -24,19 +24,19 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface ResponsesType extends EObject {
   /**
-   * Returns the value of the '<em><b>Response</b></em>' containment reference list.
-   * The list contents are of type {@link io.fixprotocol._2016.fixrepository.ResponseType}.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Response</b></em>' containment reference list.
+	 * The list contents are of type {@link io.fixprotocol._2016.fixrepository.ResponseType}.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * Responses are evaluated and triggered in the order listed
-   * <!-- end-model-doc -->
-   * @return the value of the '<em>Response</em>' containment reference list.
-   * @see io.fixprotocol._2016.fixrepository.FixrepositoryPackage#getResponsesType_Response()
-   * @model containment="true" required="true"
-   *        extendedMetaData="kind='element' name='response' namespace='##targetNamespace'"
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * Responses are evaluated and triggered in the order listed
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Response</em>' containment reference list.
+	 * @see io.fixprotocol._2016.fixrepository.FixrepositoryPackage#getResponsesType_Response()
+	 * @model containment="true" required="true"
+	 *        extendedMetaData="kind='element' name='response' namespace='##targetNamespace'"
+	 * @generated
+	 */
   EList<ResponseType> getResponse();
 
 } // ResponsesType

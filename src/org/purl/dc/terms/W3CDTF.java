@@ -24,30 +24,30 @@ import org.purl.dc.elements._1._1.SimpleLiteral;
  */
 public interface W3CDTF extends SimpleLiteral {
   /**
-   * Returns the value of the '<em><b>Value</b></em>' attribute.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Value</b></em>' attribute.
+	 * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Value</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Value</em>' attribute.
-   * @see #setValue(XMLGregorianCalendar)
-   * @see org.purl.dc.terms.TermsPackage#getW3CDTF_Value()
-   * @model dataType="org.purl.dc.terms.W3CDTFBaseBase" transient="true" volatile="true" derived="true"
-   *        extendedMetaData="name=':2' kind='simple'"
-   * @generated
-   */
+	 * @return the value of the '<em>Value</em>' attribute.
+	 * @see #setValue(XMLGregorianCalendar)
+	 * @see org.purl.dc.terms.TermsPackage#getW3CDTF_Value()
+	 * @model dataType="org.purl.dc.terms.W3CDTFBaseBase" transient="true" volatile="true" derived="true"
+	 *        extendedMetaData="name=':2' kind='simple'"
+	 * @generated
+	 */
   XMLGregorianCalendar getValue();
 
   /**
-   * Sets the value of the '{@link org.purl.dc.terms.W3CDTF#getValue <em>Value</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.purl.dc.terms.W3CDTF#getValue <em>Value</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Value</em>' attribute.
-   * @see #getValue()
-   * @generated
-   */
+	 * @param value the new value of the '<em>Value</em>' attribute.
+	 * @see #getValue()
+	 * @generated
+	 */
   void setValue(XMLGregorianCalendar value);
 
 } // W3CDTF

@@ -35,118 +35,119 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public class ConceptsTypeImpl extends MinimalEObjectImpl.Container implements ConceptsType {
   /**
-   * The cached value of the '{@link #getConcept() <em>Concept</em>}' containment reference list.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getConcept() <em>Concept</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getConcept()
-   * @generated
-   * @ordered
-   */
+	 * @see #getConcept()
+	 * @generated
+	 * @ordered
+	 */
   protected EList<ConceptType> concept;
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected ConceptsTypeImpl() {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass() {
-    return FixrepositoryPackage.eINSTANCE.getConceptsType();
-  }
+		return FixrepositoryPackage.eINSTANCE.getConceptsType();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
-  public EList<ConceptType> getConcept() {
-    if (concept == null) {
-      concept = new EObjectContainmentEList<ConceptType>(ConceptType.class, this, FixrepositoryPackage.CONCEPTS_TYPE__CONCEPT);
-    }
-    return concept;
-  }
+	 * @generated
+	 */
+  @Override
+		public EList<ConceptType> getConcept() {
+		if (concept == null) {
+			concept = new EObjectContainmentEList<ConceptType>(ConceptType.class, this, FixrepositoryPackage.CONCEPTS_TYPE__CONCEPT);
+		}
+		return concept;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-    switch (featureID) {
-      case FixrepositoryPackage.CONCEPTS_TYPE__CONCEPT:
-        return ((InternalEList<?>)getConcept()).basicRemove(otherEnd, msgs);
-    }
-    return super.eInverseRemove(otherEnd, featureID, msgs);
-  }
+		switch (featureID) {
+			case FixrepositoryPackage.CONCEPTS_TYPE__CONCEPT:
+				return ((InternalEList<?>)getConcept()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType) {
-    switch (featureID) {
-      case FixrepositoryPackage.CONCEPTS_TYPE__CONCEPT:
-        return getConcept();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case FixrepositoryPackage.CONCEPTS_TYPE__CONCEPT:
+				return getConcept();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @SuppressWarnings("unchecked")
   @Override
   public void eSet(int featureID, Object newValue) {
-    switch (featureID) {
-      case FixrepositoryPackage.CONCEPTS_TYPE__CONCEPT:
-        getConcept().clear();
-        getConcept().addAll((Collection<? extends ConceptType>)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case FixrepositoryPackage.CONCEPTS_TYPE__CONCEPT:
+				getConcept().clear();
+				getConcept().addAll((Collection<? extends ConceptType>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void eUnset(int featureID) {
-    switch (featureID) {
-      case FixrepositoryPackage.CONCEPTS_TYPE__CONCEPT:
-        getConcept().clear();
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case FixrepositoryPackage.CONCEPTS_TYPE__CONCEPT:
+				getConcept().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public boolean eIsSet(int featureID) {
-    switch (featureID) {
-      case FixrepositoryPackage.CONCEPTS_TYPE__CONCEPT:
-        return concept != null && !concept.isEmpty();
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case FixrepositoryPackage.CONCEPTS_TYPE__CONCEPT:
+				return concept != null && !concept.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
 } //ConceptsTypeImpl

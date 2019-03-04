@@ -38,7 +38,6 @@
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="fixrepository.ecore#//PresenceT">
       <genEnumLiterals ecoreEnumLiteral="fixrepository.ecore#//PresenceT/optional"/>
       <genEnumLiterals ecoreEnumLiteral="fixrepository.ecore#//PresenceT/required"/>
-      <genEnumLiterals ecoreEnumLiteral="fixrepository.ecore#//PresenceT/conditional"/>
       <genEnumLiterals ecoreEnumLiteral="fixrepository.ecore#//PresenceT/forbidden"/>
       <genEnumLiterals ecoreEnumLiteral="fixrepository.ecore#//PresenceT/ignored"/>
       <genEnumLiterals ecoreEnumLiteral="fixrepository.ecore#//PresenceT/constant"/>
@@ -87,13 +86,6 @@
       <genEnumLiterals ecoreEnumLiteral="fixrepository.ecore#//UnionDataTypeT/Reserved4000Plus"/>
       <genEnumLiterals ecoreEnumLiteral="fixrepository.ecore#//UnionDataTypeT/Tenor"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="fixrepository.ecore#//VolumeNameT">
-      <genEnumLiterals ecoreEnumLiteral="fixrepository.ecore#//VolumeNameT/Volume1"/>
-      <genEnumLiterals ecoreEnumLiteral="fixrepository.ecore#//VolumeNameT/Volume2"/>
-      <genEnumLiterals ecoreEnumLiteral="fixrepository.ecore#//VolumeNameT/Volume3"/>
-      <genEnumLiterals ecoreEnumLiteral="fixrepository.ecore#//VolumeNameT/Volume4"/>
-      <genEnumLiterals ecoreEnumLiteral="fixrepository.ecore#//VolumeNameT/Volume5"/>
-    </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="fixrepository.ecore#//VolumeT">
       <genEnumLiterals ecoreEnumLiteral="fixrepository.ecore#//VolumeT/_1"/>
       <genEnumLiterals ecoreEnumLiteral="fixrepository.ecore#//VolumeT/_2"/>
@@ -102,7 +94,7 @@
       <genEnumLiterals ecoreEnumLiteral="fixrepository.ecore#//VolumeT/_5"/>
       <genEnumLiterals ecoreEnumLiteral="fixrepository.ecore#//VolumeT/_6"/>
       <genEnumLiterals ecoreEnumLiteral="fixrepository.ecore#//VolumeT/FIXT11"/>
-      <genEnumLiterals ecoreEnumLiteral="fixrepository.ecore#//VolumeT/_"/>
+      <genEnumLiterals ecoreEnumLiteral="fixrepository.ecore#//VolumeT/_7"/>
     </genEnums>
     <genDataTypes ecoreDataType="fixrepository.ecore#//AbbreviationT"/>
     <genDataTypes ecoreDataType="fixrepository.ecore#//CatComponentTypeTObject"/>
@@ -121,14 +113,14 @@
     <genDataTypes ecoreDataType="fixrepository.ecore#//IdT"/>
     <genDataTypes ecoreDataType="fixrepository.ecore#//IncludeFileTObject"/>
     <genDataTypes ecoreDataType="fixrepository.ecore#//LanguageT"/>
+    <genDataTypes ecoreDataType="fixrepository.ecore#//MimeT"/>
     <genDataTypes ecoreDataType="fixrepository.ecore#//MsgTypeT"/>
     <genDataTypes ecoreDataType="fixrepository.ecore#//NameT"/>
-    <genDataTypes ecoreDataType="fixrepository.ecore#//OidOrUriT"/>
-    <genDataTypes ecoreDataType="fixrepository.ecore#//OidT"/>
     <genDataTypes ecoreDataType="fixrepository.ecore#//PresenceTObject"/>
     <genDataTypes ecoreDataType="fixrepository.ecore#//PurposeEnumObject"/>
     <genDataTypes ecoreDataType="fixrepository.ecore#//PurposeT"/>
     <genDataTypes ecoreDataType="fixrepository.ecore#//ReliabilityTObject"/>
+    <genDataTypes ecoreDataType="fixrepository.ecore#//ScenarioT"/>
     <genDataTypes ecoreDataType="fixrepository.ecore#//SectionIDTObject"/>
     <genDataTypes ecoreDataType="fixrepository.ecore#//SortT"/>
     <genDataTypes ecoreDataType="fixrepository.ecore#//SupportTypeObject"/>
@@ -140,8 +132,6 @@
     <genDataTypes ecoreDataType="fixrepository.ecore#//UnionDataTypeTObject"/>
     <genDataTypes ecoreDataType="fixrepository.ecore#//UsageT"/>
     <genDataTypes ecoreDataType="fixrepository.ecore#//VersionT"/>
-    <genDataTypes ecoreDataType="fixrepository.ecore#//VolumeNameTObject"/>
-    <genDataTypes ecoreDataType="fixrepository.ecore#//VolumeNumberT"/>
     <genDataTypes ecoreDataType="fixrepository.ecore#//VolumeTObject"/>
     <genClasses ecoreClass="fixrepository.ecore#//AbbreviationsType">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fixrepository.ecore#//AbbreviationsType/abbreviation"/>
@@ -194,7 +184,6 @@
       <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference fixrepository.ecore#//ActorType/states"/>
       <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference fixrepository.ecore#//ActorType/timer"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fixrepository.ecore#//ActorType/annotation"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//ActorType/extends"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//ActorType/name"/>
     </genClasses>
     <genClasses ecoreClass="fixrepository.ecore#//Annotation">
@@ -284,10 +273,10 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//CodeSetType/issue"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//CodeSetType/lastModified"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//CodeSetType/name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//CodeSetType/oid"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//CodeSetType/replaced"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//CodeSetType/replacedByField"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//CodeSetType/replacedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//CodeSetType/scenario"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//CodeSetType/specUrl"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//CodeSetType/supported"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//CodeSetType/type"/>
@@ -307,10 +296,10 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//CodeType/issue"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//CodeType/lastModified"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//CodeType/name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//CodeType/oid"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//CodeType/replaced"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//CodeType/replacedByField"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//CodeType/replacedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//CodeType/scenario"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//CodeType/sort"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//CodeType/supported"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//CodeType/updated"/>
@@ -320,7 +309,6 @@
     <genClasses ecoreClass="fixrepository.ecore#//ComponentRefType">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fixrepository.ecore#//ComponentRefType/blockAssignment"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fixrepository.ecore#//ComponentRefType/annotation"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//ComponentRefType/abbrName"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//ComponentRefType/added"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//ComponentRefType/addedEP"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//ComponentRefType/changeType"/>
@@ -330,8 +318,6 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//ComponentRefType/instanceName"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//ComponentRefType/issue"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//ComponentRefType/lastModified"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//ComponentRefType/name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//ComponentRefType/oid"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//ComponentRefType/presence"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//ComponentRefType/replaced"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//ComponentRefType/replacedByField"/>
@@ -342,9 +328,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//ComponentRefType/updatedEP"/>
     </genClasses>
     <genClasses ecoreClass="fixrepository.ecore#//ComponentsType">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute fixrepository.ecore#//ComponentsType/group"/>
       <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference fixrepository.ecore#//ComponentsType/component"/>
-      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference fixrepository.ecore#//ComponentsType/group1"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//ComponentsType/latestEP"/>
     </genClasses>
     <genClasses ecoreClass="fixrepository.ecore#//ComponentType">
@@ -352,9 +336,6 @@
       <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference fixrepository.ecore#//ComponentType/componentRef"/>
       <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference fixrepository.ecore#//ComponentType/groupRef"/>
       <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference fixrepository.ecore#//ComponentType/fieldRef"/>
-      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference fixrepository.ecore#//ComponentType/component"/>
-      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference fixrepository.ecore#//ComponentType/group1"/>
-      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference fixrepository.ecore#//ComponentType/field"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fixrepository.ecore#//ComponentType/annotation"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//ComponentType/abbrName"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//ComponentType/added"/>
@@ -363,12 +344,10 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//ComponentType/changeType"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//ComponentType/deprecated"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//ComponentType/deprecatedEP"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//ComponentType/extends"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//ComponentType/id"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//ComponentType/issue"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//ComponentType/lastModified"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//ComponentType/name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//ComponentType/oid"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//ComponentType/rendering"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//ComponentType/replaced"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//ComponentType/replacedByField"/>
@@ -389,7 +368,6 @@
       <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference fixrepository.ecore#//ConceptType/messageRef"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fixrepository.ecore#//ConceptType/annotation"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//ConceptType/name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//ConceptType/oid"/>
     </genClasses>
     <genClasses ecoreClass="fixrepository.ecore#//DatatypesType">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fixrepository.ecore#//DatatypesType/datatype"/>
@@ -420,6 +398,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//Documentation/added"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//Documentation/addedEP"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//Documentation/changeType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//Documentation/contentType"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//Documentation/deprecated"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//Documentation/deprecatedEP"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//Documentation/issue"/>
@@ -446,17 +425,16 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fixrepository.ecore#//DocumentRoot/datatype"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fixrepository.ecore#//DocumentRoot/datatypes"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fixrepository.ecore#//DocumentRoot/fields"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fixrepository.ecore#//DocumentRoot/groups"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fixrepository.ecore#//DocumentRoot/mappedDatatype"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fixrepository.ecore#//DocumentRoot/messages"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fixrepository.ecore#//DocumentRoot/repository"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fixrepository.ecore#//DocumentRoot/sections"/>
     </genClasses>
     <genClasses ecoreClass="fixrepository.ecore#//FieldRefType">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fixrepository.ecore#//FieldRefType/codeSet"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fixrepository.ecore#//FieldRefType/rule"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//FieldRefType/assign"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fixrepository.ecore#//FieldRefType/annotation"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//FieldRefType/abbrName"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//FieldRefType/added"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//FieldRefType/addedEP"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//FieldRefType/changeType"/>
@@ -473,13 +451,12 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//FieldRefType/lengthId"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//FieldRefType/maxInclusive"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//FieldRefType/minInclusive"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//FieldRefType/name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//FieldRefType/oid"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//FieldRefType/presence"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//FieldRefType/rendering"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//FieldRefType/replaced"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//FieldRefType/replacedByField"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//FieldRefType/replacedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//FieldRefType/scenario"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//FieldRefType/supported"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//FieldRefType/updated"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//FieldRefType/updatedEP"/>
@@ -506,7 +483,6 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//FieldsType/latestEP"/>
     </genClasses>
     <genClasses ecoreClass="fixrepository.ecore#//FieldType">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fixrepository.ecore#//FieldType/codeSet"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fixrepository.ecore#//FieldType/rule"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//FieldType/assign"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fixrepository.ecore#//FieldType/annotation"/>
@@ -532,12 +508,12 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//FieldType/maxInclusive"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//FieldType/minInclusive"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//FieldType/name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//FieldType/oid"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//FieldType/presence"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//FieldType/rendering"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//FieldType/replaced"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//FieldType/replacedByField"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//FieldType/replacedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//FieldType/scenario"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//FieldType/supported"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//FieldType/type"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//FieldType/unionDataType"/>
@@ -556,15 +532,51 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//GroupRefType/implMaxOccurs"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//GroupRefType/implMinOccurs"/>
     </genClasses>
+    <genClasses ecoreClass="fixrepository.ecore#//GroupsType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fixrepository.ecore#//GroupsType/group"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//GroupsType/latestEP"/>
+    </genClasses>
     <genClasses ecoreClass="fixrepository.ecore#//GroupType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fixrepository.ecore#//GroupType/numInGroup"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute fixrepository.ecore#//GroupType/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference fixrepository.ecore#//GroupType/componentRef"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference fixrepository.ecore#//GroupType/groupRef"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference fixrepository.ecore#//GroupType/fieldRef"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fixrepository.ecore#//GroupType/annotation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//GroupType/abbrName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//GroupType/added"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//GroupType/addedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//GroupType/category"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//GroupType/changeType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//GroupType/deprecated"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//GroupType/deprecatedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//GroupType/id"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//GroupType/implMaxOccurs"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//GroupType/implMinOccurs"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//GroupType/numInGroupId"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//GroupType/numInGroupName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//GroupType/issue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//GroupType/lastModified"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//GroupType/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//GroupType/rendering"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//GroupType/replaced"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//GroupType/replacedByField"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//GroupType/replacedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//GroupType/scenario"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//GroupType/supported"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//GroupType/updated"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//GroupType/updatedEP"/>
+    </genClasses>
+    <genClasses ecoreClass="fixrepository.ecore#//IdentifiersType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute fixrepository.ecore#//IdentifiersType/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference fixrepository.ecore#//IdentifiersType/correlate"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference fixrepository.ecore#//IdentifiersType/assign"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fixrepository.ecore#//IdentifiersType/annotation"/>
+    </genClasses>
+    <genClasses ecoreClass="fixrepository.ecore#//IdentifierType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//IdentifierType/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//IdentifierType/sourceId"/>
     </genClasses>
     <genClasses ecoreClass="fixrepository.ecore#//MappedDatatypeType">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fixrepository.ecore#//MappedDatatypeType/mappedDatatype"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fixrepository.ecore#//MappedDatatypeType/annotation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute fixrepository.ecore#//MappedDatatypeType/any"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//MappedDatatypeType/base"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//MappedDatatypeType/builtin"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//MappedDatatypeType/element"/>
@@ -575,6 +587,8 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//MappedDatatypeType/standard"/>
     </genClasses>
     <genClasses ecoreClass="fixrepository.ecore#//MessageRefType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fixrepository.ecore#//MessageRefType/identifiers"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//MessageRefType/id"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//MessageRefType/implMaxOccurs"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//MessageRefType/implMinOccurs"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//MessageRefType/msgType"/>
@@ -596,14 +610,12 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//MessageType/changeType"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//MessageType/deprecated"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//MessageType/deprecatedEP"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//MessageType/extends"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//MessageType/flow"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//MessageType/id"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//MessageType/issue"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//MessageType/lastModified"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//MessageType/msgType"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//MessageType/name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//MessageType/oid"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//MessageType/replaced"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//MessageType/replacedByField"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//MessageType/replacedEP"/>
@@ -623,12 +635,13 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fixrepository.ecore#//RepositoryType/fields"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fixrepository.ecore#//RepositoryType/actors"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fixrepository.ecore#//RepositoryType/components"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fixrepository.ecore#//RepositoryType/groups"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fixrepository.ecore#//RepositoryType/messages"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fixrepository.ecore#//RepositoryType/concepts"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fixrepository.ecore#//RepositoryType/annotation"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//RepositoryType/applVerId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//RepositoryType/expressionLanguage"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//RepositoryType/guid"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//RepositoryType/hasComponents"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//RepositoryType/latestEP"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//RepositoryType/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fixrepository.ecore#//RepositoryType/namespace"/>
@@ -685,11 +698,8 @@
     </genClasses>
     <genClasses ecoreClass="fixrepository.ecore#//StructureType">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute fixrepository.ecore#//StructureType/group"/>
-      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference fixrepository.ecore#//StructureType/component"/>
       <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference fixrepository.ecore#//StructureType/componentRef"/>
-      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference fixrepository.ecore#//StructureType/group1"/>
       <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference fixrepository.ecore#//StructureType/groupRef"/>
-      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference fixrepository.ecore#//StructureType/field"/>
       <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference fixrepository.ecore#//StructureType/fieldRef"/>
     </genClasses>
     <genClasses ecoreClass="fixrepository.ecore#//TimerSchedule">
@@ -893,24 +903,5 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _1.ecore#//DocumentRoot/subject"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _1.ecore#//DocumentRoot/type"/>
     </genClasses>
-  </genPackages>
-  <genPackages prefix="Dcmitype" basePackage="org.purl.dc" resource="XML" disposableProviderFactory="true"
-      ecorePackage="dcmitype.ecore#/">
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="dcmitype.ecore#//DCMITypeMember0">
-      <genEnumLiterals ecoreEnumLiteral="dcmitype.ecore#//DCMITypeMember0/Collection"/>
-      <genEnumLiterals ecoreEnumLiteral="dcmitype.ecore#//DCMITypeMember0/Dataset"/>
-      <genEnumLiterals ecoreEnumLiteral="dcmitype.ecore#//DCMITypeMember0/Event"/>
-      <genEnumLiterals ecoreEnumLiteral="dcmitype.ecore#//DCMITypeMember0/Image"/>
-      <genEnumLiterals ecoreEnumLiteral="dcmitype.ecore#//DCMITypeMember0/MovingImage"/>
-      <genEnumLiterals ecoreEnumLiteral="dcmitype.ecore#//DCMITypeMember0/StillImage"/>
-      <genEnumLiterals ecoreEnumLiteral="dcmitype.ecore#//DCMITypeMember0/InteractiveResource"/>
-      <genEnumLiterals ecoreEnumLiteral="dcmitype.ecore#//DCMITypeMember0/Service"/>
-      <genEnumLiterals ecoreEnumLiteral="dcmitype.ecore#//DCMITypeMember0/Software"/>
-      <genEnumLiterals ecoreEnumLiteral="dcmitype.ecore#//DCMITypeMember0/Sound"/>
-      <genEnumLiterals ecoreEnumLiteral="dcmitype.ecore#//DCMITypeMember0/Text"/>
-      <genEnumLiterals ecoreEnumLiteral="dcmitype.ecore#//DCMITypeMember0/PhysicalObject"/>
-    </genEnums>
-    <genDataTypes ecoreDataType="dcmitype.ecore#//DCMIType"/>
-    <genDataTypes ecoreDataType="dcmitype.ecore#//DCMITypeMember0Object"/>
   </genPackages>
 </genmodel:GenModel>
