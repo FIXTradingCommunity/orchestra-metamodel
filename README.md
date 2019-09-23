@@ -8,7 +8,7 @@ The model was generated from the Orchestra XML schema by Eclipse Modeling Framew
 ### Source Schema
 The XML schema upon which this project is based is in project [fix-orchestra](https://github.com/FIXTradingCommunity/fix-orchestra). 
 
-The initial implementation was updated in March 2019 for Orchestra Release Candidate 4.
+The initial implementation was updated for Orchestra Version 1.0 Release Candidate 5.
 
 ### Eclipse Modeling Project
 The only prerequisite to use this project is installation of Eclipse Modeling Framework and XML Schema plug-ins for Eclipse.

@@ -3,133 +3,13 @@
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="fixrepository" nsURI="http://fixprotocol.io/2016/fixrepository"
     nsPrefix="fixrepository">
   <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-    <details key="documentation" value="&#xA;&#x9;&#x9;&#x9;FIX Repository standard structure of messages with workflow&#xA;&#x9;&#x9;&#x9;© Copyright 2016-2019 FIX Protocol Limited&#xA;&#x9;&#x9;&#x9;Creative Commons Attribution-NoDerivatives 4.0&#xA;&#x9;&#x9;&#x9;International Public License&#xA;&#x9;&#x9;&#xD;&#xA;&#xA;&#x9;&#x9;&#x9;© Copyright 2016-2019 FIX Protocol Limited Creative&#xA;&#x9;&#x9;&#x9;Commons Attribution-NoDerivatives 4.0&#xA;&#x9;&#x9;&#x9;International Public License&#xA;&#x9;&#x9;&#xD;&#xA;&#xA;      DCterms XML Schema&#xA;      XML Schema for http://purl.org/dc/terms/ namespace&#xA; &#xA;      Created 2008-02-11&#xA;&#xA;      Created by &#xA;&#xA;      Tim Cole (t-cole3@uiuc.edu)&#xA;      Tom Habing (thabing@uiuc.edu)&#xA;      Jane Hunter (jane@dstc.edu.au)&#xA;      Pete Johnston (p.johnston@ukoln.ac.uk),&#xA;      Carl Lagoze (lagoze@cs.cornell.edu)&#xA;&#xA;      This schema declares XML elements for the DC elements and&#xA;      DC element refinements from the http://purl.org/dc/terms/ namespace.&#xA;      &#xA;      It reuses the complexType dc:SimpleLiteral, imported from the dc.xsd&#xA;      schema, which permits simple element content, and makes the xml:lang&#xA;      attribute available.&#xA;&#xA;      This complexType permits the derivation of other complexTypes&#xA;      which would permit child elements.&#xA;&#xA;      XML elements corresponding to DC elements are declared as substitutable for the abstract element dc:any, and &#xA;      XML elements corresponding to DC element refinements are defined as substitutable for the base elements &#xA;      which they refine.&#xA;&#xA;      This means that the default type for all XML elements (i.e. corresponding to all DC elements and &#xA;      element refinements) is dc:SimpleLiteral.&#xA;&#xA;      Encoding schemes are defined as complexTypes which are restrictions&#xA;      of the dc:SimpleLiteral complexType. These complexTypes restrict &#xA;      values to an appropriates syntax or format using data typing,&#xA;      regular expressions, or enumerated lists.&#xA;  &#xA;      In order to specify one of these encodings an xsi:type attribute must &#xA;      be used in the instance document.&#xA;&#xA;      Also, note that one shortcoming of this approach is that any type can be &#xA;      applied to any of the elements or refinements.  There is no convenient way&#xA;      to restrict types to specific elements using this approach.&#xA;&#xA;      Changes in 2008-02-11 version:&#xA;      &#xA;      Add element declarations corresponding to 15 new dcterms URIs, and amend use of substitutionGroups.&#xA;      &#xA;      Add compexType definitions corresponding to ISO639-3, RFC4646.&#xA;      &#xA;    &#xD;&#xA;&#xA;      DCMES 1.1 XML Schema&#xA;      XML Schema for http://purl.org/dc/elements/1.1/ namespace&#xA;&#xA;      Created 2008-02-11&#xA;&#xA;      Created by &#xA;&#xA;      Tim Cole (t-cole3@uiuc.edu)&#xA;      Tom Habing (thabing@uiuc.edu)&#xA;      Jane Hunter (jane@dstc.edu.au)&#xA;      Pete Johnston (p.johnston@ukoln.ac.uk),&#xA;      Carl Lagoze (lagoze@cs.cornell.edu)&#xA;&#xA;      This schema declares XML elements for the 15 DC elements from the&#xA;      http://purl.org/dc/elements/1.1/ namespace.&#xA;&#xA;      It defines a complexType SimpleLiteral which permits mixed content &#xA;      and makes the xml:lang attribute available. It disallows child elements by&#xA;      use of minOcccurs/maxOccurs.&#xA;&#xA;      However, this complexType does permit the derivation of other complexTypes&#xA;      which would permit child elements.&#xA;&#xA;      All elements are declared as substitutable for the abstract element any, &#xA;      which means that the default type for all elements is dc:SimpleLiteral.&#xA;&#xA;    &#xD;&#xA;&#xA;   See http://www.w3.org/XML/1998/namespace.html and&#xA;   http://www.w3.org/TR/REC-xml for information about this namespace.&#xA;&#xA;    This schema document describes the XML namespace, in a form&#xA;    suitable for import by other schema documents.  &#xA;&#xA;    Note that local names in this namespace are intended to be defined&#xA;    only by the World Wide Web Consortium or its subgroups.  The&#xA;    following names are currently defined in this namespace and should&#xA;    not be used with conflicting semantics by any Working Group,&#xA;    specification, or document instance:&#xA;&#xA;    base (as an attribute name): denotes an attribute whose value&#xA;         provides a URI to be used as the base for interpreting any&#xA;         relative URIs in the scope of the element on which it&#xA;         appears; its value is inherited.  This name is reserved&#xA;         by virtue of its definition in the XML Base specification.&#xA;&#xA;    lang (as an attribute name): denotes an attribute whose value&#xA;         is a language code for the natural language of the content of&#xA;         any element; its value is inherited.  This name is reserved&#xA;         by virtue of its definition in the XML specification.&#xA;  &#xA;    space (as an attribute name): denotes an attribute whose&#xA;         value is a keyword indicating what whitespace processing&#xA;         discipline is intended for the content of the element; its&#xA;         value is inherited.  This name is reserved by virtue of its&#xA;         definition in the XML specification.&#xA;&#xA;    Father (in any context at all): denotes Jon Bosak, the chair of &#xA;         the original XML Working Group.  This name is reserved by &#xA;         the following decision of the W3C XML Plenary and &#xA;         XML Coordination groups:&#xA;&#xA;             In appreciation for his vision, leadership and dedication&#xA;             the W3C XML Plenary on this 10th day of February, 2000&#xA;             reserves for Jon Bosak in perpetuity the XML name&#xA;             xml:Father&#xA;  &#xD;&#xA;This schema defines attributes and an attribute group&#xA;        suitable for use by&#xA;        schemas wishing to allow xml:base, xml:lang or xml:space attributes&#xA;        on elements they define.&#xA;&#xA;        To enable this, such a schema must import this schema&#xA;        for the XML namespace, e.g. as follows:&#xA;        &lt;schema . . .>&#xA;         . . .&#xA;         &lt;import namespace=&quot;http://www.w3.org/XML/1998/namespace&quot;&#xA;                    schemaLocation=&quot;http://www.w3.org/2001/03/xml.xsd&quot;/>&#xA;&#xA;        Subsequently, qualified reference to any of the attributes&#xA;        or the group defined below will have the desired effect, e.g.&#xA;&#xA;        &lt;type . . .>&#xA;         . . .&#xA;         &lt;attributeGroup ref=&quot;xml:specialAttrs&quot;/>&#xA; &#xA;         will define a type which will schema-validate an instance&#xA;         element with any of those attributes&#xD;&#xA;In keeping with the XML Schema WG's standard versioning&#xA;   policy, this schema document will persist at&#xA;   http://www.w3.org/2001/03/xml.xsd.&#xA;   At the date of issue it can also be found at&#xA;   http://www.w3.org/2001/xml.xsd.&#xA;   The schema document at that URI may however change in the future,&#xA;   in order to remain compatible with the latest version of XML Schema&#xA;   itself.  In other words, if the XML Schema namespace changes, the version&#xA;   of this document at&#xA;   http://www.w3.org/2001/xml.xsd will change&#xA;   accordingly; the version at&#xA;   http://www.w3.org/2001/03/xml.xsd will not change.&#xA;  &#xD;&#xA;&#xA;      DCMI Type Vocabulary XML Schema&#xA;      XML Schema for http://purl.org/dc/dcmitype/ namespace&#xA;&#xA;      Created 2008-02-11&#xA;&#xA;      Created by &#xA;&#xA;      Tim Cole (t-cole3@uiuc.edu)&#xA;      Tom Habing (thabing@uiuc.edu)&#xA;      Jane Hunter (jane@dstc.edu.au)&#xA;      Pete Johnston (p.johnston@ukoln.ac.uk),&#xA;      Carl Lagoze (lagoze@cs.cornell.edu)&#xA;&#xA;      This schema defines a simpleType which enumerates&#xA;      the allowable values for the DCMI Type Vocabulary.&#xA;    "/>
+    <details key="documentation" value="&#xA;&#x9;&#x9;&#x9;FIX Repository standard structure of messages with workflow&#xA;&#x9;&#x9;&#x9;© Copyright 2016-2019 FIX Protocol Limited&#xA;&#x9;&#x9;&#x9;Creative Commons Attribution-NoDerivatives 4.0&#xA;&#x9;&#x9;&#x9;International Public License&#xA;&#x9;&#x9;&#xD;&#xA;&#xA;&#x9;&#x9;&#x9;© Copyright 2016-2019 FIX Protocol Limited Creative&#xA;&#x9;&#x9;&#x9;Commons Attribution-NoDerivatives 4.0&#xA;&#x9;&#x9;&#x9;International Public License&#xA;&#x9;&#x9;&#xD;&#xA;&#xA;   See http://www.w3.org/XML/1998/namespace.html and&#xA;   http://www.w3.org/TR/REC-xml for information about this namespace.&#xA;&#xA;    This schema document describes the XML namespace, in a form&#xA;    suitable for import by other schema documents.  &#xA;&#xA;    Note that local names in this namespace are intended to be defined&#xA;    only by the World Wide Web Consortium or its subgroups.  The&#xA;    following names are currently defined in this namespace and should&#xA;    not be used with conflicting semantics by any Working Group,&#xA;    specification, or document instance:&#xA;&#xA;    base (as an attribute name): denotes an attribute whose value&#xA;         provides a URI to be used as the base for interpreting any&#xA;         relative URIs in the scope of the element on which it&#xA;         appears; its value is inherited.  This name is reserved&#xA;         by virtue of its definition in the XML Base specification.&#xA;&#xA;    lang (as an attribute name): denotes an attribute whose value&#xA;         is a language code for the natural language of the content of&#xA;         any element; its value is inherited.  This name is reserved&#xA;         by virtue of its definition in the XML specification.&#xA;  &#xA;    space (as an attribute name): denotes an attribute whose&#xA;         value is a keyword indicating what whitespace processing&#xA;         discipline is intended for the content of the element; its&#xA;         value is inherited.  This name is reserved by virtue of its&#xA;         definition in the XML specification.&#xA;&#xA;    Father (in any context at all): denotes Jon Bosak, the chair of &#xA;         the original XML Working Group.  This name is reserved by &#xA;         the following decision of the W3C XML Plenary and &#xA;         XML Coordination groups:&#xA;&#xA;             In appreciation for his vision, leadership and dedication&#xA;             the W3C XML Plenary on this 10th day of February, 2000&#xA;             reserves for Jon Bosak in perpetuity the XML name&#xA;             xml:Father&#xA;  &#xD;&#xA;This schema defines attributes and an attribute group&#xA;        suitable for use by&#xA;        schemas wishing to allow xml:base, xml:lang or xml:space attributes&#xA;        on elements they define.&#xA;&#xA;        To enable this, such a schema must import this schema&#xA;        for the XML namespace, e.g. as follows:&#xA;        &lt;schema . . .>&#xA;         . . .&#xA;         &lt;import namespace=&quot;http://www.w3.org/XML/1998/namespace&quot;&#xA;                    schemaLocation=&quot;http://www.w3.org/2001/03/xml.xsd&quot;/>&#xA;&#xA;        Subsequently, qualified reference to any of the attributes&#xA;        or the group defined below will have the desired effect, e.g.&#xA;&#xA;        &lt;type . . .>&#xA;         . . .&#xA;         &lt;attributeGroup ref=&quot;xml:specialAttrs&quot;/>&#xA; &#xA;         will define a type which will schema-validate an instance&#xA;         element with any of those attributes&#xD;&#xA;In keeping with the XML Schema WG's standard versioning&#xA;   policy, this schema document will persist at&#xA;   http://www.w3.org/2001/03/xml.xsd.&#xA;   At the date of issue it can also be found at&#xA;   http://www.w3.org/2001/xml.xsd.&#xA;   The schema document at that URI may however change in the future,&#xA;   in order to remain compatible with the latest version of XML Schema&#xA;   itself.  In other words, if the XML Schema namespace changes, the version&#xA;   of this document at&#xA;   http://www.w3.org/2001/xml.xsd will change&#xA;   accordingly; the version at&#xA;   http://www.w3.org/2001/03/xml.xsd will not change.&#xA;  &#xD;&#xA;&#xA;      DCterms XML Schema&#xA;      XML Schema for http://purl.org/dc/terms/ namespace&#xA; &#xA;      Created 2008-02-11&#xA;&#xA;      Created by &#xA;&#xA;      Tim Cole (t-cole3@uiuc.edu)&#xA;      Tom Habing (thabing@uiuc.edu)&#xA;      Jane Hunter (jane@dstc.edu.au)&#xA;      Pete Johnston (p.johnston@ukoln.ac.uk),&#xA;      Carl Lagoze (lagoze@cs.cornell.edu)&#xA;&#xA;      This schema declares XML elements for the DC elements and&#xA;      DC element refinements from the http://purl.org/dc/terms/ namespace.&#xA;      &#xA;      It reuses the complexType dc:SimpleLiteral, imported from the dc.xsd&#xA;      schema, which permits simple element content, and makes the xml:lang&#xA;      attribute available.&#xA;&#xA;      This complexType permits the derivation of other complexTypes&#xA;      which would permit child elements.&#xA;&#xA;      XML elements corresponding to DC elements are declared as substitutable for the abstract element dc:any, and &#xA;      XML elements corresponding to DC element refinements are defined as substitutable for the base elements &#xA;      which they refine.&#xA;&#xA;      This means that the default type for all XML elements (i.e. corresponding to all DC elements and &#xA;      element refinements) is dc:SimpleLiteral.&#xA;&#xA;      Encoding schemes are defined as complexTypes which are restrictions&#xA;      of the dc:SimpleLiteral complexType. These complexTypes restrict &#xA;      values to an appropriates syntax or format using data typing,&#xA;      regular expressions, or enumerated lists.&#xA;  &#xA;      In order to specify one of these encodings an xsi:type attribute must &#xA;      be used in the instance document.&#xA;&#xA;      Also, note that one shortcoming of this approach is that any type can be &#xA;      applied to any of the elements or refinements.  There is no convenient way&#xA;      to restrict types to specific elements using this approach.&#xA;&#xA;      Changes in 2008-02-11 version:&#xA;      &#xA;      Add element declarations corresponding to 15 new dcterms URIs, and amend use of substitutionGroups.&#xA;      &#xA;      Add compexType definitions corresponding to ISO639-3, RFC4646.&#xA;      &#xA;    &#xD;&#xA;&#xA;      DCMES 1.1 XML Schema&#xA;      XML Schema for http://purl.org/dc/elements/1.1/ namespace&#xA;&#xA;      Created 2008-02-11&#xA;&#xA;      Created by &#xA;&#xA;      Tim Cole (t-cole3@uiuc.edu)&#xA;      Tom Habing (thabing@uiuc.edu)&#xA;      Jane Hunter (jane@dstc.edu.au)&#xA;      Pete Johnston (p.johnston@ukoln.ac.uk),&#xA;      Carl Lagoze (lagoze@cs.cornell.edu)&#xA;&#xA;      This schema declares XML elements for the 15 DC elements from the&#xA;      http://purl.org/dc/elements/1.1/ namespace.&#xA;&#xA;      It defines a complexType SimpleLiteral which permits mixed content &#xA;      and makes the xml:lang attribute available. It disallows child elements by&#xA;      use of minOcccurs/maxOccurs.&#xA;&#xA;      However, this complexType does permit the derivation of other complexTypes&#xA;      which would permit child elements.&#xA;&#xA;      All elements are declared as substitutable for the abstract element any, &#xA;      which means that the default type for all elements is dc:SimpleLiteral.&#xA;&#xA;    &#xD;&#xA;&#xA;      DCMI Type Vocabulary XML Schema&#xA;      XML Schema for http://purl.org/dc/dcmitype/ namespace&#xA;&#xA;      Created 2008-02-11&#xA;&#xA;      Created by &#xA;&#xA;      Tim Cole (t-cole3@uiuc.edu)&#xA;      Tom Habing (thabing@uiuc.edu)&#xA;      Jane Hunter (jane@dstc.edu.au)&#xA;      Pete Johnston (p.johnston@ukoln.ac.uk),&#xA;      Carl Lagoze (lagoze@cs.cornell.edu)&#xA;&#xA;      This schema defines a simpleType which enumerates&#xA;      the allowable values for the DCMI Type Vocabulary.&#xA;    "/>
   </eAnnotations>
-  <eClassifiers xsi:type="ecore:EClass" name="AbbreviationsType">
-    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-      <details key="name" value="abbreviations_._type"/>
-      <details key="kind" value="elementOnly"/>
-    </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="abbreviation" lowerBound="1"
-        upperBound="-1" eType="#//AbbreviationType" containment="true" resolveProxies="false">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="element"/>
-        <details key="name" value="abbreviation"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="latestEP" eType="#//EPT">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="attribute"/>
-        <details key="name" value="latestEP"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-  </eClassifiers>
   <eClassifiers xsi:type="ecore:EDataType" name="AbbreviationT" instanceClassName="java.lang.String">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="Abbreviation_t"/>
       <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#string"/>
     </eAnnotations>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="AbbreviationType">
-    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-      <details key="name" value="abbreviationType"/>
-      <details key="kind" value="elementOnly"/>
-    </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="annotation" eType="#//Annotation"
-        containment="true" resolveProxies="false">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="element"/>
-        <details key="name" value="annotation"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="added" eType="#//VersionT">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="attribute"/>
-        <details key="name" value="added"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="addedEP" eType="#//EPT">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="attribute"/>
-        <details key="name" value="addedEP"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="changeType" eType="#//ChangeTypeT"
-        unsettable="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="attribute"/>
-        <details key="name" value="changeType"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="deprecated" eType="#//VersionT">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="attribute"/>
-        <details key="name" value="deprecated"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="deprecatedEP" eType="#//EPT">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="attribute"/>
-        <details key="name" value="deprecatedEP"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="issue" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="attribute"/>
-        <details key="name" value="issue"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lastModified" eType="#//VersionT">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="attribute"/>
-        <details key="name" value="lastModified"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="attribute"/>
-        <details key="name" value="name"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="replaced" eType="#//VersionT">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="attribute"/>
-        <details key="name" value="replaced"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="replacedByField" eType="#//IdT">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="attribute"/>
-        <details key="name" value="replacedByField"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="replacedEP" eType="#//EPT">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="attribute"/>
-        <details key="name" value="replacedEP"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="supported" eType="#//SupportType"
-        defaultValueLiteral="supported" unsettable="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="attribute"/>
-        <details key="name" value="supported"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="updated" eType="#//VersionT">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="attribute"/>
-        <details key="name" value="updated"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="updatedEP" eType="#//EPT">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="attribute"/>
-        <details key="name" value="updatedEP"/>
-      </eAnnotations>
-    </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ActionType">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -295,6 +175,16 @@
         <details key="name" value="flow"/>
         <details key="namespace" value="##targetNamespace"/>
         <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="base" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//AnyURI">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="See http://www.w3.org/TR/xmlbase/ for&#xA;                     information about this attribute."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="base"/>
+        <details key="namespace" value="http://www.w3.org/XML/1998/namespace"/>
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
@@ -705,12 +595,22 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="category" lowerBound="1"
         upperBound="-1" eType="#//CategoryType" containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="A business area category, usually a subcategory of a section"/>
+        <details key="documentation" value="A business process category, a subcategory of a businessArea"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="category"/>
         <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="base" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//AnyURI">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="See http://www.w3.org/TR/xmlbase/ for&#xA;                     information about this attribute."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="base"/>
+        <details key="namespace" value="http://www.w3.org/XML/1998/namespace"/>
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="latestEP" eType="#//EPT">
@@ -731,12 +631,6 @@
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="CategoryComponentType_t:Object"/>
       <details key="baseType" value="CategoryComponentType_t"/>
-    </eAnnotations>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EDataType" name="CategoryIDT" instanceClassName="java.lang.String">
-    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-      <details key="name" value="CategoryID_t"/>
-      <details key="baseType" value="Name_t"/>
     </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="CategoryType">
@@ -796,12 +690,6 @@
         <details key="name" value="FIXMLFileName"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="#//CategoryIDT">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="attribute"/>
-        <details key="name" value="id"/>
-      </eAnnotations>
-    </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="includeFile" eType="#//CatIncludeFileT"
         unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -819,6 +707,12 @@
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
         <details key="name" value="lastModified"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="#//NameT">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="name"/>
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="replaced" eType="#//VersionT">
@@ -839,8 +733,7 @@
         <details key="name" value="replacedEP"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="section" eType="#//SectionIDT"
-        unsettable="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="section" eType="#//NameT">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
         <details key="name" value="section"/>
@@ -863,13 +756,6 @@
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
         <details key="name" value="updatedEP"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="volume" eType="#//VolumeT"
-        unsettable="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="attribute"/>
-        <details key="name" value="volume"/>
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
@@ -912,10 +798,14 @@
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="#//NameT">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="base" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//AnyURI">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="See http://www.w3.org/TR/xmlbase/ for&#xA;                     information about this attribute."/>
+      </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
-        <details key="name" value="name"/>
+        <details key="name" value="base"/>
+        <details key="namespace" value="http://www.w3.org/XML/1998/namespace"/>
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
@@ -1385,6 +1275,16 @@
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="base" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//AnyURI">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="See http://www.w3.org/TR/xmlbase/ for&#xA;                     information about this attribute."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="base"/>
+        <details key="namespace" value="http://www.w3.org/XML/1998/namespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="latestEP" eType="#//EPT">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
@@ -1460,7 +1360,7 @@
         <details key="name" value="addedEP"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="category" eType="#//CategoryIDT">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="category" eType="#//NameT">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
         <details key="name" value="category"/>
@@ -1568,6 +1468,13 @@
         <details key="name" value="updatedEP"/>
       </eAnnotations>
     </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="which" eType="#//MemberType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="which"/>
+      </eAnnotations>
+    </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ConceptsType">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -1580,6 +1487,16 @@
         <details key="kind" value="element"/>
         <details key="name" value="concept"/>
         <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="base" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//AnyURI">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="See http://www.w3.org/TR/xmlbase/ for&#xA;                     information about this attribute."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="base"/>
+        <details key="namespace" value="http://www.w3.org/XML/1998/namespace"/>
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
@@ -1679,6 +1596,11 @@
         <details key="documentation" value="XML Schema and FIXML"/>
       </eAnnotations>
     </eLiterals>
+    <eLiterals name="TAGVALUE" value="5" literal="TAG_VALUE">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="FIX classic encoding"/>
+      </eAnnotations>
+    </eLiterals>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EDataType" name="DatatypeStandardEnumObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -1706,6 +1628,16 @@
         <details key="kind" value="element"/>
         <details key="name" value="datatype"/>
         <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="base" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//AnyURI">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="See http://www.w3.org/TR/xmlbase/ for&#xA;                     information about this attribute."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="base"/>
+        <details key="namespace" value="http://www.w3.org/XML/1998/namespace"/>
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="latestEP" eType="#//EPT">
@@ -1977,15 +1909,6 @@
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
         <details key="name" value="xsi:schemaLocation"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="abbreviations" upperBound="-2"
-        eType="#//AbbreviationsType" volatile="true" transient="true" derived="true"
-        containment="true" resolveProxies="false">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="element"/>
-        <details key="name" value="abbreviations"/>
-        <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="actors" upperBound="-2"
@@ -2499,6 +2422,16 @@
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="base" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//AnyURI">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="See http://www.w3.org/TR/xmlbase/ for&#xA;                     information about this attribute."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="base"/>
+        <details key="namespace" value="http://www.w3.org/XML/1998/namespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="latestEP" eType="#//EPT">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
@@ -2558,7 +2491,7 @@
         <details key="name" value="addedEP"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="baseCategory" eType="#//CategoryIDT">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="baseCategory" eType="#//NameT">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
         <details key="name" value="baseCategory"/>
@@ -2596,12 +2529,6 @@
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
         <details key="name" value="discriminatorId"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="discriminatorName" eType="#//NameT">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="attribute"/>
-        <details key="name" value="discriminatorName"/>
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="encoding" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String">
@@ -2665,12 +2592,6 @@
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
         <details key="name" value="lengthId"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lengthName" eType="#//NameT">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="attribute"/>
-        <details key="name" value="lengthName"/>
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxInclusive" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String">
@@ -2874,6 +2795,16 @@
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="base" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//AnyURI">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="See http://www.w3.org/TR/xmlbase/ for&#xA;                     information about this attribute."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="base"/>
+        <details key="namespace" value="http://www.w3.org/XML/1998/namespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="latestEP" eType="#//EPT">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
@@ -2960,7 +2891,7 @@
         <details key="name" value="addedEP"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="category" eType="#//CategoryIDT">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="category" eType="#//NameT">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
         <details key="name" value="category"/>
@@ -2996,12 +2927,18 @@
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="implMaxOccurs" eType="#//UnboundedIntType"
         defaultValueLiteral="unbounded" unsettable="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Upper bound of group instances (numInGroup)"/>
+      </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
         <details key="name" value="implMaxOccurs"/>
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="implMinOccurs" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//NonNegativeInteger">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Lower bound of group instances (numInGroup)"/>
+      </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
         <details key="name" value="implMinOccurs"/>
@@ -3079,6 +3016,16 @@
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
         <details key="name" value="updatedEP"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="which" eType="#//MemberType"
+        unsettable="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Member selection within each group instance"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="which"/>
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
@@ -3249,6 +3196,27 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="MemberType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="memberType"/>
+    </eAnnotations>
+    <eLiterals name="oneOf">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Members are mutually exclusive; exactly one must be present."/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="anyOf" value="1">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="At least one of the members must be present."/>
+      </eAnnotations>
+    </eLiterals>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="MemberTypeObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="memberType:Object"/>
+      <details key="baseType" value="memberType"/>
+    </eAnnotations>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="MessageRefType">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="messageRefType"/>
@@ -3324,6 +3292,16 @@
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="base" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//AnyURI">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="See http://www.w3.org/TR/xmlbase/ for&#xA;                     information about this attribute."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="base"/>
+        <details key="namespace" value="http://www.w3.org/XML/1998/namespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="latestEP" eType="#//EPT">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
@@ -3378,7 +3356,7 @@
         <details key="name" value="addedEP"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="category" eType="#//CategoryIDT">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="category" eType="#//NameT">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
         <details key="name" value="category"/>
@@ -3468,13 +3446,6 @@
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
         <details key="name" value="scenario"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="section" eType="#//SectionIDT"
-        unsettable="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="attribute"/>
-        <details key="name" value="section"/>
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="supported" eType="#//SupportType"
@@ -3619,14 +3590,6 @@
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="metadata"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="abbreviations" eType="#//AbbreviationsType"
-        containment="true" resolveProxies="false">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="element"/>
-        <details key="name" value="abbreviations"/>
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
@@ -3850,23 +3813,6 @@
       <details key="pattern" value="([A-Z]|[a-z])([0-9]|[A-Z]|[a-z]|_|-)*"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="SectionIDT">
-    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-      <details key="name" value="SectionID_t"/>
-    </eAnnotations>
-    <eLiterals name="Session"/>
-    <eLiterals name="PreTrade" value="1"/>
-    <eLiterals name="Trade" value="2"/>
-    <eLiterals name="PostTrade" value="3"/>
-    <eLiterals name="Infrastructure" value="4"/>
-    <eLiterals name="Other" value="5"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EDataType" name="SectionIDTObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
-    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-      <details key="name" value="SectionID_t:Object"/>
-      <details key="baseType" value="SectionID_t"/>
-    </eAnnotations>
-  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SectionsType">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="sections_._type"/>
@@ -3881,6 +3827,16 @@
         <details key="kind" value="element"/>
         <details key="name" value="section"/>
         <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="base" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//AnyURI">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="See http://www.w3.org/TR/xmlbase/ for&#xA;                     information about this attribute."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="base"/>
+        <details key="namespace" value="http://www.w3.org/XML/1998/namespace"/>
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="latestEP" eType="#//EPT">
@@ -3947,13 +3903,6 @@
         <details key="name" value="FIXMLFileName"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="#//SectionIDT"
-        unsettable="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="attribute"/>
-        <details key="name" value="id"/>
-      </eAnnotations>
-    </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="issue" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
@@ -4007,13 +3956,6 @@
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
         <details key="name" value="updatedEP"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="volume" eType="#//VolumeT"
-        unsettable="true">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="attribute"/>
-        <details key="name" value="volume"/>
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
@@ -4166,6 +4108,13 @@
         <details key="name" value="fieldRef"/>
         <details key="namespace" value="##targetNamespace"/>
         <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="which" eType="#//MemberType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="which"/>
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
@@ -4435,25 +4384,6 @@
       <details key="name" value="Version_t"/>
       <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#string"/>
       <details key="pattern" value="(FIX.2.7)|(FIX.3.0)|(FIX\.4\.[0-4])|(FIX\.5\.0(SP\d{1,2})?(_EP((9[8-9])|([1-9][0-9][0-9])))?)|(FIXT.1.1)|([0-9]+)\.([0-9]+)|(\d{8})"/>
-    </eAnnotations>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="VolumeT">
-    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-      <details key="name" value="Volume_t"/>
-    </eAnnotations>
-    <eLiterals name="_1" literal="1"/>
-    <eLiterals name="_2" value="1" literal="2"/>
-    <eLiterals name="_3" value="2" literal="3"/>
-    <eLiterals name="_4" value="3" literal="4"/>
-    <eLiterals name="_5" value="4" literal="5"/>
-    <eLiterals name="_6" value="5" literal="6"/>
-    <eLiterals name="FIXT11" value="6" literal="FIXT.1.1"/>
-    <eLiterals name="_7" value="7" literal="7"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EDataType" name="VolumeTObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
-    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-      <details key="name" value="Volume_t:Object"/>
-      <details key="baseType" value="Volume_t"/>
     </eAnnotations>
   </eClassifiers>
 </ecore:EPackage>
