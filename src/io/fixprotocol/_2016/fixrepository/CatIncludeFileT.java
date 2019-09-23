@@ -19,199 +19,199 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum CatIncludeFileT implements Enumerator {
   /**
-	 * The '<em><b>Components</b></em>' literal object.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>Components</b></em>' literal object.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #COMPONENTS_VALUE
-	 * @generated
-	 * @ordered
-	 */
+   * @see #COMPONENTS_VALUE
+   * @generated
+   * @ordered
+   */
   COMPONENTS(0, "components", "components"),
 
   /**
-	 * The '<em><b>Fields</b></em>' literal object.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>Fields</b></em>' literal object.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #FIELDS_VALUE
-	 * @generated
-	 * @ordered
-	 */
+   * @see #FIELDS_VALUE
+   * @generated
+   * @ordered
+   */
   FIELDS(1, "fields", "fields");
 
   /**
-	 * The '<em><b>Components</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>Components</b></em>' literal value.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of '<em><b>Components</b></em>' literal object isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @see #COMPONENTS
-	 * @model name="components"
-	 * @generated
-	 * @ordered
-	 */
+   * @see #COMPONENTS
+   * @model name="components"
+   * @generated
+   * @ordered
+   */
   public static final int COMPONENTS_VALUE = 0;
 
   /**
-	 * The '<em><b>Fields</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>Fields</b></em>' literal value.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of '<em><b>Fields</b></em>' literal object isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @see #FIELDS
-	 * @model name="fields"
-	 * @generated
-	 * @ordered
-	 */
+   * @see #FIELDS
+   * @model name="fields"
+   * @generated
+   * @ordered
+   */
   public static final int FIELDS_VALUE = 1;
 
   /**
-	 * An array of all the '<em><b>Cat Include File T</b></em>' enumerators.
-	 * <!-- begin-user-doc -->
+   * An array of all the '<em><b>Cat Include File T</b></em>' enumerators.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   private static final CatIncludeFileT[] VALUES_ARRAY =
     new CatIncludeFileT[] {
-			COMPONENTS,
-			FIELDS,
-		};
+      COMPONENTS,
+      FIELDS,
+    };
 
   /**
-	 * A public read-only list of all the '<em><b>Cat Include File T</b></em>' enumerators.
-	 * <!-- begin-user-doc -->
+   * A public read-only list of all the '<em><b>Cat Include File T</b></em>' enumerators.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public static final List<CatIncludeFileT> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
   /**
-	 * Returns the '<em><b>Cat Include File T</b></em>' literal with the specified literal value.
-	 * <!-- begin-user-doc -->
+   * Returns the '<em><b>Cat Include File T</b></em>' literal with the specified literal value.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @param literal the literal.
-	 * @return the matching enumerator or <code>null</code>.
-	 * @generated
-	 */
+   * @param literal the literal.
+   * @return the matching enumerator or <code>null</code>.
+   * @generated
+   */
   public static CatIncludeFileT get(String literal) {
-		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			CatIncludeFileT result = VALUES_ARRAY[i];
-			if (result.toString().equals(literal)) {
-				return result;
-			}
-		}
-		return null;
-	}
+    for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+      CatIncludeFileT result = VALUES_ARRAY[i];
+      if (result.toString().equals(literal)) {
+        return result;
+      }
+    }
+    return null;
+  }
 
   /**
-	 * Returns the '<em><b>Cat Include File T</b></em>' literal with the specified name.
-	 * <!-- begin-user-doc -->
+   * Returns the '<em><b>Cat Include File T</b></em>' literal with the specified name.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @param name the name.
-	 * @return the matching enumerator or <code>null</code>.
-	 * @generated
-	 */
+   * @param name the name.
+   * @return the matching enumerator or <code>null</code>.
+   * @generated
+   */
   public static CatIncludeFileT getByName(String name) {
-		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			CatIncludeFileT result = VALUES_ARRAY[i];
-			if (result.getName().equals(name)) {
-				return result;
-			}
-		}
-		return null;
-	}
+    for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+      CatIncludeFileT result = VALUES_ARRAY[i];
+      if (result.getName().equals(name)) {
+        return result;
+      }
+    }
+    return null;
+  }
 
   /**
-	 * Returns the '<em><b>Cat Include File T</b></em>' literal with the specified integer value.
-	 * <!-- begin-user-doc -->
+   * Returns the '<em><b>Cat Include File T</b></em>' literal with the specified integer value.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @param value the integer value.
-	 * @return the matching enumerator or <code>null</code>.
-	 * @generated
-	 */
+   * @param value the integer value.
+   * @return the matching enumerator or <code>null</code>.
+   * @generated
+   */
   public static CatIncludeFileT get(int value) {
-		switch (value) {
-			case COMPONENTS_VALUE: return COMPONENTS;
-			case FIELDS_VALUE: return FIELDS;
-		}
-		return null;
-	}
+    switch (value) {
+      case COMPONENTS_VALUE: return COMPONENTS;
+      case FIELDS_VALUE: return FIELDS;
+    }
+    return null;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   private final int value;
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   private final String name;
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   private final String literal;
 
   /**
-	 * Only this class can construct instances.
-	 * <!-- begin-user-doc -->
+   * Only this class can construct instances.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   private CatIncludeFileT(int value, String name, String literal) {
-		this.value = value;
-		this.name = name;
-		this.literal = literal;
-	}
+    this.value = value;
+    this.name = name;
+    this.literal = literal;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
 		public int getValue() {
-	  return value;
-	}
+    return value;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
 		public String getName() {
-	  return name;
-	}
+    return name;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
 		public String getLiteral() {
-	  return literal;
-	}
+    return literal;
+  }
 
   /**
-	 * Returns the literal value of the enumerator, which is its string representation.
-	 * <!-- begin-user-doc -->
+   * Returns the literal value of the enumerator, which is its string representation.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public String toString() {
-		return literal;
-	}
+    return literal;
+  }
   
 } //CatIncludeFileT

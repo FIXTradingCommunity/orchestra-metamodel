@@ -41,204 +41,204 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public class BlockAssignmentTypeImpl extends MinimalEObjectImpl.Container implements BlockAssignmentType {
   /**
-	 * The cached value of the '{@link #getGroup() <em>Group</em>}' attribute list.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getGroup() <em>Group</em>}' attribute list.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getGroup()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getGroup()
+   * @generated
+   * @ordered
+   */
   protected FeatureMap group;
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected BlockAssignmentTypeImpl() {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   protected EClass eStaticClass() {
-		return FixrepositoryPackage.eINSTANCE.getBlockAssignmentType();
-	}
+    return FixrepositoryPackage.eINSTANCE.getBlockAssignmentType();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
 		public FeatureMap getGroup() {
-		if (group == null) {
-			group = new BasicFeatureMap(this, FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__GROUP);
-		}
-		return group;
-	}
+    if (group == null) {
+      group = new BasicFeatureMap(this, FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__GROUP);
+    }
+    return group;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
 		public EList<ComponentRefType> getComponentRef() {
-		return getGroup().list(FixrepositoryPackage.eINSTANCE.getBlockAssignmentType_ComponentRef());
-	}
+    return getGroup().list(FixrepositoryPackage.eINSTANCE.getBlockAssignmentType_ComponentRef());
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
 		public EList<GroupRefType> getGroupRef() {
-		return getGroup().list(FixrepositoryPackage.eINSTANCE.getBlockAssignmentType_GroupRef());
-	}
+    return getGroup().list(FixrepositoryPackage.eINSTANCE.getBlockAssignmentType_GroupRef());
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
 		public EList<FieldRefType> getFieldRef() {
-		return getGroup().list(FixrepositoryPackage.eINSTANCE.getBlockAssignmentType_FieldRef());
-	}
+    return getGroup().list(FixrepositoryPackage.eINSTANCE.getBlockAssignmentType_FieldRef());
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__GROUP:
-				return ((InternalEList<?>)getGroup()).basicRemove(otherEnd, msgs);
-			case FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__COMPONENT_REF:
-				return ((InternalEList<?>)getComponentRef()).basicRemove(otherEnd, msgs);
-			case FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__GROUP_REF:
-				return ((InternalEList<?>)getGroupRef()).basicRemove(otherEnd, msgs);
-			case FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__FIELD_REF:
-				return ((InternalEList<?>)getFieldRef()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
+    switch (featureID) {
+      case FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__GROUP:
+        return ((InternalEList<?>)getGroup()).basicRemove(otherEnd, msgs);
+      case FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__COMPONENT_REF:
+        return ((InternalEList<?>)getComponentRef()).basicRemove(otherEnd, msgs);
+      case FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__GROUP_REF:
+        return ((InternalEList<?>)getGroupRef()).basicRemove(otherEnd, msgs);
+      case FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__FIELD_REF:
+        return ((InternalEList<?>)getFieldRef()).basicRemove(otherEnd, msgs);
+    }
+    return super.eInverseRemove(otherEnd, featureID, msgs);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__GROUP:
-				if (coreType) return getGroup();
-				return ((FeatureMap.Internal)getGroup()).getWrapper();
-			case FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__COMPONENT_REF:
-				return getComponentRef();
-			case FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__GROUP_REF:
-				return getGroupRef();
-			case FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__FIELD_REF:
-				return getFieldRef();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+    switch (featureID) {
+      case FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__GROUP:
+        if (coreType) return getGroup();
+        return ((FeatureMap.Internal)getGroup()).getWrapper();
+      case FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__COMPONENT_REF:
+        return getComponentRef();
+      case FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__GROUP_REF:
+        return getGroupRef();
+      case FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__FIELD_REF:
+        return getFieldRef();
+    }
+    return super.eGet(featureID, resolve, coreType);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @SuppressWarnings("unchecked")
   @Override
   public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__GROUP:
-				((FeatureMap.Internal)getGroup()).set(newValue);
-				return;
-			case FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__COMPONENT_REF:
-				getComponentRef().clear();
-				getComponentRef().addAll((Collection<? extends ComponentRefType>)newValue);
-				return;
-			case FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__GROUP_REF:
-				getGroupRef().clear();
-				getGroupRef().addAll((Collection<? extends GroupRefType>)newValue);
-				return;
-			case FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__FIELD_REF:
-				getFieldRef().clear();
-				getFieldRef().addAll((Collection<? extends FieldRefType>)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+    switch (featureID) {
+      case FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__GROUP:
+        ((FeatureMap.Internal)getGroup()).set(newValue);
+        return;
+      case FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__COMPONENT_REF:
+        getComponentRef().clear();
+        getComponentRef().addAll((Collection<? extends ComponentRefType>)newValue);
+        return;
+      case FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__GROUP_REF:
+        getGroupRef().clear();
+        getGroupRef().addAll((Collection<? extends GroupRefType>)newValue);
+        return;
+      case FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__FIELD_REF:
+        getFieldRef().clear();
+        getFieldRef().addAll((Collection<? extends FieldRefType>)newValue);
+        return;
+    }
+    super.eSet(featureID, newValue);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public void eUnset(int featureID) {
-		switch (featureID) {
-			case FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__GROUP:
-				getGroup().clear();
-				return;
-			case FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__COMPONENT_REF:
-				getComponentRef().clear();
-				return;
-			case FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__GROUP_REF:
-				getGroupRef().clear();
-				return;
-			case FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__FIELD_REF:
-				getFieldRef().clear();
-				return;
-		}
-		super.eUnset(featureID);
-	}
+    switch (featureID) {
+      case FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__GROUP:
+        getGroup().clear();
+        return;
+      case FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__COMPONENT_REF:
+        getComponentRef().clear();
+        return;
+      case FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__GROUP_REF:
+        getGroupRef().clear();
+        return;
+      case FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__FIELD_REF:
+        getFieldRef().clear();
+        return;
+    }
+    super.eUnset(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__GROUP:
-				return group != null && !group.isEmpty();
-			case FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__COMPONENT_REF:
-				return !getComponentRef().isEmpty();
-			case FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__GROUP_REF:
-				return !getGroupRef().isEmpty();
-			case FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__FIELD_REF:
-				return !getFieldRef().isEmpty();
-		}
-		return super.eIsSet(featureID);
-	}
+    switch (featureID) {
+      case FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__GROUP:
+        return group != null && !group.isEmpty();
+      case FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__COMPONENT_REF:
+        return !getComponentRef().isEmpty();
+      case FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__GROUP_REF:
+        return !getGroupRef().isEmpty();
+      case FixrepositoryPackage.BLOCK_ASSIGNMENT_TYPE__FIELD_REF:
+        return !getFieldRef().isEmpty();
+    }
+    return super.eIsSet(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public String toString() {
-		if (eIsProxy()) return super.toString();
+    if (eIsProxy()) return super.toString();
 
-		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (group: ");
-		result.append(group);
-		result.append(')');
-		return result.toString();
-	}
+    StringBuilder result = new StringBuilder(super.toString());
+    result.append(" (group: ");
+    result.append(group);
+    result.append(')');
+    return result.toString();
+  }
 
 } //BlockAssignmentTypeImpl

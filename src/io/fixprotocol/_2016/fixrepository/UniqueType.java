@@ -24,20 +24,20 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface UniqueType extends EObject {
   /**
-	 * Returns the value of the '<em><b>Field Ref</b></em>' containment reference list.
-	 * The list contents are of type {@link io.fixprotocol._2016.fixrepository.FieldRefType}.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Field Ref</b></em>' containment reference list.
+   * The list contents are of type {@link io.fixprotocol._2016.fixrepository.FieldRefType}.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * Other field or fields that scope uniqueness. 
-	 * 									If none provided, then the field value must be globally unique.
-	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>Field Ref</em>' containment reference list.
-	 * @see io.fixprotocol._2016.fixrepository.FixrepositoryPackage#getUniqueType_FieldRef()
-	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='fieldRef' namespace='##targetNamespace'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * Other field or fields that scope uniqueness. 
+   * 									If none provided, then the field value must be globally unique.
+   * <!-- end-model-doc -->
+   * @return the value of the '<em>Field Ref</em>' containment reference list.
+   * @see io.fixprotocol._2016.fixrepository.FixrepositoryPackage#getUniqueType_FieldRef()
+   * @model containment="true"
+   *        extendedMetaData="kind='element' name='fieldRef' namespace='##targetNamespace'"
+   * @generated
+   */
   EList<FieldRefType> getFieldRef();
 
 } // UniqueType

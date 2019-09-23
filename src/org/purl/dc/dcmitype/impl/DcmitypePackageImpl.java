@@ -15,6 +15,7 @@ import org.eclipse.emf.ecore.EValidator;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
+import org.eclipse.emf.ecore.xml.namespace.XMLNamespacePackage;
 import org.purl.dc.dcmitype.DCMITypeMember0;
 import org.purl.dc.dcmitype.DcmitypeFactory;
 import org.purl.dc.dcmitype.DcmitypePackage;
@@ -85,7 +86,7 @@ public class DcmitypePackageImpl extends EPackageImpl implements DcmitypePackage
 
   /**
    * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
-   * 
+   *
    * <p>This method is used to initialize {@link DcmitypePackage#eINSTANCE} when that field is accessed.
    * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
    * <!-- begin-user-doc -->
@@ -99,14 +100,21 @@ public class DcmitypePackageImpl extends EPackageImpl implements DcmitypePackage
     if (isInited) return (DcmitypePackage)EPackage.Registry.INSTANCE.getEPackage(DcmitypePackage.eNS_URI);
 
     // Obtain or create and register package
-    DcmitypePackageImpl theDcmitypePackage = (DcmitypePackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof DcmitypePackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new DcmitypePackageImpl());
+    Object registeredDcmitypePackage = EPackage.Registry.INSTANCE.get(eNS_URI);
+    DcmitypePackageImpl theDcmitypePackage = registeredDcmitypePackage instanceof DcmitypePackageImpl ? (DcmitypePackageImpl)registeredDcmitypePackage : new DcmitypePackageImpl();
 
     isInited = true;
 
+    // Initialize simple dependencies
+    XMLNamespacePackage.eINSTANCE.eClass();
+
     // Obtain or create and register interdependencies
-    FixrepositoryPackageImpl theFixrepositoryPackage = (FixrepositoryPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(FixrepositoryPackage.eNS_URI) instanceof FixrepositoryPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(FixrepositoryPackage.eNS_URI) : FixrepositoryPackage.eINSTANCE);
-    TermsPackageImpl theTermsPackage = (TermsPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(TermsPackage.eNS_URI) instanceof TermsPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(TermsPackage.eNS_URI) : TermsPackage.eINSTANCE);
-    _1PackageImpl the_1Package = (_1PackageImpl)(EPackage.Registry.INSTANCE.getEPackage(_1Package.eNS_URI) instanceof _1PackageImpl ? EPackage.Registry.INSTANCE.getEPackage(_1Package.eNS_URI) : _1Package.eINSTANCE);
+    Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(TermsPackage.eNS_URI);
+    TermsPackageImpl theTermsPackage = (TermsPackageImpl)(registeredPackage instanceof TermsPackageImpl ? registeredPackage : TermsPackage.eINSTANCE);
+    registeredPackage = EPackage.Registry.INSTANCE.getEPackage(_1Package.eNS_URI);
+    _1PackageImpl the_1Package = (_1PackageImpl)(registeredPackage instanceof _1PackageImpl ? registeredPackage : _1Package.eINSTANCE);
+    registeredPackage = EPackage.Registry.INSTANCE.getEPackage(FixrepositoryPackage.eNS_URI);
+    FixrepositoryPackageImpl theFixrepositoryPackage = (FixrepositoryPackageImpl)(registeredPackage instanceof FixrepositoryPackageImpl ? registeredPackage : FixrepositoryPackage.eINSTANCE);
 
     // Load packages
     theFixrepositoryPackage.loadPackage();
@@ -126,8 +134,9 @@ public class DcmitypePackageImpl extends EPackageImpl implements DcmitypePackage
 
     // Register package validator
     EValidator.Registry.INSTANCE.put
-      (theDcmitypePackage, 
+      (theDcmitypePackage,
        new EValidator.Descriptor() {
+         @Override
          public EValidator getEValidator() {
            return DcmitypeValidator.INSTANCE;
          }
@@ -136,7 +145,6 @@ public class DcmitypePackageImpl extends EPackageImpl implements DcmitypePackage
     // Mark meta-data to indicate it can't be changed
     theDcmitypePackage.freeze();
 
-  
     // Update the registry and return the package
     EPackage.Registry.INSTANCE.put(DcmitypePackage.eNS_URI, theDcmitypePackage);
     return theDcmitypePackage;
@@ -147,6 +155,7 @@ public class DcmitypePackageImpl extends EPackageImpl implements DcmitypePackage
    * <!-- end-user-doc -->
    * @generated
    */
+  @Override
   public EEnum getDCMITypeMember0() {
     return dcmiTypeMember0EEnum;
   }
@@ -156,6 +165,7 @@ public class DcmitypePackageImpl extends EPackageImpl implements DcmitypePackage
    * <!-- end-user-doc -->
    * @generated
    */
+  @Override
   public EDataType getDCMIType() {
     return dcmiTypeEDataType;
   }
@@ -165,6 +175,7 @@ public class DcmitypePackageImpl extends EPackageImpl implements DcmitypePackage
    * <!-- end-user-doc -->
    * @generated
    */
+  @Override
   public EDataType getDCMITypeMember0Object() {
     return dcmiTypeMember0ObjectEDataType;
   }
@@ -174,6 +185,7 @@ public class DcmitypePackageImpl extends EPackageImpl implements DcmitypePackage
    * <!-- end-user-doc -->
    * @generated
    */
+  @Override
   public DcmitypeFactory getDcmitypeFactory() {
     return (DcmitypeFactory)getEFactoryInstance();
   }
@@ -261,26 +273,26 @@ public class DcmitypePackageImpl extends EPackageImpl implements DcmitypePackage
    * @generated
    */
   protected void createExtendedMetaDataAnnotations() {
-    String source = "http:///org/eclipse/emf/ecore/util/ExtendedMetaData";	
+    String source = "http:///org/eclipse/emf/ecore/util/ExtendedMetaData";
     addAnnotation
-      (dcmiTypeEDataType, 
-       source, 
+      (dcmiTypeEDataType,
+       source,
        new String[] {
-       "name", "DCMIType",
-       "memberTypes", "DCMIType_._member_._0"
-       });	
+         "name", "DCMIType",
+         "memberTypes", "DCMIType_._member_._0"
+       });
     addAnnotation
-      (dcmiTypeMember0EEnum, 
-       source, 
+      (dcmiTypeMember0EEnum,
+       source,
        new String[] {
-       "name", "DCMIType_._member_._0"
-       });	
+         "name", "DCMIType_._member_._0"
+       });
     addAnnotation
-      (dcmiTypeMember0ObjectEDataType, 
-       source, 
+      (dcmiTypeMember0ObjectEDataType,
+       source,
        new String[] {
-       "name", "DCMIType_._member_._0:Object",
-       "baseType", "DCMIType_._member_._0"
+         "name", "DCMIType_._member_._0:Object",
+         "baseType", "DCMIType_._member_._0"
        });
   }
 

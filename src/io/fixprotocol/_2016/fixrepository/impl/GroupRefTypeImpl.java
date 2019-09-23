@@ -30,230 +30,230 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class GroupRefTypeImpl extends ComponentRefTypeImpl implements GroupRefType {
   /**
-	 * The default value of the '{@link #getImplMaxOccurs() <em>Impl Max Occurs</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getImplMaxOccurs() <em>Impl Max Occurs</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getImplMaxOccurs()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getImplMaxOccurs()
+   * @generated
+   * @ordered
+   */
   protected static final Object IMPL_MAX_OCCURS_EDEFAULT = FixrepositoryFactory.eINSTANCE.createFromString(FixrepositoryPackage.eINSTANCE.getUnboundedIntType(), "unbounded");
 
   /**
-	 * The cached value of the '{@link #getImplMaxOccurs() <em>Impl Max Occurs</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getImplMaxOccurs() <em>Impl Max Occurs</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getImplMaxOccurs()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getImplMaxOccurs()
+   * @generated
+   * @ordered
+   */
   protected Object implMaxOccurs = IMPL_MAX_OCCURS_EDEFAULT;
 
   /**
-	 * This is true if the Impl Max Occurs attribute has been set.
-	 * <!-- begin-user-doc -->
+   * This is true if the Impl Max Occurs attribute has been set.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+   * @generated
+   * @ordered
+   */
   protected boolean implMaxOccursESet;
 
   /**
-	 * The default value of the '{@link #getImplMinOccurs() <em>Impl Min Occurs</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getImplMinOccurs() <em>Impl Min Occurs</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getImplMinOccurs()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getImplMinOccurs()
+   * @generated
+   * @ordered
+   */
   protected static final BigInteger IMPL_MIN_OCCURS_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getImplMinOccurs() <em>Impl Min Occurs</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getImplMinOccurs() <em>Impl Min Occurs</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getImplMinOccurs()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getImplMinOccurs()
+   * @generated
+   * @ordered
+   */
   protected BigInteger implMinOccurs = IMPL_MIN_OCCURS_EDEFAULT;
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected GroupRefTypeImpl() {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   protected EClass eStaticClass() {
-		return FixrepositoryPackage.eINSTANCE.getGroupRefType();
-	}
+    return FixrepositoryPackage.eINSTANCE.getGroupRefType();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
 		public Object getImplMaxOccurs() {
-		return implMaxOccurs;
-	}
+    return implMaxOccurs;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
 		public void setImplMaxOccurs(Object newImplMaxOccurs) {
-		Object oldImplMaxOccurs = implMaxOccurs;
-		implMaxOccurs = newImplMaxOccurs;
-		boolean oldImplMaxOccursESet = implMaxOccursESet;
-		implMaxOccursESet = true;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FixrepositoryPackage.GROUP_REF_TYPE__IMPL_MAX_OCCURS, oldImplMaxOccurs, implMaxOccurs, !oldImplMaxOccursESet));
-	}
+    Object oldImplMaxOccurs = implMaxOccurs;
+    implMaxOccurs = newImplMaxOccurs;
+    boolean oldImplMaxOccursESet = implMaxOccursESet;
+    implMaxOccursESet = true;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, FixrepositoryPackage.GROUP_REF_TYPE__IMPL_MAX_OCCURS, oldImplMaxOccurs, implMaxOccurs, !oldImplMaxOccursESet));
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
 		public void unsetImplMaxOccurs() {
-		Object oldImplMaxOccurs = implMaxOccurs;
-		boolean oldImplMaxOccursESet = implMaxOccursESet;
-		implMaxOccurs = IMPL_MAX_OCCURS_EDEFAULT;
-		implMaxOccursESet = false;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, FixrepositoryPackage.GROUP_REF_TYPE__IMPL_MAX_OCCURS, oldImplMaxOccurs, IMPL_MAX_OCCURS_EDEFAULT, oldImplMaxOccursESet));
-	}
+    Object oldImplMaxOccurs = implMaxOccurs;
+    boolean oldImplMaxOccursESet = implMaxOccursESet;
+    implMaxOccurs = IMPL_MAX_OCCURS_EDEFAULT;
+    implMaxOccursESet = false;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.UNSET, FixrepositoryPackage.GROUP_REF_TYPE__IMPL_MAX_OCCURS, oldImplMaxOccurs, IMPL_MAX_OCCURS_EDEFAULT, oldImplMaxOccursESet));
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
 		public boolean isSetImplMaxOccurs() {
-		return implMaxOccursESet;
-	}
+    return implMaxOccursESet;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
 		public BigInteger getImplMinOccurs() {
-		return implMinOccurs;
-	}
+    return implMinOccurs;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
 		public void setImplMinOccurs(BigInteger newImplMinOccurs) {
-		BigInteger oldImplMinOccurs = implMinOccurs;
-		implMinOccurs = newImplMinOccurs;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FixrepositoryPackage.GROUP_REF_TYPE__IMPL_MIN_OCCURS, oldImplMinOccurs, implMinOccurs));
-	}
+    BigInteger oldImplMinOccurs = implMinOccurs;
+    implMinOccurs = newImplMinOccurs;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, FixrepositoryPackage.GROUP_REF_TYPE__IMPL_MIN_OCCURS, oldImplMinOccurs, implMinOccurs));
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case FixrepositoryPackage.GROUP_REF_TYPE__IMPL_MAX_OCCURS:
-				return getImplMaxOccurs();
-			case FixrepositoryPackage.GROUP_REF_TYPE__IMPL_MIN_OCCURS:
-				return getImplMinOccurs();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+    switch (featureID) {
+      case FixrepositoryPackage.GROUP_REF_TYPE__IMPL_MAX_OCCURS:
+        return getImplMaxOccurs();
+      case FixrepositoryPackage.GROUP_REF_TYPE__IMPL_MIN_OCCURS:
+        return getImplMinOccurs();
+    }
+    return super.eGet(featureID, resolve, coreType);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case FixrepositoryPackage.GROUP_REF_TYPE__IMPL_MAX_OCCURS:
-				setImplMaxOccurs(newValue);
-				return;
-			case FixrepositoryPackage.GROUP_REF_TYPE__IMPL_MIN_OCCURS:
-				setImplMinOccurs((BigInteger)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+    switch (featureID) {
+      case FixrepositoryPackage.GROUP_REF_TYPE__IMPL_MAX_OCCURS:
+        setImplMaxOccurs(newValue);
+        return;
+      case FixrepositoryPackage.GROUP_REF_TYPE__IMPL_MIN_OCCURS:
+        setImplMinOccurs((BigInteger)newValue);
+        return;
+    }
+    super.eSet(featureID, newValue);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public void eUnset(int featureID) {
-		switch (featureID) {
-			case FixrepositoryPackage.GROUP_REF_TYPE__IMPL_MAX_OCCURS:
-				unsetImplMaxOccurs();
-				return;
-			case FixrepositoryPackage.GROUP_REF_TYPE__IMPL_MIN_OCCURS:
-				setImplMinOccurs(IMPL_MIN_OCCURS_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+    switch (featureID) {
+      case FixrepositoryPackage.GROUP_REF_TYPE__IMPL_MAX_OCCURS:
+        unsetImplMaxOccurs();
+        return;
+      case FixrepositoryPackage.GROUP_REF_TYPE__IMPL_MIN_OCCURS:
+        setImplMinOccurs(IMPL_MIN_OCCURS_EDEFAULT);
+        return;
+    }
+    super.eUnset(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case FixrepositoryPackage.GROUP_REF_TYPE__IMPL_MAX_OCCURS:
-				return isSetImplMaxOccurs();
-			case FixrepositoryPackage.GROUP_REF_TYPE__IMPL_MIN_OCCURS:
-				return IMPL_MIN_OCCURS_EDEFAULT == null ? implMinOccurs != null : !IMPL_MIN_OCCURS_EDEFAULT.equals(implMinOccurs);
-		}
-		return super.eIsSet(featureID);
-	}
+    switch (featureID) {
+      case FixrepositoryPackage.GROUP_REF_TYPE__IMPL_MAX_OCCURS:
+        return isSetImplMaxOccurs();
+      case FixrepositoryPackage.GROUP_REF_TYPE__IMPL_MIN_OCCURS:
+        return IMPL_MIN_OCCURS_EDEFAULT == null ? implMinOccurs != null : !IMPL_MIN_OCCURS_EDEFAULT.equals(implMinOccurs);
+    }
+    return super.eIsSet(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public String toString() {
-		if (eIsProxy()) return super.toString();
+    if (eIsProxy()) return super.toString();
 
-		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (implMaxOccurs: ");
-		if (implMaxOccursESet) result.append(implMaxOccurs); else result.append("<unset>");
-		result.append(", implMinOccurs: ");
-		result.append(implMinOccurs);
-		result.append(')');
-		return result.toString();
-	}
+    StringBuilder result = new StringBuilder(super.toString());
+    result.append(" (implMaxOccurs: ");
+    if (implMaxOccursESet) result.append(implMaxOccurs); else result.append("<unset>");
+    result.append(", implMinOccurs: ");
+    result.append(implMinOccurs);
+    result.append(')');
+    return result.toString();
+  }
 
 } //GroupRefTypeImpl

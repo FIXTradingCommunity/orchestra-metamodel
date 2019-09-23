@@ -10,69 +10,99 @@ import org.eclipse.emf.common.util.Enumerator;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the literals of the enumeration '<em><b>Unbounded</b></em>',
+ * A representation of the literals of the enumeration '<em><b>Member Type</b></em>',
  * and utility methods for working with them.
  * <!-- end-user-doc -->
- * @see io.fixprotocol._2016.fixrepository.FixrepositoryPackage#getUnbounded()
- * @model extendedMetaData="name='unbounded'"
+ * @see io.fixprotocol._2016.fixrepository.FixrepositoryPackage#getMemberType()
+ * @model extendedMetaData="name='memberType'"
  * @generated
  */
-public enum Unbounded implements Enumerator {
+public enum MemberType implements Enumerator {
   /**
-   * The '<em><b>Unbounded</b></em>' literal object.
+   * The '<em><b>One Of</b></em>' literal object.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #UNBOUNDED_VALUE
+   * <!-- begin-model-doc -->
+   * Members are mutually exclusive; exactly one must be present.
+   * <!-- end-model-doc -->
+   * @see #ONE_OF_VALUE
    * @generated
    * @ordered
    */
-  UNBOUNDED(0, "unbounded", "unbounded");
+  ONE_OF(0, "oneOf", "oneOf"),
 
   /**
-   * The '<em><b>Unbounded</b></em>' literal value.
+   * The '<em><b>Any Of</b></em>' literal object.
    * <!-- begin-user-doc -->
-   * <p>
-   * If the meaning of '<em><b>Unbounded</b></em>' literal object isn't clear,
-   * there really should be more of a description here...
-   * </p>
    * <!-- end-user-doc -->
-   * @see #UNBOUNDED
-   * @model name="unbounded"
+   * <!-- begin-model-doc -->
+   * At least one of the members must be present.
+   * <!-- end-model-doc -->
+   * @see #ANY_OF_VALUE
    * @generated
    * @ordered
    */
-  public static final int UNBOUNDED_VALUE = 0;
+  ANY_OF(1, "anyOf", "anyOf");
 
   /**
-   * An array of all the '<em><b>Unbounded</b></em>' enumerators.
+   * The '<em><b>One Of</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * Members are mutually exclusive; exactly one must be present.
+   * <!-- end-model-doc -->
+   * @see #ONE_OF
+   * @model name="oneOf"
+   * @generated
+   * @ordered
+   */
+  public static final int ONE_OF_VALUE = 0;
+
+  /**
+   * The '<em><b>Any Of</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * At least one of the members must be present.
+   * <!-- end-model-doc -->
+   * @see #ANY_OF
+   * @model name="anyOf"
+   * @generated
+   * @ordered
+   */
+  public static final int ANY_OF_VALUE = 1;
+
+  /**
+   * An array of all the '<em><b>Member Type</b></em>' enumerators.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  private static final Unbounded[] VALUES_ARRAY =
-    new Unbounded[] {
-      UNBOUNDED,
+  private static final MemberType[] VALUES_ARRAY =
+    new MemberType[] {
+      ONE_OF,
+      ANY_OF,
     };
 
   /**
-   * A public read-only list of all the '<em><b>Unbounded</b></em>' enumerators.
+   * A public read-only list of all the '<em><b>Member Type</b></em>' enumerators.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final List<Unbounded> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
+  public static final List<MemberType> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
   /**
-   * Returns the '<em><b>Unbounded</b></em>' literal with the specified literal value.
+   * Returns the '<em><b>Member Type</b></em>' literal with the specified literal value.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @param literal the literal.
    * @return the matching enumerator or <code>null</code>.
    * @generated
    */
-  public static Unbounded get(String literal) {
+  public static MemberType get(String literal) {
     for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-      Unbounded result = VALUES_ARRAY[i];
+      MemberType result = VALUES_ARRAY[i];
       if (result.toString().equals(literal)) {
         return result;
       }
@@ -81,16 +111,16 @@ public enum Unbounded implements Enumerator {
   }
 
   /**
-   * Returns the '<em><b>Unbounded</b></em>' literal with the specified name.
+   * Returns the '<em><b>Member Type</b></em>' literal with the specified name.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @param name the name.
    * @return the matching enumerator or <code>null</code>.
    * @generated
    */
-  public static Unbounded getByName(String name) {
+  public static MemberType getByName(String name) {
     for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-      Unbounded result = VALUES_ARRAY[i];
+      MemberType result = VALUES_ARRAY[i];
       if (result.getName().equals(name)) {
         return result;
       }
@@ -99,16 +129,17 @@ public enum Unbounded implements Enumerator {
   }
 
   /**
-   * Returns the '<em><b>Unbounded</b></em>' literal with the specified integer value.
+   * Returns the '<em><b>Member Type</b></em>' literal with the specified integer value.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @param value the integer value.
    * @return the matching enumerator or <code>null</code>.
    * @generated
    */
-  public static Unbounded get(int value) {
+  public static MemberType get(int value) {
     switch (value) {
-      case UNBOUNDED_VALUE: return UNBOUNDED;
+      case ONE_OF_VALUE: return ONE_OF;
+      case ANY_OF_VALUE: return ANY_OF;
     }
     return null;
   }
@@ -140,7 +171,7 @@ public enum Unbounded implements Enumerator {
    * <!-- end-user-doc -->
    * @generated
    */
-  private Unbounded(int value, String name, String literal) {
+  private MemberType(int value, String name, String literal) {
     this.value = value;
     this.name = name;
     this.literal = literal;
@@ -152,7 +183,7 @@ public enum Unbounded implements Enumerator {
    * @generated
    */
   @Override
-		public int getValue() {
+  public int getValue() {
     return value;
   }
 
@@ -162,7 +193,7 @@ public enum Unbounded implements Enumerator {
    * @generated
    */
   @Override
-		public String getName() {
+  public String getName() {
     return name;
   }
 
@@ -172,7 +203,7 @@ public enum Unbounded implements Enumerator {
    * @generated
    */
   @Override
-		public String getLiteral() {
+  public String getLiteral() {
     return literal;
   }
 
@@ -187,4 +218,4 @@ public enum Unbounded implements Enumerator {
     return literal;
   }
   
-} //Unbounded
+} //MemberType

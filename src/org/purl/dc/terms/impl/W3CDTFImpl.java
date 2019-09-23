@@ -28,110 +28,110 @@ import org.purl.dc.terms.W3CDTF;
  */
 public class W3CDTFImpl extends SimpleLiteralImpl implements W3CDTF {
   /**
-	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getValue()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getValue()
+   * @generated
+   * @ordered
+   */
   protected static final XMLGregorianCalendar VALUE_EDEFAULT = null;
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected W3CDTFImpl() {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   protected EClass eStaticClass() {
-		return TermsPackage.Literals.W3CDTF;
-	}
+    return TermsPackage.Literals.W3CDTF;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
 		public XMLGregorianCalendar getValue() {
-		return (XMLGregorianCalendar)getMixed().get(TermsPackage.Literals.W3CDTF__VALUE, true);
-	}
+    return (XMLGregorianCalendar)getMixed().get(TermsPackage.Literals.W3CDTF__VALUE, true);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
 		public void setValue(XMLGregorianCalendar newValue) {
-		((FeatureMap.Internal)getMixed()).set(TermsPackage.Literals.W3CDTF__VALUE, newValue);
-	}
+    ((FeatureMap.Internal)getMixed()).set(TermsPackage.Literals.W3CDTF__VALUE, newValue);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case TermsPackage.W3CDTF__VALUE:
-				return getValue();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+    switch (featureID) {
+      case TermsPackage.W3CDTF__VALUE:
+        return getValue();
+    }
+    return super.eGet(featureID, resolve, coreType);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case TermsPackage.W3CDTF__VALUE:
-				setValue((XMLGregorianCalendar)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+    switch (featureID) {
+      case TermsPackage.W3CDTF__VALUE:
+        setValue((XMLGregorianCalendar)newValue);
+        return;
+    }
+    super.eSet(featureID, newValue);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public void eUnset(int featureID) {
-		switch (featureID) {
-			case TermsPackage.W3CDTF__VALUE:
-				setValue(VALUE_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+    switch (featureID) {
+      case TermsPackage.W3CDTF__VALUE:
+        setValue(VALUE_EDEFAULT);
+        return;
+    }
+    super.eUnset(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case TermsPackage.W3CDTF__VALUE:
-				return VALUE_EDEFAULT == null ? getValue() != null : !VALUE_EDEFAULT.equals(getValue());
-		}
-		return super.eIsSet(featureID);
-	}
+    switch (featureID) {
+      case TermsPackage.W3CDTF__VALUE:
+        return VALUE_EDEFAULT == null ? getValue() != null : !VALUE_EDEFAULT.equals(getValue());
+    }
+    return super.eIsSet(featureID);
+  }
 
 } //W3CDTFImpl

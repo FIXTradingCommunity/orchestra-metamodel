@@ -19,280 +19,280 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum UnionDataTypeT implements Enumerator {
   /**
-	 * The '<em><b>Qty</b></em>' literal object.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>Qty</b></em>' literal object.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #QTY_VALUE
-	 * @generated
-	 * @ordered
-	 */
+   * @see #QTY_VALUE
+   * @generated
+   * @ordered
+   */
   QTY(0, "Qty", "Qty"),
 
   /**
-	 * The '<em><b>Reserved100 Plus</b></em>' literal object.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>Reserved100 Plus</b></em>' literal object.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #RESERVED100_PLUS_VALUE
-	 * @generated
-	 * @ordered
-	 */
+   * @see #RESERVED100_PLUS_VALUE
+   * @generated
+   * @ordered
+   */
   RESERVED100_PLUS(1, "Reserved100Plus", "Reserved100Plus"),
 
   /**
-	 * The '<em><b>Reserved1000 Plus</b></em>' literal object.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>Reserved1000 Plus</b></em>' literal object.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #RESERVED1000_PLUS_VALUE
-	 * @generated
-	 * @ordered
-	 */
+   * @see #RESERVED1000_PLUS_VALUE
+   * @generated
+   * @ordered
+   */
   RESERVED1000_PLUS(2, "Reserved1000Plus", "Reserved1000Plus"),
 
   /**
-	 * The '<em><b>Reserved4000 Plus</b></em>' literal object.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>Reserved4000 Plus</b></em>' literal object.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #RESERVED4000_PLUS_VALUE
-	 * @generated
-	 * @ordered
-	 */
+   * @see #RESERVED4000_PLUS_VALUE
+   * @generated
+   * @ordered
+   */
   RESERVED4000_PLUS(3, "Reserved4000Plus", "Reserved4000Plus"),
 
   /**
-	 * The '<em><b>Tenor</b></em>' literal object.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>Tenor</b></em>' literal object.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #TENOR_VALUE
-	 * @generated
-	 * @ordered
-	 */
+   * @see #TENOR_VALUE
+   * @generated
+   * @ordered
+   */
   TENOR(4, "Tenor", "Tenor");
 
   /**
-	 * The '<em><b>Qty</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>Qty</b></em>' literal value.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of '<em><b>Qty</b></em>' literal object isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @see #QTY
-	 * @model name="Qty"
-	 * @generated
-	 * @ordered
-	 */
+   * @see #QTY
+   * @model name="Qty"
+   * @generated
+   * @ordered
+   */
   public static final int QTY_VALUE = 0;
 
   /**
-	 * The '<em><b>Reserved100 Plus</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>Reserved100 Plus</b></em>' literal value.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of '<em><b>Reserved100 Plus</b></em>' literal object isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @see #RESERVED100_PLUS
-	 * @model name="Reserved100Plus"
-	 * @generated
-	 * @ordered
-	 */
+   * @see #RESERVED100_PLUS
+   * @model name="Reserved100Plus"
+   * @generated
+   * @ordered
+   */
   public static final int RESERVED100_PLUS_VALUE = 1;
 
   /**
-	 * The '<em><b>Reserved1000 Plus</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>Reserved1000 Plus</b></em>' literal value.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of '<em><b>Reserved1000 Plus</b></em>' literal object isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @see #RESERVED1000_PLUS
-	 * @model name="Reserved1000Plus"
-	 * @generated
-	 * @ordered
-	 */
+   * @see #RESERVED1000_PLUS
+   * @model name="Reserved1000Plus"
+   * @generated
+   * @ordered
+   */
   public static final int RESERVED1000_PLUS_VALUE = 2;
 
   /**
-	 * The '<em><b>Reserved4000 Plus</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>Reserved4000 Plus</b></em>' literal value.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of '<em><b>Reserved4000 Plus</b></em>' literal object isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @see #RESERVED4000_PLUS
-	 * @model name="Reserved4000Plus"
-	 * @generated
-	 * @ordered
-	 */
+   * @see #RESERVED4000_PLUS
+   * @model name="Reserved4000Plus"
+   * @generated
+   * @ordered
+   */
   public static final int RESERVED4000_PLUS_VALUE = 3;
 
   /**
-	 * The '<em><b>Tenor</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>Tenor</b></em>' literal value.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of '<em><b>Tenor</b></em>' literal object isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @see #TENOR
-	 * @model name="Tenor"
-	 * @generated
-	 * @ordered
-	 */
+   * @see #TENOR
+   * @model name="Tenor"
+   * @generated
+   * @ordered
+   */
   public static final int TENOR_VALUE = 4;
 
   /**
-	 * An array of all the '<em><b>Union Data Type T</b></em>' enumerators.
-	 * <!-- begin-user-doc -->
+   * An array of all the '<em><b>Union Data Type T</b></em>' enumerators.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   private static final UnionDataTypeT[] VALUES_ARRAY =
     new UnionDataTypeT[] {
-			QTY,
-			RESERVED100_PLUS,
-			RESERVED1000_PLUS,
-			RESERVED4000_PLUS,
-			TENOR,
-		};
+      QTY,
+      RESERVED100_PLUS,
+      RESERVED1000_PLUS,
+      RESERVED4000_PLUS,
+      TENOR,
+    };
 
   /**
-	 * A public read-only list of all the '<em><b>Union Data Type T</b></em>' enumerators.
-	 * <!-- begin-user-doc -->
+   * A public read-only list of all the '<em><b>Union Data Type T</b></em>' enumerators.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public static final List<UnionDataTypeT> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
   /**
-	 * Returns the '<em><b>Union Data Type T</b></em>' literal with the specified literal value.
-	 * <!-- begin-user-doc -->
+   * Returns the '<em><b>Union Data Type T</b></em>' literal with the specified literal value.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @param literal the literal.
-	 * @return the matching enumerator or <code>null</code>.
-	 * @generated
-	 */
+   * @param literal the literal.
+   * @return the matching enumerator or <code>null</code>.
+   * @generated
+   */
   public static UnionDataTypeT get(String literal) {
-		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			UnionDataTypeT result = VALUES_ARRAY[i];
-			if (result.toString().equals(literal)) {
-				return result;
-			}
-		}
-		return null;
-	}
+    for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+      UnionDataTypeT result = VALUES_ARRAY[i];
+      if (result.toString().equals(literal)) {
+        return result;
+      }
+    }
+    return null;
+  }
 
   /**
-	 * Returns the '<em><b>Union Data Type T</b></em>' literal with the specified name.
-	 * <!-- begin-user-doc -->
+   * Returns the '<em><b>Union Data Type T</b></em>' literal with the specified name.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @param name the name.
-	 * @return the matching enumerator or <code>null</code>.
-	 * @generated
-	 */
+   * @param name the name.
+   * @return the matching enumerator or <code>null</code>.
+   * @generated
+   */
   public static UnionDataTypeT getByName(String name) {
-		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			UnionDataTypeT result = VALUES_ARRAY[i];
-			if (result.getName().equals(name)) {
-				return result;
-			}
-		}
-		return null;
-	}
+    for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+      UnionDataTypeT result = VALUES_ARRAY[i];
+      if (result.getName().equals(name)) {
+        return result;
+      }
+    }
+    return null;
+  }
 
   /**
-	 * Returns the '<em><b>Union Data Type T</b></em>' literal with the specified integer value.
-	 * <!-- begin-user-doc -->
+   * Returns the '<em><b>Union Data Type T</b></em>' literal with the specified integer value.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @param value the integer value.
-	 * @return the matching enumerator or <code>null</code>.
-	 * @generated
-	 */
+   * @param value the integer value.
+   * @return the matching enumerator or <code>null</code>.
+   * @generated
+   */
   public static UnionDataTypeT get(int value) {
-		switch (value) {
-			case QTY_VALUE: return QTY;
-			case RESERVED100_PLUS_VALUE: return RESERVED100_PLUS;
-			case RESERVED1000_PLUS_VALUE: return RESERVED1000_PLUS;
-			case RESERVED4000_PLUS_VALUE: return RESERVED4000_PLUS;
-			case TENOR_VALUE: return TENOR;
-		}
-		return null;
-	}
+    switch (value) {
+      case QTY_VALUE: return QTY;
+      case RESERVED100_PLUS_VALUE: return RESERVED100_PLUS;
+      case RESERVED1000_PLUS_VALUE: return RESERVED1000_PLUS;
+      case RESERVED4000_PLUS_VALUE: return RESERVED4000_PLUS;
+      case TENOR_VALUE: return TENOR;
+    }
+    return null;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   private final int value;
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   private final String name;
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   private final String literal;
 
   /**
-	 * Only this class can construct instances.
-	 * <!-- begin-user-doc -->
+   * Only this class can construct instances.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   private UnionDataTypeT(int value, String name, String literal) {
-		this.value = value;
-		this.name = name;
-		this.literal = literal;
-	}
+    this.value = value;
+    this.name = name;
+    this.literal = literal;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
 		public int getValue() {
-	  return value;
-	}
+    return value;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
 		public String getName() {
-	  return name;
-	}
+    return name;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
 		public String getLiteral() {
-	  return literal;
-	}
+    return literal;
+  }
 
   /**
-	 * Returns the literal value of the enumerator, which is its string representation.
-	 * <!-- begin-user-doc -->
+   * Returns the literal value of the enumerator, which is its string representation.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public String toString() {
-		return literal;
-	}
+    return literal;
+  }
   
 } //UnionDataTypeT

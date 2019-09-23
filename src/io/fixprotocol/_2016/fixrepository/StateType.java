@@ -33,152 +33,152 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface StateType extends EObject {
   /**
-	 * Returns the value of the '<em><b>Transition</b></em>' containment reference list.
-	 * The list contents are of type {@link io.fixprotocol._2016.fixrepository.TransitionType}.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Transition</b></em>' containment reference list.
+   * The list contents are of type {@link io.fixprotocol._2016.fixrepository.TransitionType}.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Transition</em>' containment reference list isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Transition</em>' containment reference list.
-	 * @see io.fixprotocol._2016.fixrepository.FixrepositoryPackage#getStateType_Transition()
-	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='transition' namespace='##targetNamespace'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Transition</em>' containment reference list.
+   * @see io.fixprotocol._2016.fixrepository.FixrepositoryPackage#getStateType_Transition()
+   * @model containment="true"
+   *        extendedMetaData="kind='element' name='transition' namespace='##targetNamespace'"
+   * @generated
+   */
   EList<TransitionType> getTransition();
 
   /**
-	 * Returns the value of the '<em><b>Onentry</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Onentry</b></em>' containment reference.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * Operation fired when entering a state.
-	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>Onentry</em>' containment reference.
-	 * @see #setOnentry(ActionType)
-	 * @see io.fixprotocol._2016.fixrepository.FixrepositoryPackage#getStateType_Onentry()
-	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='onentry' namespace='##targetNamespace'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * Operation fired when entering a state.
+   * <!-- end-model-doc -->
+   * @return the value of the '<em>Onentry</em>' containment reference.
+   * @see #setOnentry(ActionType)
+   * @see io.fixprotocol._2016.fixrepository.FixrepositoryPackage#getStateType_Onentry()
+   * @model containment="true"
+   *        extendedMetaData="kind='element' name='onentry' namespace='##targetNamespace'"
+   * @generated
+   */
   ActionType getOnentry();
 
   /**
-	 * Sets the value of the '{@link io.fixprotocol._2016.fixrepository.StateType#getOnentry <em>Onentry</em>}' containment reference.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link io.fixprotocol._2016.fixrepository.StateType#getOnentry <em>Onentry</em>}' containment reference.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Onentry</em>' containment reference.
-	 * @see #getOnentry()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Onentry</em>' containment reference.
+   * @see #getOnentry()
+   * @generated
+   */
   void setOnentry(ActionType value);
 
   /**
-	 * Returns the value of the '<em><b>Activity</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Activity</b></em>' containment reference.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * Operation fired when entering a state and completing when exiting or earlier.
-	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>Activity</em>' containment reference.
-	 * @see #setActivity(ActionType)
-	 * @see io.fixprotocol._2016.fixrepository.FixrepositoryPackage#getStateType_Activity()
-	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='activity' namespace='##targetNamespace'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * Operation fired when entering a state and completing when exiting or earlier.
+   * <!-- end-model-doc -->
+   * @return the value of the '<em>Activity</em>' containment reference.
+   * @see #setActivity(ActionType)
+   * @see io.fixprotocol._2016.fixrepository.FixrepositoryPackage#getStateType_Activity()
+   * @model containment="true"
+   *        extendedMetaData="kind='element' name='activity' namespace='##targetNamespace'"
+   * @generated
+   */
   ActionType getActivity();
 
   /**
-	 * Sets the value of the '{@link io.fixprotocol._2016.fixrepository.StateType#getActivity <em>Activity</em>}' containment reference.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link io.fixprotocol._2016.fixrepository.StateType#getActivity <em>Activity</em>}' containment reference.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Activity</em>' containment reference.
-	 * @see #getActivity()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Activity</em>' containment reference.
+   * @see #getActivity()
+   * @generated
+   */
   void setActivity(ActionType value);
 
   /**
-	 * Returns the value of the '<em><b>Onexit</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Onexit</b></em>' containment reference.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * Operation fired when exiting a state.
-	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>Onexit</em>' containment reference.
-	 * @see #setOnexit(ActionType)
-	 * @see io.fixprotocol._2016.fixrepository.FixrepositoryPackage#getStateType_Onexit()
-	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='onexit' namespace='##targetNamespace'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * Operation fired when exiting a state.
+   * <!-- end-model-doc -->
+   * @return the value of the '<em>Onexit</em>' containment reference.
+   * @see #setOnexit(ActionType)
+   * @see io.fixprotocol._2016.fixrepository.FixrepositoryPackage#getStateType_Onexit()
+   * @model containment="true"
+   *        extendedMetaData="kind='element' name='onexit' namespace='##targetNamespace'"
+   * @generated
+   */
   ActionType getOnexit();
 
   /**
-	 * Sets the value of the '{@link io.fixprotocol._2016.fixrepository.StateType#getOnexit <em>Onexit</em>}' containment reference.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link io.fixprotocol._2016.fixrepository.StateType#getOnexit <em>Onexit</em>}' containment reference.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Onexit</em>' containment reference.
-	 * @see #getOnexit()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Onexit</em>' containment reference.
+   * @see #getOnexit()
+   * @generated
+   */
   void setOnexit(ActionType value);
 
   /**
-	 * Returns the value of the '<em><b>Annotation</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Annotation</b></em>' containment reference.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Annotation</em>' containment reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Annotation</em>' containment reference.
-	 * @see #setAnnotation(Annotation)
-	 * @see io.fixprotocol._2016.fixrepository.FixrepositoryPackage#getStateType_Annotation()
-	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='annotation' namespace='##targetNamespace'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Annotation</em>' containment reference.
+   * @see #setAnnotation(Annotation)
+   * @see io.fixprotocol._2016.fixrepository.FixrepositoryPackage#getStateType_Annotation()
+   * @model containment="true"
+   *        extendedMetaData="kind='element' name='annotation' namespace='##targetNamespace'"
+   * @generated
+   */
   Annotation getAnnotation();
 
   /**
-	 * Sets the value of the '{@link io.fixprotocol._2016.fixrepository.StateType#getAnnotation <em>Annotation</em>}' containment reference.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link io.fixprotocol._2016.fixrepository.StateType#getAnnotation <em>Annotation</em>}' containment reference.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Annotation</em>' containment reference.
-	 * @see #getAnnotation()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Annotation</em>' containment reference.
+   * @see #getAnnotation()
+   * @generated
+   */
   void setAnnotation(Annotation value);
 
   /**
-	 * Returns the value of the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Name</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Name</em>' attribute.
-	 * @see #setName(String)
-	 * @see io.fixprotocol._2016.fixrepository.FixrepositoryPackage#getStateType_Name()
-	 * @model dataType="io.fixprotocol._2016.fixrepository.NameT" required="true"
-	 *        extendedMetaData="kind='attribute' name='name'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Name</em>' attribute.
+   * @see #setName(String)
+   * @see io.fixprotocol._2016.fixrepository.FixrepositoryPackage#getStateType_Name()
+   * @model dataType="io.fixprotocol._2016.fixrepository.NameT" required="true"
+   *        extendedMetaData="kind='attribute' name='name'"
+   * @generated
+   */
   String getName();
 
   /**
-	 * Sets the value of the '{@link io.fixprotocol._2016.fixrepository.StateType#getName <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link io.fixprotocol._2016.fixrepository.StateType#getName <em>Name</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Name</em>' attribute.
-	 * @see #getName()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Name</em>' attribute.
+   * @see #getName()
+   * @generated
+   */
   void setName(String value);
 
 } // StateType

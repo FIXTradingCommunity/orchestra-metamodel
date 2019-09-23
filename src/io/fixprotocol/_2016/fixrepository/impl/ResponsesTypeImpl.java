@@ -35,119 +35,119 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public class ResponsesTypeImpl extends MinimalEObjectImpl.Container implements ResponsesType {
   /**
-	 * The cached value of the '{@link #getResponse() <em>Response</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getResponse() <em>Response</em>}' containment reference list.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getResponse()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getResponse()
+   * @generated
+   * @ordered
+   */
   protected EList<ResponseType> response;
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected ResponsesTypeImpl() {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   protected EClass eStaticClass() {
-		return FixrepositoryPackage.eINSTANCE.getResponsesType();
-	}
+    return FixrepositoryPackage.eINSTANCE.getResponsesType();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
 		public EList<ResponseType> getResponse() {
-		if (response == null) {
-			response = new EObjectContainmentEList<ResponseType>(ResponseType.class, this, FixrepositoryPackage.RESPONSES_TYPE__RESPONSE);
-		}
-		return response;
-	}
+    if (response == null) {
+      response = new EObjectContainmentEList<ResponseType>(ResponseType.class, this, FixrepositoryPackage.RESPONSES_TYPE__RESPONSE);
+    }
+    return response;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case FixrepositoryPackage.RESPONSES_TYPE__RESPONSE:
-				return ((InternalEList<?>)getResponse()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
+    switch (featureID) {
+      case FixrepositoryPackage.RESPONSES_TYPE__RESPONSE:
+        return ((InternalEList<?>)getResponse()).basicRemove(otherEnd, msgs);
+    }
+    return super.eInverseRemove(otherEnd, featureID, msgs);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case FixrepositoryPackage.RESPONSES_TYPE__RESPONSE:
-				return getResponse();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+    switch (featureID) {
+      case FixrepositoryPackage.RESPONSES_TYPE__RESPONSE:
+        return getResponse();
+    }
+    return super.eGet(featureID, resolve, coreType);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @SuppressWarnings("unchecked")
   @Override
   public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case FixrepositoryPackage.RESPONSES_TYPE__RESPONSE:
-				getResponse().clear();
-				getResponse().addAll((Collection<? extends ResponseType>)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+    switch (featureID) {
+      case FixrepositoryPackage.RESPONSES_TYPE__RESPONSE:
+        getResponse().clear();
+        getResponse().addAll((Collection<? extends ResponseType>)newValue);
+        return;
+    }
+    super.eSet(featureID, newValue);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public void eUnset(int featureID) {
-		switch (featureID) {
-			case FixrepositoryPackage.RESPONSES_TYPE__RESPONSE:
-				getResponse().clear();
-				return;
-		}
-		super.eUnset(featureID);
-	}
+    switch (featureID) {
+      case FixrepositoryPackage.RESPONSES_TYPE__RESPONSE:
+        getResponse().clear();
+        return;
+    }
+    super.eUnset(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case FixrepositoryPackage.RESPONSES_TYPE__RESPONSE:
-				return response != null && !response.isEmpty();
-		}
-		return super.eIsSet(featureID);
-	}
+    switch (featureID) {
+      case FixrepositoryPackage.RESPONSES_TYPE__RESPONSE:
+        return response != null && !response.isEmpty();
+    }
+    return super.eIsSet(featureID);
+  }
 
 } //ResponsesTypeImpl

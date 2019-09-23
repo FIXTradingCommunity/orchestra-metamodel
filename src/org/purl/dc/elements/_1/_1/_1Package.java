@@ -129,643 +129,643 @@ import org.eclipse.emf.ecore.EReference;
  */
 public interface _1Package extends EPackage {
   /**
-	 * The package name.
-	 * <!-- begin-user-doc -->
+   * The package name.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   String eNAME = "_1";
 
   /**
-	 * The package namespace URI.
-	 * <!-- begin-user-doc -->
+   * The package namespace URI.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   String eNS_URI = "http://purl.org/dc/elements/1.1/";
 
   /**
-	 * The package namespace name.
-	 * <!-- begin-user-doc -->
+   * The package namespace name.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   String eNS_PREFIX = "_1";
 
   /**
-	 * The singleton instance of the package.
-	 * <!-- begin-user-doc -->
+   * The singleton instance of the package.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   _1Package eINSTANCE = org.purl.dc.elements._1._1.impl._1PackageImpl.init();
 
   /**
-	 * The meta object id for the '{@link org.purl.dc.elements._1._1.impl.ElementContainerImpl <em>Element Container</em>}' class.
-	 * <!-- begin-user-doc -->
+   * The meta object id for the '{@link org.purl.dc.elements._1._1.impl.ElementContainerImpl <em>Element Container</em>}' class.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see org.purl.dc.elements._1._1.impl.ElementContainerImpl
-	 * @see org.purl.dc.elements._1._1.impl._1PackageImpl#getElementContainer()
-	 * @generated
-	 */
+   * @see org.purl.dc.elements._1._1.impl.ElementContainerImpl
+   * @see org.purl.dc.elements._1._1.impl._1PackageImpl#getElementContainer()
+   * @generated
+   */
   int ELEMENT_CONTAINER = 0;
 
   /**
-	 * The feature id for the '<em><b>Group</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
+   * The feature id for the '<em><b>Group</b></em>' attribute list.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+   * @generated
+   * @ordered
+   */
   int ELEMENT_CONTAINER__GROUP = 0;
 
   /**
-	 * The feature id for the '<em><b>Any Group</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
+   * The feature id for the '<em><b>Any Group</b></em>' attribute list.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+   * @generated
+   * @ordered
+   */
   int ELEMENT_CONTAINER__ANY_GROUP = 1;
 
   /**
-	 * The feature id for the '<em><b>Any</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
+   * The feature id for the '<em><b>Any</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+   * @generated
+   * @ordered
+   */
   int ELEMENT_CONTAINER__ANY = 2;
 
   /**
-	 * The number of structural features of the '<em>Element Container</em>' class.
-	 * <!-- begin-user-doc -->
+   * The number of structural features of the '<em>Element Container</em>' class.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+   * @generated
+   * @ordered
+   */
   int ELEMENT_CONTAINER_FEATURE_COUNT = 3;
 
   /**
-	 * The number of operations of the '<em>Element Container</em>' class.
-	 * <!-- begin-user-doc -->
+   * The number of operations of the '<em>Element Container</em>' class.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+   * @generated
+   * @ordered
+   */
   int ELEMENT_CONTAINER_OPERATION_COUNT = 0;
 
   /**
-	 * The meta object id for the '{@link org.purl.dc.elements._1._1.impl.SimpleLiteralImpl <em>Simple Literal</em>}' class.
-	 * <!-- begin-user-doc -->
+   * The meta object id for the '{@link org.purl.dc.elements._1._1.impl.SimpleLiteralImpl <em>Simple Literal</em>}' class.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see org.purl.dc.elements._1._1.impl.SimpleLiteralImpl
-	 * @see org.purl.dc.elements._1._1.impl._1PackageImpl#getSimpleLiteral()
-	 * @generated
-	 */
+   * @see org.purl.dc.elements._1._1.impl.SimpleLiteralImpl
+   * @see org.purl.dc.elements._1._1.impl._1PackageImpl#getSimpleLiteral()
+   * @generated
+   */
   int SIMPLE_LITERAL = 1;
 
   /**
-	 * The feature id for the '<em><b>Mixed</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
+   * The feature id for the '<em><b>Mixed</b></em>' attribute list.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+   * @generated
+   * @ordered
+   */
   int SIMPLE_LITERAL__MIXED = 0;
 
   /**
-	 * The feature id for the '<em><b>Lang</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * The feature id for the '<em><b>Lang</b></em>' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+   * @generated
+   * @ordered
+   */
   int SIMPLE_LITERAL__LANG = 1;
 
   /**
-	 * The number of structural features of the '<em>Simple Literal</em>' class.
-	 * <!-- begin-user-doc -->
+   * The number of structural features of the '<em>Simple Literal</em>' class.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+   * @generated
+   * @ordered
+   */
   int SIMPLE_LITERAL_FEATURE_COUNT = 2;
 
   /**
-	 * The number of operations of the '<em>Simple Literal</em>' class.
-	 * <!-- begin-user-doc -->
+   * The number of operations of the '<em>Simple Literal</em>' class.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+   * @generated
+   * @ordered
+   */
   int SIMPLE_LITERAL_OPERATION_COUNT = 0;
 
   /**
-	 * The meta object id for the '{@link org.purl.dc.elements._1._1.impl.DocumentRootImpl <em>Document Root</em>}' class.
-	 * <!-- begin-user-doc -->
+   * The meta object id for the '{@link org.purl.dc.elements._1._1.impl.DocumentRootImpl <em>Document Root</em>}' class.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see org.purl.dc.elements._1._1.impl.DocumentRootImpl
-	 * @see org.purl.dc.elements._1._1.impl._1PackageImpl#getDocumentRoot()
-	 * @generated
-	 */
+   * @see org.purl.dc.elements._1._1.impl.DocumentRootImpl
+   * @see org.purl.dc.elements._1._1.impl._1PackageImpl#getDocumentRoot()
+   * @generated
+   */
   int DOCUMENT_ROOT = 2;
 
   /**
-	 * The feature id for the '<em><b>Mixed</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
+   * The feature id for the '<em><b>Mixed</b></em>' attribute list.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+   * @generated
+   * @ordered
+   */
   int DOCUMENT_ROOT__MIXED = 0;
 
   /**
-	 * The feature id for the '<em><b>XMLNS Prefix Map</b></em>' map.
-	 * <!-- begin-user-doc -->
+   * The feature id for the '<em><b>XMLNS Prefix Map</b></em>' map.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+   * @generated
+   * @ordered
+   */
   int DOCUMENT_ROOT__XMLNS_PREFIX_MAP = 1;
 
   /**
-	 * The feature id for the '<em><b>XSI Schema Location</b></em>' map.
-	 * <!-- begin-user-doc -->
+   * The feature id for the '<em><b>XSI Schema Location</b></em>' map.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+   * @generated
+   * @ordered
+   */
   int DOCUMENT_ROOT__XSI_SCHEMA_LOCATION = 2;
 
   /**
-	 * The feature id for the '<em><b>Description</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
+   * The feature id for the '<em><b>Description</b></em>' containment reference.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+   * @generated
+   * @ordered
+   */
   int DOCUMENT_ROOT__DESCRIPTION = 3;
 
   /**
-	 * The feature id for the '<em><b>Any</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
+   * The feature id for the '<em><b>Any</b></em>' containment reference.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+   * @generated
+   * @ordered
+   */
   int DOCUMENT_ROOT__ANY = 4;
 
   /**
-	 * The feature id for the '<em><b>Rights</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
+   * The feature id for the '<em><b>Rights</b></em>' containment reference.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+   * @generated
+   * @ordered
+   */
   int DOCUMENT_ROOT__RIGHTS = 5;
 
   /**
-	 * The feature id for the '<em><b>Title</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
+   * The feature id for the '<em><b>Title</b></em>' containment reference.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+   * @generated
+   * @ordered
+   */
   int DOCUMENT_ROOT__TITLE = 6;
 
   /**
-	 * The feature id for the '<em><b>Date</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
+   * The feature id for the '<em><b>Date</b></em>' containment reference.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+   * @generated
+   * @ordered
+   */
   int DOCUMENT_ROOT__DATE = 7;
 
   /**
-	 * The feature id for the '<em><b>Identifier</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
+   * The feature id for the '<em><b>Identifier</b></em>' containment reference.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+   * @generated
+   * @ordered
+   */
   int DOCUMENT_ROOT__IDENTIFIER = 8;
 
   /**
-	 * The feature id for the '<em><b>Relation</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
+   * The feature id for the '<em><b>Relation</b></em>' containment reference.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+   * @generated
+   * @ordered
+   */
   int DOCUMENT_ROOT__RELATION = 9;
 
   /**
-	 * The feature id for the '<em><b>Contributor</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
+   * The feature id for the '<em><b>Contributor</b></em>' containment reference.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+   * @generated
+   * @ordered
+   */
   int DOCUMENT_ROOT__CONTRIBUTOR = 10;
 
   /**
-	 * The feature id for the '<em><b>Coverage</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
+   * The feature id for the '<em><b>Coverage</b></em>' containment reference.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+   * @generated
+   * @ordered
+   */
   int DOCUMENT_ROOT__COVERAGE = 11;
 
   /**
-	 * The feature id for the '<em><b>Creator</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
+   * The feature id for the '<em><b>Creator</b></em>' containment reference.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+   * @generated
+   * @ordered
+   */
   int DOCUMENT_ROOT__CREATOR = 12;
 
   /**
-	 * The feature id for the '<em><b>Format</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
+   * The feature id for the '<em><b>Format</b></em>' containment reference.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+   * @generated
+   * @ordered
+   */
   int DOCUMENT_ROOT__FORMAT = 13;
 
   /**
-	 * The feature id for the '<em><b>Language</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
+   * The feature id for the '<em><b>Language</b></em>' containment reference.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+   * @generated
+   * @ordered
+   */
   int DOCUMENT_ROOT__LANGUAGE = 14;
 
   /**
-	 * The feature id for the '<em><b>Publisher</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
+   * The feature id for the '<em><b>Publisher</b></em>' containment reference.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+   * @generated
+   * @ordered
+   */
   int DOCUMENT_ROOT__PUBLISHER = 15;
 
   /**
-	 * The feature id for the '<em><b>Source</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
+   * The feature id for the '<em><b>Source</b></em>' containment reference.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+   * @generated
+   * @ordered
+   */
   int DOCUMENT_ROOT__SOURCE = 16;
 
   /**
-	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
+   * The feature id for the '<em><b>Subject</b></em>' containment reference.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+   * @generated
+   * @ordered
+   */
   int DOCUMENT_ROOT__SUBJECT = 17;
 
   /**
-	 * The feature id for the '<em><b>Type</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
+   * The feature id for the '<em><b>Type</b></em>' containment reference.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+   * @generated
+   * @ordered
+   */
   int DOCUMENT_ROOT__TYPE = 18;
 
   /**
-	 * The number of structural features of the '<em>Document Root</em>' class.
-	 * <!-- begin-user-doc -->
+   * The number of structural features of the '<em>Document Root</em>' class.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+   * @generated
+   * @ordered
+   */
   int DOCUMENT_ROOT_FEATURE_COUNT = 19;
 
   /**
-	 * The number of operations of the '<em>Document Root</em>' class.
-	 * <!-- begin-user-doc -->
+   * The number of operations of the '<em>Document Root</em>' class.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+   * @generated
+   * @ordered
+   */
   int DOCUMENT_ROOT_OPERATION_COUNT = 0;
 
 
   /**
-	 * Returns the meta object for class '{@link org.purl.dc.elements._1._1.ElementContainer <em>Element Container</em>}'.
-	 * <!-- begin-user-doc -->
+   * Returns the meta object for class '{@link org.purl.dc.elements._1._1.ElementContainer <em>Element Container</em>}'.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Element Container</em>'.
-	 * @see org.purl.dc.elements._1._1.ElementContainer
-	 * @generated
-	 */
+   * @return the meta object for class '<em>Element Container</em>'.
+   * @see org.purl.dc.elements._1._1.ElementContainer
+   * @generated
+   */
   EClass getElementContainer();
 
   /**
-	 * Returns the meta object for the attribute list '{@link org.purl.dc.elements._1._1.ElementContainer#getGroup <em>Group</em>}'.
-	 * <!-- begin-user-doc -->
+   * Returns the meta object for the attribute list '{@link org.purl.dc.elements._1._1.ElementContainer#getGroup <em>Group</em>}'.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @return the meta object for the attribute list '<em>Group</em>'.
-	 * @see org.purl.dc.elements._1._1.ElementContainer#getGroup()
-	 * @see #getElementContainer()
-	 * @generated
-	 */
+   * @return the meta object for the attribute list '<em>Group</em>'.
+   * @see org.purl.dc.elements._1._1.ElementContainer#getGroup()
+   * @see #getElementContainer()
+   * @generated
+   */
   EAttribute getElementContainer_Group();
 
   /**
-	 * Returns the meta object for the attribute list '{@link org.purl.dc.elements._1._1.ElementContainer#getAnyGroup <em>Any Group</em>}'.
-	 * <!-- begin-user-doc -->
+   * Returns the meta object for the attribute list '{@link org.purl.dc.elements._1._1.ElementContainer#getAnyGroup <em>Any Group</em>}'.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @return the meta object for the attribute list '<em>Any Group</em>'.
-	 * @see org.purl.dc.elements._1._1.ElementContainer#getAnyGroup()
-	 * @see #getElementContainer()
-	 * @generated
-	 */
+   * @return the meta object for the attribute list '<em>Any Group</em>'.
+   * @see org.purl.dc.elements._1._1.ElementContainer#getAnyGroup()
+   * @see #getElementContainer()
+   * @generated
+   */
   EAttribute getElementContainer_AnyGroup();
 
   /**
-	 * Returns the meta object for the containment reference list '{@link org.purl.dc.elements._1._1.ElementContainer#getAny <em>Any</em>}'.
-	 * <!-- begin-user-doc -->
+   * Returns the meta object for the containment reference list '{@link org.purl.dc.elements._1._1.ElementContainer#getAny <em>Any</em>}'.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Any</em>'.
-	 * @see org.purl.dc.elements._1._1.ElementContainer#getAny()
-	 * @see #getElementContainer()
-	 * @generated
-	 */
+   * @return the meta object for the containment reference list '<em>Any</em>'.
+   * @see org.purl.dc.elements._1._1.ElementContainer#getAny()
+   * @see #getElementContainer()
+   * @generated
+   */
   EReference getElementContainer_Any();
 
   /**
-	 * Returns the meta object for class '{@link org.purl.dc.elements._1._1.SimpleLiteral <em>Simple Literal</em>}'.
-	 * <!-- begin-user-doc -->
+   * Returns the meta object for class '{@link org.purl.dc.elements._1._1.SimpleLiteral <em>Simple Literal</em>}'.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Simple Literal</em>'.
-	 * @see org.purl.dc.elements._1._1.SimpleLiteral
-	 * @generated
-	 */
+   * @return the meta object for class '<em>Simple Literal</em>'.
+   * @see org.purl.dc.elements._1._1.SimpleLiteral
+   * @generated
+   */
   EClass getSimpleLiteral();
 
   /**
-	 * Returns the meta object for the attribute list '{@link org.purl.dc.elements._1._1.SimpleLiteral#getMixed <em>Mixed</em>}'.
-	 * <!-- begin-user-doc -->
+   * Returns the meta object for the attribute list '{@link org.purl.dc.elements._1._1.SimpleLiteral#getMixed <em>Mixed</em>}'.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @return the meta object for the attribute list '<em>Mixed</em>'.
-	 * @see org.purl.dc.elements._1._1.SimpleLiteral#getMixed()
-	 * @see #getSimpleLiteral()
-	 * @generated
-	 */
+   * @return the meta object for the attribute list '<em>Mixed</em>'.
+   * @see org.purl.dc.elements._1._1.SimpleLiteral#getMixed()
+   * @see #getSimpleLiteral()
+   * @generated
+   */
   EAttribute getSimpleLiteral_Mixed();
 
   /**
-	 * Returns the meta object for the attribute '{@link org.purl.dc.elements._1._1.SimpleLiteral#getLang <em>Lang</em>}'.
-	 * <!-- begin-user-doc -->
+   * Returns the meta object for the attribute '{@link org.purl.dc.elements._1._1.SimpleLiteral#getLang <em>Lang</em>}'.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Lang</em>'.
-	 * @see org.purl.dc.elements._1._1.SimpleLiteral#getLang()
-	 * @see #getSimpleLiteral()
-	 * @generated
-	 */
+   * @return the meta object for the attribute '<em>Lang</em>'.
+   * @see org.purl.dc.elements._1._1.SimpleLiteral#getLang()
+   * @see #getSimpleLiteral()
+   * @generated
+   */
   EAttribute getSimpleLiteral_Lang();
 
   /**
-	 * Returns the meta object for class '{@link org.purl.dc.elements._1._1.DocumentRoot <em>Document Root</em>}'.
-	 * <!-- begin-user-doc -->
+   * Returns the meta object for class '{@link org.purl.dc.elements._1._1.DocumentRoot <em>Document Root</em>}'.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Document Root</em>'.
-	 * @see org.purl.dc.elements._1._1.DocumentRoot
-	 * @generated
-	 */
+   * @return the meta object for class '<em>Document Root</em>'.
+   * @see org.purl.dc.elements._1._1.DocumentRoot
+   * @generated
+   */
   EClass getDocumentRoot();
 
   /**
-	 * Returns the meta object for the attribute list '{@link org.purl.dc.elements._1._1.DocumentRoot#getMixed <em>Mixed</em>}'.
-	 * <!-- begin-user-doc -->
+   * Returns the meta object for the attribute list '{@link org.purl.dc.elements._1._1.DocumentRoot#getMixed <em>Mixed</em>}'.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @return the meta object for the attribute list '<em>Mixed</em>'.
-	 * @see org.purl.dc.elements._1._1.DocumentRoot#getMixed()
-	 * @see #getDocumentRoot()
-	 * @generated
-	 */
+   * @return the meta object for the attribute list '<em>Mixed</em>'.
+   * @see org.purl.dc.elements._1._1.DocumentRoot#getMixed()
+   * @see #getDocumentRoot()
+   * @generated
+   */
   EAttribute getDocumentRoot_Mixed();
 
   /**
-	 * Returns the meta object for the map '{@link org.purl.dc.elements._1._1.DocumentRoot#getXMLNSPrefixMap <em>XMLNS Prefix Map</em>}'.
-	 * <!-- begin-user-doc -->
+   * Returns the meta object for the map '{@link org.purl.dc.elements._1._1.DocumentRoot#getXMLNSPrefixMap <em>XMLNS Prefix Map</em>}'.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @return the meta object for the map '<em>XMLNS Prefix Map</em>'.
-	 * @see org.purl.dc.elements._1._1.DocumentRoot#getXMLNSPrefixMap()
-	 * @see #getDocumentRoot()
-	 * @generated
-	 */
+   * @return the meta object for the map '<em>XMLNS Prefix Map</em>'.
+   * @see org.purl.dc.elements._1._1.DocumentRoot#getXMLNSPrefixMap()
+   * @see #getDocumentRoot()
+   * @generated
+   */
   EReference getDocumentRoot_XMLNSPrefixMap();
 
   /**
-	 * Returns the meta object for the map '{@link org.purl.dc.elements._1._1.DocumentRoot#getXSISchemaLocation <em>XSI Schema Location</em>}'.
-	 * <!-- begin-user-doc -->
+   * Returns the meta object for the map '{@link org.purl.dc.elements._1._1.DocumentRoot#getXSISchemaLocation <em>XSI Schema Location</em>}'.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @return the meta object for the map '<em>XSI Schema Location</em>'.
-	 * @see org.purl.dc.elements._1._1.DocumentRoot#getXSISchemaLocation()
-	 * @see #getDocumentRoot()
-	 * @generated
-	 */
+   * @return the meta object for the map '<em>XSI Schema Location</em>'.
+   * @see org.purl.dc.elements._1._1.DocumentRoot#getXSISchemaLocation()
+   * @see #getDocumentRoot()
+   * @generated
+   */
   EReference getDocumentRoot_XSISchemaLocation();
 
   /**
-	 * Returns the meta object for the containment reference '{@link org.purl.dc.elements._1._1.DocumentRoot#getDescription <em>Description</em>}'.
-	 * <!-- begin-user-doc -->
+   * Returns the meta object for the containment reference '{@link org.purl.dc.elements._1._1.DocumentRoot#getDescription <em>Description</em>}'.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Description</em>'.
-	 * @see org.purl.dc.elements._1._1.DocumentRoot#getDescription()
-	 * @see #getDocumentRoot()
-	 * @generated
-	 */
+   * @return the meta object for the containment reference '<em>Description</em>'.
+   * @see org.purl.dc.elements._1._1.DocumentRoot#getDescription()
+   * @see #getDocumentRoot()
+   * @generated
+   */
   EReference getDocumentRoot_Description();
 
   /**
-	 * Returns the meta object for the containment reference '{@link org.purl.dc.elements._1._1.DocumentRoot#getAny <em>Any</em>}'.
-	 * <!-- begin-user-doc -->
+   * Returns the meta object for the containment reference '{@link org.purl.dc.elements._1._1.DocumentRoot#getAny <em>Any</em>}'.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Any</em>'.
-	 * @see org.purl.dc.elements._1._1.DocumentRoot#getAny()
-	 * @see #getDocumentRoot()
-	 * @generated
-	 */
+   * @return the meta object for the containment reference '<em>Any</em>'.
+   * @see org.purl.dc.elements._1._1.DocumentRoot#getAny()
+   * @see #getDocumentRoot()
+   * @generated
+   */
   EReference getDocumentRoot_Any();
 
   /**
-	 * Returns the meta object for the containment reference '{@link org.purl.dc.elements._1._1.DocumentRoot#getRights <em>Rights</em>}'.
-	 * <!-- begin-user-doc -->
+   * Returns the meta object for the containment reference '{@link org.purl.dc.elements._1._1.DocumentRoot#getRights <em>Rights</em>}'.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Rights</em>'.
-	 * @see org.purl.dc.elements._1._1.DocumentRoot#getRights()
-	 * @see #getDocumentRoot()
-	 * @generated
-	 */
+   * @return the meta object for the containment reference '<em>Rights</em>'.
+   * @see org.purl.dc.elements._1._1.DocumentRoot#getRights()
+   * @see #getDocumentRoot()
+   * @generated
+   */
   EReference getDocumentRoot_Rights();
 
   /**
-	 * Returns the meta object for the containment reference '{@link org.purl.dc.elements._1._1.DocumentRoot#getTitle <em>Title</em>}'.
-	 * <!-- begin-user-doc -->
+   * Returns the meta object for the containment reference '{@link org.purl.dc.elements._1._1.DocumentRoot#getTitle <em>Title</em>}'.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Title</em>'.
-	 * @see org.purl.dc.elements._1._1.DocumentRoot#getTitle()
-	 * @see #getDocumentRoot()
-	 * @generated
-	 */
+   * @return the meta object for the containment reference '<em>Title</em>'.
+   * @see org.purl.dc.elements._1._1.DocumentRoot#getTitle()
+   * @see #getDocumentRoot()
+   * @generated
+   */
   EReference getDocumentRoot_Title();
 
   /**
-	 * Returns the meta object for the containment reference '{@link org.purl.dc.elements._1._1.DocumentRoot#getDate <em>Date</em>}'.
-	 * <!-- begin-user-doc -->
+   * Returns the meta object for the containment reference '{@link org.purl.dc.elements._1._1.DocumentRoot#getDate <em>Date</em>}'.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Date</em>'.
-	 * @see org.purl.dc.elements._1._1.DocumentRoot#getDate()
-	 * @see #getDocumentRoot()
-	 * @generated
-	 */
+   * @return the meta object for the containment reference '<em>Date</em>'.
+   * @see org.purl.dc.elements._1._1.DocumentRoot#getDate()
+   * @see #getDocumentRoot()
+   * @generated
+   */
   EReference getDocumentRoot_Date();
 
   /**
-	 * Returns the meta object for the containment reference '{@link org.purl.dc.elements._1._1.DocumentRoot#getIdentifier <em>Identifier</em>}'.
-	 * <!-- begin-user-doc -->
+   * Returns the meta object for the containment reference '{@link org.purl.dc.elements._1._1.DocumentRoot#getIdentifier <em>Identifier</em>}'.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Identifier</em>'.
-	 * @see org.purl.dc.elements._1._1.DocumentRoot#getIdentifier()
-	 * @see #getDocumentRoot()
-	 * @generated
-	 */
+   * @return the meta object for the containment reference '<em>Identifier</em>'.
+   * @see org.purl.dc.elements._1._1.DocumentRoot#getIdentifier()
+   * @see #getDocumentRoot()
+   * @generated
+   */
   EReference getDocumentRoot_Identifier();
 
   /**
-	 * Returns the meta object for the containment reference '{@link org.purl.dc.elements._1._1.DocumentRoot#getRelation <em>Relation</em>}'.
-	 * <!-- begin-user-doc -->
+   * Returns the meta object for the containment reference '{@link org.purl.dc.elements._1._1.DocumentRoot#getRelation <em>Relation</em>}'.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Relation</em>'.
-	 * @see org.purl.dc.elements._1._1.DocumentRoot#getRelation()
-	 * @see #getDocumentRoot()
-	 * @generated
-	 */
+   * @return the meta object for the containment reference '<em>Relation</em>'.
+   * @see org.purl.dc.elements._1._1.DocumentRoot#getRelation()
+   * @see #getDocumentRoot()
+   * @generated
+   */
   EReference getDocumentRoot_Relation();
 
   /**
-	 * Returns the meta object for the containment reference '{@link org.purl.dc.elements._1._1.DocumentRoot#getContributor <em>Contributor</em>}'.
-	 * <!-- begin-user-doc -->
+   * Returns the meta object for the containment reference '{@link org.purl.dc.elements._1._1.DocumentRoot#getContributor <em>Contributor</em>}'.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Contributor</em>'.
-	 * @see org.purl.dc.elements._1._1.DocumentRoot#getContributor()
-	 * @see #getDocumentRoot()
-	 * @generated
-	 */
+   * @return the meta object for the containment reference '<em>Contributor</em>'.
+   * @see org.purl.dc.elements._1._1.DocumentRoot#getContributor()
+   * @see #getDocumentRoot()
+   * @generated
+   */
   EReference getDocumentRoot_Contributor();
 
   /**
-	 * Returns the meta object for the containment reference '{@link org.purl.dc.elements._1._1.DocumentRoot#getCoverage <em>Coverage</em>}'.
-	 * <!-- begin-user-doc -->
+   * Returns the meta object for the containment reference '{@link org.purl.dc.elements._1._1.DocumentRoot#getCoverage <em>Coverage</em>}'.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Coverage</em>'.
-	 * @see org.purl.dc.elements._1._1.DocumentRoot#getCoverage()
-	 * @see #getDocumentRoot()
-	 * @generated
-	 */
+   * @return the meta object for the containment reference '<em>Coverage</em>'.
+   * @see org.purl.dc.elements._1._1.DocumentRoot#getCoverage()
+   * @see #getDocumentRoot()
+   * @generated
+   */
   EReference getDocumentRoot_Coverage();
 
   /**
-	 * Returns the meta object for the containment reference '{@link org.purl.dc.elements._1._1.DocumentRoot#getCreator <em>Creator</em>}'.
-	 * <!-- begin-user-doc -->
+   * Returns the meta object for the containment reference '{@link org.purl.dc.elements._1._1.DocumentRoot#getCreator <em>Creator</em>}'.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Creator</em>'.
-	 * @see org.purl.dc.elements._1._1.DocumentRoot#getCreator()
-	 * @see #getDocumentRoot()
-	 * @generated
-	 */
+   * @return the meta object for the containment reference '<em>Creator</em>'.
+   * @see org.purl.dc.elements._1._1.DocumentRoot#getCreator()
+   * @see #getDocumentRoot()
+   * @generated
+   */
   EReference getDocumentRoot_Creator();
 
   /**
-	 * Returns the meta object for the containment reference '{@link org.purl.dc.elements._1._1.DocumentRoot#getFormat <em>Format</em>}'.
-	 * <!-- begin-user-doc -->
+   * Returns the meta object for the containment reference '{@link org.purl.dc.elements._1._1.DocumentRoot#getFormat <em>Format</em>}'.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Format</em>'.
-	 * @see org.purl.dc.elements._1._1.DocumentRoot#getFormat()
-	 * @see #getDocumentRoot()
-	 * @generated
-	 */
+   * @return the meta object for the containment reference '<em>Format</em>'.
+   * @see org.purl.dc.elements._1._1.DocumentRoot#getFormat()
+   * @see #getDocumentRoot()
+   * @generated
+   */
   EReference getDocumentRoot_Format();
 
   /**
-	 * Returns the meta object for the containment reference '{@link org.purl.dc.elements._1._1.DocumentRoot#getLanguage <em>Language</em>}'.
-	 * <!-- begin-user-doc -->
+   * Returns the meta object for the containment reference '{@link org.purl.dc.elements._1._1.DocumentRoot#getLanguage <em>Language</em>}'.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Language</em>'.
-	 * @see org.purl.dc.elements._1._1.DocumentRoot#getLanguage()
-	 * @see #getDocumentRoot()
-	 * @generated
-	 */
+   * @return the meta object for the containment reference '<em>Language</em>'.
+   * @see org.purl.dc.elements._1._1.DocumentRoot#getLanguage()
+   * @see #getDocumentRoot()
+   * @generated
+   */
   EReference getDocumentRoot_Language();
 
   /**
-	 * Returns the meta object for the containment reference '{@link org.purl.dc.elements._1._1.DocumentRoot#getPublisher <em>Publisher</em>}'.
-	 * <!-- begin-user-doc -->
+   * Returns the meta object for the containment reference '{@link org.purl.dc.elements._1._1.DocumentRoot#getPublisher <em>Publisher</em>}'.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Publisher</em>'.
-	 * @see org.purl.dc.elements._1._1.DocumentRoot#getPublisher()
-	 * @see #getDocumentRoot()
-	 * @generated
-	 */
+   * @return the meta object for the containment reference '<em>Publisher</em>'.
+   * @see org.purl.dc.elements._1._1.DocumentRoot#getPublisher()
+   * @see #getDocumentRoot()
+   * @generated
+   */
   EReference getDocumentRoot_Publisher();
 
   /**
-	 * Returns the meta object for the containment reference '{@link org.purl.dc.elements._1._1.DocumentRoot#getSource <em>Source</em>}'.
-	 * <!-- begin-user-doc -->
+   * Returns the meta object for the containment reference '{@link org.purl.dc.elements._1._1.DocumentRoot#getSource <em>Source</em>}'.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Source</em>'.
-	 * @see org.purl.dc.elements._1._1.DocumentRoot#getSource()
-	 * @see #getDocumentRoot()
-	 * @generated
-	 */
+   * @return the meta object for the containment reference '<em>Source</em>'.
+   * @see org.purl.dc.elements._1._1.DocumentRoot#getSource()
+   * @see #getDocumentRoot()
+   * @generated
+   */
   EReference getDocumentRoot_Source();
 
   /**
-	 * Returns the meta object for the containment reference '{@link org.purl.dc.elements._1._1.DocumentRoot#getSubject <em>Subject</em>}'.
-	 * <!-- begin-user-doc -->
+   * Returns the meta object for the containment reference '{@link org.purl.dc.elements._1._1.DocumentRoot#getSubject <em>Subject</em>}'.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Subject</em>'.
-	 * @see org.purl.dc.elements._1._1.DocumentRoot#getSubject()
-	 * @see #getDocumentRoot()
-	 * @generated
-	 */
+   * @return the meta object for the containment reference '<em>Subject</em>'.
+   * @see org.purl.dc.elements._1._1.DocumentRoot#getSubject()
+   * @see #getDocumentRoot()
+   * @generated
+   */
   EReference getDocumentRoot_Subject();
 
   /**
-	 * Returns the meta object for the containment reference '{@link org.purl.dc.elements._1._1.DocumentRoot#getType <em>Type</em>}'.
-	 * <!-- begin-user-doc -->
+   * Returns the meta object for the containment reference '{@link org.purl.dc.elements._1._1.DocumentRoot#getType <em>Type</em>}'.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Type</em>'.
-	 * @see org.purl.dc.elements._1._1.DocumentRoot#getType()
-	 * @see #getDocumentRoot()
-	 * @generated
-	 */
+   * @return the meta object for the containment reference '<em>Type</em>'.
+   * @see org.purl.dc.elements._1._1.DocumentRoot#getType()
+   * @see #getDocumentRoot()
+   * @generated
+   */
   EReference getDocumentRoot_Type();
 
   /**
-	 * Returns the factory that creates the instances of the model.
-	 * <!-- begin-user-doc -->
+   * Returns the factory that creates the instances of the model.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @return the factory that creates the instances of the model.
-	 * @generated
-	 */
+   * @return the factory that creates the instances of the model.
+   * @generated
+   */
   _1Factory get_1Factory();
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * Defines literals for the meta objects that represent
    * <ul>
    *   <li>each class,</li>
@@ -775,229 +775,229 @@ public interface _1Package extends EPackage {
    *   <li>and each data type</li>
    * </ul>
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   interface Literals {
     /**
-		 * The meta object literal for the '{@link org.purl.dc.elements._1._1.impl.ElementContainerImpl <em>Element Container</em>}' class.
-		 * <!-- begin-user-doc -->
+     * The meta object literal for the '{@link org.purl.dc.elements._1._1.impl.ElementContainerImpl <em>Element Container</em>}' class.
+     * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-		 * @see org.purl.dc.elements._1._1.impl.ElementContainerImpl
-		 * @see org.purl.dc.elements._1._1.impl._1PackageImpl#getElementContainer()
-		 * @generated
-		 */
+     * @see org.purl.dc.elements._1._1.impl.ElementContainerImpl
+     * @see org.purl.dc.elements._1._1.impl._1PackageImpl#getElementContainer()
+     * @generated
+     */
     EClass ELEMENT_CONTAINER = eINSTANCE.getElementContainer();
 
     /**
-		 * The meta object literal for the '<em><b>Group</b></em>' attribute list feature.
-		 * <!-- begin-user-doc -->
+     * The meta object literal for the '<em><b>Group</b></em>' attribute list feature.
+     * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-		 * @generated
-		 */
+     * @generated
+     */
     EAttribute ELEMENT_CONTAINER__GROUP = eINSTANCE.getElementContainer_Group();
 
     /**
-		 * The meta object literal for the '<em><b>Any Group</b></em>' attribute list feature.
-		 * <!-- begin-user-doc -->
+     * The meta object literal for the '<em><b>Any Group</b></em>' attribute list feature.
+     * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-		 * @generated
-		 */
+     * @generated
+     */
     EAttribute ELEMENT_CONTAINER__ANY_GROUP = eINSTANCE.getElementContainer_AnyGroup();
 
     /**
-		 * The meta object literal for the '<em><b>Any</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
+     * The meta object literal for the '<em><b>Any</b></em>' containment reference list feature.
+     * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-		 * @generated
-		 */
+     * @generated
+     */
     EReference ELEMENT_CONTAINER__ANY = eINSTANCE.getElementContainer_Any();
 
     /**
-		 * The meta object literal for the '{@link org.purl.dc.elements._1._1.impl.SimpleLiteralImpl <em>Simple Literal</em>}' class.
-		 * <!-- begin-user-doc -->
+     * The meta object literal for the '{@link org.purl.dc.elements._1._1.impl.SimpleLiteralImpl <em>Simple Literal</em>}' class.
+     * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-		 * @see org.purl.dc.elements._1._1.impl.SimpleLiteralImpl
-		 * @see org.purl.dc.elements._1._1.impl._1PackageImpl#getSimpleLiteral()
-		 * @generated
-		 */
+     * @see org.purl.dc.elements._1._1.impl.SimpleLiteralImpl
+     * @see org.purl.dc.elements._1._1.impl._1PackageImpl#getSimpleLiteral()
+     * @generated
+     */
     EClass SIMPLE_LITERAL = eINSTANCE.getSimpleLiteral();
 
     /**
-		 * The meta object literal for the '<em><b>Mixed</b></em>' attribute list feature.
-		 * <!-- begin-user-doc -->
+     * The meta object literal for the '<em><b>Mixed</b></em>' attribute list feature.
+     * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-		 * @generated
-		 */
+     * @generated
+     */
     EAttribute SIMPLE_LITERAL__MIXED = eINSTANCE.getSimpleLiteral_Mixed();
 
     /**
-		 * The meta object literal for the '<em><b>Lang</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
+     * The meta object literal for the '<em><b>Lang</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-		 * @generated
-		 */
+     * @generated
+     */
     EAttribute SIMPLE_LITERAL__LANG = eINSTANCE.getSimpleLiteral_Lang();
 
     /**
-		 * The meta object literal for the '{@link org.purl.dc.elements._1._1.impl.DocumentRootImpl <em>Document Root</em>}' class.
-		 * <!-- begin-user-doc -->
+     * The meta object literal for the '{@link org.purl.dc.elements._1._1.impl.DocumentRootImpl <em>Document Root</em>}' class.
+     * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-		 * @see org.purl.dc.elements._1._1.impl.DocumentRootImpl
-		 * @see org.purl.dc.elements._1._1.impl._1PackageImpl#getDocumentRoot()
-		 * @generated
-		 */
+     * @see org.purl.dc.elements._1._1.impl.DocumentRootImpl
+     * @see org.purl.dc.elements._1._1.impl._1PackageImpl#getDocumentRoot()
+     * @generated
+     */
     EClass DOCUMENT_ROOT = eINSTANCE.getDocumentRoot();
 
     /**
-		 * The meta object literal for the '<em><b>Mixed</b></em>' attribute list feature.
-		 * <!-- begin-user-doc -->
+     * The meta object literal for the '<em><b>Mixed</b></em>' attribute list feature.
+     * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-		 * @generated
-		 */
+     * @generated
+     */
     EAttribute DOCUMENT_ROOT__MIXED = eINSTANCE.getDocumentRoot_Mixed();
 
     /**
-		 * The meta object literal for the '<em><b>XMLNS Prefix Map</b></em>' map feature.
-		 * <!-- begin-user-doc -->
+     * The meta object literal for the '<em><b>XMLNS Prefix Map</b></em>' map feature.
+     * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-		 * @generated
-		 */
+     * @generated
+     */
     EReference DOCUMENT_ROOT__XMLNS_PREFIX_MAP = eINSTANCE.getDocumentRoot_XMLNSPrefixMap();
 
     /**
-		 * The meta object literal for the '<em><b>XSI Schema Location</b></em>' map feature.
-		 * <!-- begin-user-doc -->
+     * The meta object literal for the '<em><b>XSI Schema Location</b></em>' map feature.
+     * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-		 * @generated
-		 */
+     * @generated
+     */
     EReference DOCUMENT_ROOT__XSI_SCHEMA_LOCATION = eINSTANCE.getDocumentRoot_XSISchemaLocation();
 
     /**
-		 * The meta object literal for the '<em><b>Description</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
+     * The meta object literal for the '<em><b>Description</b></em>' containment reference feature.
+     * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-		 * @generated
-		 */
+     * @generated
+     */
     EReference DOCUMENT_ROOT__DESCRIPTION = eINSTANCE.getDocumentRoot_Description();
 
     /**
-		 * The meta object literal for the '<em><b>Any</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
+     * The meta object literal for the '<em><b>Any</b></em>' containment reference feature.
+     * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-		 * @generated
-		 */
+     * @generated
+     */
     EReference DOCUMENT_ROOT__ANY = eINSTANCE.getDocumentRoot_Any();
 
     /**
-		 * The meta object literal for the '<em><b>Rights</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
+     * The meta object literal for the '<em><b>Rights</b></em>' containment reference feature.
+     * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-		 * @generated
-		 */
+     * @generated
+     */
     EReference DOCUMENT_ROOT__RIGHTS = eINSTANCE.getDocumentRoot_Rights();
 
     /**
-		 * The meta object literal for the '<em><b>Title</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
+     * The meta object literal for the '<em><b>Title</b></em>' containment reference feature.
+     * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-		 * @generated
-		 */
+     * @generated
+     */
     EReference DOCUMENT_ROOT__TITLE = eINSTANCE.getDocumentRoot_Title();
 
     /**
-		 * The meta object literal for the '<em><b>Date</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
+     * The meta object literal for the '<em><b>Date</b></em>' containment reference feature.
+     * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-		 * @generated
-		 */
+     * @generated
+     */
     EReference DOCUMENT_ROOT__DATE = eINSTANCE.getDocumentRoot_Date();
 
     /**
-		 * The meta object literal for the '<em><b>Identifier</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
+     * The meta object literal for the '<em><b>Identifier</b></em>' containment reference feature.
+     * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-		 * @generated
-		 */
+     * @generated
+     */
     EReference DOCUMENT_ROOT__IDENTIFIER = eINSTANCE.getDocumentRoot_Identifier();
 
     /**
-		 * The meta object literal for the '<em><b>Relation</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
+     * The meta object literal for the '<em><b>Relation</b></em>' containment reference feature.
+     * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-		 * @generated
-		 */
+     * @generated
+     */
     EReference DOCUMENT_ROOT__RELATION = eINSTANCE.getDocumentRoot_Relation();
 
     /**
-		 * The meta object literal for the '<em><b>Contributor</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
+     * The meta object literal for the '<em><b>Contributor</b></em>' containment reference feature.
+     * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-		 * @generated
-		 */
+     * @generated
+     */
     EReference DOCUMENT_ROOT__CONTRIBUTOR = eINSTANCE.getDocumentRoot_Contributor();
 
     /**
-		 * The meta object literal for the '<em><b>Coverage</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
+     * The meta object literal for the '<em><b>Coverage</b></em>' containment reference feature.
+     * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-		 * @generated
-		 */
+     * @generated
+     */
     EReference DOCUMENT_ROOT__COVERAGE = eINSTANCE.getDocumentRoot_Coverage();
 
     /**
-		 * The meta object literal for the '<em><b>Creator</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
+     * The meta object literal for the '<em><b>Creator</b></em>' containment reference feature.
+     * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-		 * @generated
-		 */
+     * @generated
+     */
     EReference DOCUMENT_ROOT__CREATOR = eINSTANCE.getDocumentRoot_Creator();
 
     /**
-		 * The meta object literal for the '<em><b>Format</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
+     * The meta object literal for the '<em><b>Format</b></em>' containment reference feature.
+     * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-		 * @generated
-		 */
+     * @generated
+     */
     EReference DOCUMENT_ROOT__FORMAT = eINSTANCE.getDocumentRoot_Format();
 
     /**
-		 * The meta object literal for the '<em><b>Language</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
+     * The meta object literal for the '<em><b>Language</b></em>' containment reference feature.
+     * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-		 * @generated
-		 */
+     * @generated
+     */
     EReference DOCUMENT_ROOT__LANGUAGE = eINSTANCE.getDocumentRoot_Language();
 
     /**
-		 * The meta object literal for the '<em><b>Publisher</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
+     * The meta object literal for the '<em><b>Publisher</b></em>' containment reference feature.
+     * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-		 * @generated
-		 */
+     * @generated
+     */
     EReference DOCUMENT_ROOT__PUBLISHER = eINSTANCE.getDocumentRoot_Publisher();
 
     /**
-		 * The meta object literal for the '<em><b>Source</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
+     * The meta object literal for the '<em><b>Source</b></em>' containment reference feature.
+     * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-		 * @generated
-		 */
+     * @generated
+     */
     EReference DOCUMENT_ROOT__SOURCE = eINSTANCE.getDocumentRoot_Source();
 
     /**
-		 * The meta object literal for the '<em><b>Subject</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
+     * The meta object literal for the '<em><b>Subject</b></em>' containment reference feature.
+     * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-		 * @generated
-		 */
+     * @generated
+     */
     EReference DOCUMENT_ROOT__SUBJECT = eINSTANCE.getDocumentRoot_Subject();
 
     /**
-		 * The meta object literal for the '<em><b>Type</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
+     * The meta object literal for the '<em><b>Type</b></em>' containment reference feature.
+     * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-		 * @generated
-		 */
+     * @generated
+     */
     EReference DOCUMENT_ROOT__TYPE = eINSTANCE.getDocumentRoot_Type();
 
   }

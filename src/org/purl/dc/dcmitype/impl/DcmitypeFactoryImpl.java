@@ -189,6 +189,7 @@ public class DcmitypeFactoryImpl extends EFactoryImpl implements DcmitypeFactory
    * <!-- end-user-doc -->
    * @generated
    */
+  @Override
   public DcmitypePackage getDcmitypePackage() {
     return (DcmitypePackage)getEPackage();
   }

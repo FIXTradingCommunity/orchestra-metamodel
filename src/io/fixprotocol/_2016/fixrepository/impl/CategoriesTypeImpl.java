@@ -33,6 +33,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * </p>
  * <ul>
  *   <li>{@link io.fixprotocol._2016.fixrepository.impl.CategoriesTypeImpl#getCategory <em>Category</em>}</li>
+ *   <li>{@link io.fixprotocol._2016.fixrepository.impl.CategoriesTypeImpl#getBase <em>Base</em>}</li>
  *   <li>{@link io.fixprotocol._2016.fixrepository.impl.CategoriesTypeImpl#getLatestEP <em>Latest EP</em>}</li>
  * </ul>
  *
@@ -40,188 +41,243 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public class CategoriesTypeImpl extends MinimalEObjectImpl.Container implements CategoriesType {
   /**
-	 * The cached value of the '{@link #getCategory() <em>Category</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getCategory() <em>Category</em>}' containment reference list.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getCategory()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getCategory()
+   * @generated
+   * @ordered
+   */
   protected EList<CategoryType> category;
 
   /**
-	 * The default value of the '{@link #getLatestEP() <em>Latest EP</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getBase() <em>Base</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getLatestEP()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getBase()
+   * @generated
+   * @ordered
+   */
+  protected static final String BASE_EDEFAULT = null;
+
+  /**
+   * The cached value of the '{@link #getBase() <em>Base</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getBase()
+   * @generated
+   * @ordered
+   */
+  protected String base = BASE_EDEFAULT;
+
+  /**
+   * The default value of the '{@link #getLatestEP() <em>Latest EP</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getLatestEP()
+   * @generated
+   * @ordered
+   */
   protected static final BigInteger LATEST_EP_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getLatestEP() <em>Latest EP</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getLatestEP() <em>Latest EP</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getLatestEP()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getLatestEP()
+   * @generated
+   * @ordered
+   */
   protected BigInteger latestEP = LATEST_EP_EDEFAULT;
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected CategoriesTypeImpl() {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   protected EClass eStaticClass() {
-		return FixrepositoryPackage.eINSTANCE.getCategoriesType();
-	}
+    return FixrepositoryPackage.eINSTANCE.getCategoriesType();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
 		public EList<CategoryType> getCategory() {
-		if (category == null) {
-			category = new EObjectContainmentEList<CategoryType>(CategoryType.class, this, FixrepositoryPackage.CATEGORIES_TYPE__CATEGORY);
-		}
-		return category;
-	}
+    if (category == null) {
+      category = new EObjectContainmentEList<CategoryType>(CategoryType.class, this, FixrepositoryPackage.CATEGORIES_TYPE__CATEGORY);
+    }
+    return category;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
+  @Override
+  public String getBase() {
+    return base;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public void setBase(String newBase) {
+    String oldBase = base;
+    base = newBase;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, FixrepositoryPackage.CATEGORIES_TYPE__BASE, oldBase, base));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   @Override
 		public BigInteger getLatestEP() {
-		return latestEP;
-	}
+    return latestEP;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
 		public void setLatestEP(BigInteger newLatestEP) {
-		BigInteger oldLatestEP = latestEP;
-		latestEP = newLatestEP;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FixrepositoryPackage.CATEGORIES_TYPE__LATEST_EP, oldLatestEP, latestEP));
-	}
+    BigInteger oldLatestEP = latestEP;
+    latestEP = newLatestEP;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, FixrepositoryPackage.CATEGORIES_TYPE__LATEST_EP, oldLatestEP, latestEP));
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case FixrepositoryPackage.CATEGORIES_TYPE__CATEGORY:
-				return ((InternalEList<?>)getCategory()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
+    switch (featureID) {
+      case FixrepositoryPackage.CATEGORIES_TYPE__CATEGORY:
+        return ((InternalEList<?>)getCategory()).basicRemove(otherEnd, msgs);
+    }
+    return super.eInverseRemove(otherEnd, featureID, msgs);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case FixrepositoryPackage.CATEGORIES_TYPE__CATEGORY:
-				return getCategory();
-			case FixrepositoryPackage.CATEGORIES_TYPE__LATEST_EP:
-				return getLatestEP();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+    switch (featureID) {
+      case FixrepositoryPackage.CATEGORIES_TYPE__CATEGORY:
+        return getCategory();
+      case FixrepositoryPackage.CATEGORIES_TYPE__BASE:
+        return getBase();
+      case FixrepositoryPackage.CATEGORIES_TYPE__LATEST_EP:
+        return getLatestEP();
+    }
+    return super.eGet(featureID, resolve, coreType);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @SuppressWarnings("unchecked")
   @Override
   public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case FixrepositoryPackage.CATEGORIES_TYPE__CATEGORY:
-				getCategory().clear();
-				getCategory().addAll((Collection<? extends CategoryType>)newValue);
-				return;
-			case FixrepositoryPackage.CATEGORIES_TYPE__LATEST_EP:
-				setLatestEP((BigInteger)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+    switch (featureID) {
+      case FixrepositoryPackage.CATEGORIES_TYPE__CATEGORY:
+        getCategory().clear();
+        getCategory().addAll((Collection<? extends CategoryType>)newValue);
+        return;
+      case FixrepositoryPackage.CATEGORIES_TYPE__BASE:
+        setBase((String)newValue);
+        return;
+      case FixrepositoryPackage.CATEGORIES_TYPE__LATEST_EP:
+        setLatestEP((BigInteger)newValue);
+        return;
+    }
+    super.eSet(featureID, newValue);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public void eUnset(int featureID) {
-		switch (featureID) {
-			case FixrepositoryPackage.CATEGORIES_TYPE__CATEGORY:
-				getCategory().clear();
-				return;
-			case FixrepositoryPackage.CATEGORIES_TYPE__LATEST_EP:
-				setLatestEP(LATEST_EP_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+    switch (featureID) {
+      case FixrepositoryPackage.CATEGORIES_TYPE__CATEGORY:
+        getCategory().clear();
+        return;
+      case FixrepositoryPackage.CATEGORIES_TYPE__BASE:
+        setBase(BASE_EDEFAULT);
+        return;
+      case FixrepositoryPackage.CATEGORIES_TYPE__LATEST_EP:
+        setLatestEP(LATEST_EP_EDEFAULT);
+        return;
+    }
+    super.eUnset(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case FixrepositoryPackage.CATEGORIES_TYPE__CATEGORY:
-				return category != null && !category.isEmpty();
-			case FixrepositoryPackage.CATEGORIES_TYPE__LATEST_EP:
-				return LATEST_EP_EDEFAULT == null ? latestEP != null : !LATEST_EP_EDEFAULT.equals(latestEP);
-		}
-		return super.eIsSet(featureID);
-	}
+    switch (featureID) {
+      case FixrepositoryPackage.CATEGORIES_TYPE__CATEGORY:
+        return category != null && !category.isEmpty();
+      case FixrepositoryPackage.CATEGORIES_TYPE__BASE:
+        return BASE_EDEFAULT == null ? base != null : !BASE_EDEFAULT.equals(base);
+      case FixrepositoryPackage.CATEGORIES_TYPE__LATEST_EP:
+        return LATEST_EP_EDEFAULT == null ? latestEP != null : !LATEST_EP_EDEFAULT.equals(latestEP);
+    }
+    return super.eIsSet(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public String toString() {
-		if (eIsProxy()) return super.toString();
+    if (eIsProxy()) return super.toString();
 
-		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (latestEP: ");
-		result.append(latestEP);
-		result.append(')');
-		return result.toString();
-	}
+    StringBuilder result = new StringBuilder(super.toString());
+    result.append(" (base: ");
+    result.append(base);
+    result.append(", latestEP: ");
+    result.append(latestEP);
+    result.append(')');
+    return result.toString();
+  }
 
 } //CategoriesTypeImpl

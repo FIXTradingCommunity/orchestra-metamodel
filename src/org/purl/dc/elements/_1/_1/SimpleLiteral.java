@@ -39,47 +39,47 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  */
 public interface SimpleLiteral extends EObject {
   /**
-	 * Returns the value of the '<em><b>Mixed</b></em>' attribute list.
-	 * The list contents are of type {@link org.eclipse.emf.ecore.util.FeatureMap.Entry}.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Mixed</b></em>' attribute list.
+   * The list contents are of type {@link org.eclipse.emf.ecore.util.FeatureMap.Entry}.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Mixed</em>' attribute list isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Mixed</em>' attribute list.
-	 * @see org.purl.dc.elements._1._1._1Package#getSimpleLiteral_Mixed()
-	 * @model unique="false" dataType="org.eclipse.emf.ecore.EFeatureMapEntry" many="true"
-	 *        extendedMetaData="kind='elementWildcard' name=':mixed'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Mixed</em>' attribute list.
+   * @see org.purl.dc.elements._1._1._1Package#getSimpleLiteral_Mixed()
+   * @model unique="false" dataType="org.eclipse.emf.ecore.EFeatureMapEntry" many="true"
+   *        extendedMetaData="kind='elementWildcard' name=':mixed'"
+   * @generated
+   */
   FeatureMap getMixed();
 
   /**
-	 * Returns the value of the '<em><b>Lang</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Lang</b></em>' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * In due course, we should install the relevant ISO 2- and 3-letter
-	 *          codes as the enumerated possible values . . .
-	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>Lang</em>' attribute.
-	 * @see #setLang(String)
-	 * @see org.purl.dc.elements._1._1._1Package#getSimpleLiteral_Lang()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Language"
-	 *        extendedMetaData="kind='attribute' name='lang' namespace='http://www.w3.org/XML/1998/namespace'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * In due course, we should install the relevant ISO 2- and 3-letter
+   *          codes as the enumerated possible values . . .
+   * <!-- end-model-doc -->
+   * @return the value of the '<em>Lang</em>' attribute.
+   * @see #setLang(String)
+   * @see org.purl.dc.elements._1._1._1Package#getSimpleLiteral_Lang()
+   * @model dataType="org.eclipse.emf.ecore.xml.type.Language"
+   *        extendedMetaData="kind='attribute' name='lang' namespace='http://www.w3.org/XML/1998/namespace'"
+   * @generated
+   */
   String getLang();
 
   /**
-	 * Sets the value of the '{@link org.purl.dc.elements._1._1.SimpleLiteral#getLang <em>Lang</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.purl.dc.elements._1._1.SimpleLiteral#getLang <em>Lang</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Lang</em>' attribute.
-	 * @see #getLang()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Lang</em>' attribute.
+   * @see #getLang()
+   * @generated
+   */
   void setLang(String value);
 
 } // SimpleLiteral

@@ -30,194 +30,194 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  */
 public class IdentifierTypeImpl extends MinimalEObjectImpl.Container implements IdentifierType {
 	/**
-	 * The default value of the '{@link #getId() <em>Id</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getId() <em>Id</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getId()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getId()
+   * @generated
+   * @ordered
+   */
 	protected static final BigInteger ID_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getId() <em>Id</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getId() <em>Id</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getId()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getId()
+   * @generated
+   * @ordered
+   */
 	protected BigInteger id = ID_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getSourceId() <em>Source Id</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getSourceId() <em>Source Id</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getSourceId()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getSourceId()
+   * @generated
+   * @ordered
+   */
 	protected static final BigInteger SOURCE_ID_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getSourceId() <em>Source Id</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getSourceId() <em>Source Id</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getSourceId()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getSourceId()
+   * @generated
+   * @ordered
+   */
 	protected BigInteger sourceId = SOURCE_ID_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected IdentifierTypeImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return FixrepositoryPackage.eINSTANCE.getIdentifierType();
-	}
+    return FixrepositoryPackage.eINSTANCE.getIdentifierType();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public BigInteger getId() {
-		return id;
-	}
+    return id;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public void setId(BigInteger newId) {
-		BigInteger oldId = id;
-		id = newId;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FixrepositoryPackage.IDENTIFIER_TYPE__ID, oldId, id));
-	}
+    BigInteger oldId = id;
+    id = newId;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, FixrepositoryPackage.IDENTIFIER_TYPE__ID, oldId, id));
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public BigInteger getSourceId() {
-		return sourceId;
-	}
+    return sourceId;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public void setSourceId(BigInteger newSourceId) {
-		BigInteger oldSourceId = sourceId;
-		sourceId = newSourceId;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FixrepositoryPackage.IDENTIFIER_TYPE__SOURCE_ID, oldSourceId, sourceId));
-	}
+    BigInteger oldSourceId = sourceId;
+    sourceId = newSourceId;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, FixrepositoryPackage.IDENTIFIER_TYPE__SOURCE_ID, oldSourceId, sourceId));
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case FixrepositoryPackage.IDENTIFIER_TYPE__ID:
-				return getId();
-			case FixrepositoryPackage.IDENTIFIER_TYPE__SOURCE_ID:
-				return getSourceId();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+    switch (featureID) {
+      case FixrepositoryPackage.IDENTIFIER_TYPE__ID:
+        return getId();
+      case FixrepositoryPackage.IDENTIFIER_TYPE__SOURCE_ID:
+        return getSourceId();
+    }
+    return super.eGet(featureID, resolve, coreType);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case FixrepositoryPackage.IDENTIFIER_TYPE__ID:
-				setId((BigInteger)newValue);
-				return;
-			case FixrepositoryPackage.IDENTIFIER_TYPE__SOURCE_ID:
-				setSourceId((BigInteger)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+    switch (featureID) {
+      case FixrepositoryPackage.IDENTIFIER_TYPE__ID:
+        setId((BigInteger)newValue);
+        return;
+      case FixrepositoryPackage.IDENTIFIER_TYPE__SOURCE_ID:
+        setSourceId((BigInteger)newValue);
+        return;
+    }
+    super.eSet(featureID, newValue);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case FixrepositoryPackage.IDENTIFIER_TYPE__ID:
-				setId(ID_EDEFAULT);
-				return;
-			case FixrepositoryPackage.IDENTIFIER_TYPE__SOURCE_ID:
-				setSourceId(SOURCE_ID_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+    switch (featureID) {
+      case FixrepositoryPackage.IDENTIFIER_TYPE__ID:
+        setId(ID_EDEFAULT);
+        return;
+      case FixrepositoryPackage.IDENTIFIER_TYPE__SOURCE_ID:
+        setSourceId(SOURCE_ID_EDEFAULT);
+        return;
+    }
+    super.eUnset(featureID);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case FixrepositoryPackage.IDENTIFIER_TYPE__ID:
-				return ID_EDEFAULT == null ? id != null : !ID_EDEFAULT.equals(id);
-			case FixrepositoryPackage.IDENTIFIER_TYPE__SOURCE_ID:
-				return SOURCE_ID_EDEFAULT == null ? sourceId != null : !SOURCE_ID_EDEFAULT.equals(sourceId);
-		}
-		return super.eIsSet(featureID);
-	}
+    switch (featureID) {
+      case FixrepositoryPackage.IDENTIFIER_TYPE__ID:
+        return ID_EDEFAULT == null ? id != null : !ID_EDEFAULT.equals(id);
+      case FixrepositoryPackage.IDENTIFIER_TYPE__SOURCE_ID:
+        return SOURCE_ID_EDEFAULT == null ? sourceId != null : !SOURCE_ID_EDEFAULT.equals(sourceId);
+    }
+    return super.eIsSet(featureID);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+    if (eIsProxy()) return super.toString();
 
-		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (id: ");
-		result.append(id);
-		result.append(", sourceId: ");
-		result.append(sourceId);
-		result.append(')');
-		return result.toString();
-	}
+    StringBuilder result = new StringBuilder(super.toString());
+    result.append(" (id: ");
+    result.append(id);
+    result.append(", sourceId: ");
+    result.append(sourceId);
+    result.append(')');
+    return result.toString();
+  }
 
 } //IdentifierTypeImpl
