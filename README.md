@@ -8,7 +8,7 @@ The model was generated from the Orchestra XML schema by Eclipse Modeling Framew
 ### Source Schema
 The XML schema upon which this project is based is in project [fix-orchestra](https://github.com/FIXTradingCommunity/fix-orchestra). 
 
-The initial implementation was updated for Orchestra Version 1.0 Release Candidate 5.
+The current implementation is conformant to Orchestra Version 1.0 Technical Standard.
 
 ### Eclipse Modeling Project
 The only prerequisite to use this project is installation of Eclipse Modeling Framework and XML Schema plug-ins for Eclipse.
@@ -22,8 +22,17 @@ The model is in Ecore, an implementation of OMG's [Meta Object Facility](https:/
 > The Meta Object Facility (MOF) provides an open and platform-independent metadata management framework and associated
 set of metadata services to enable the development and interoperability of model and metadata driven systems.
 
+### Prerequisites
+To translate the Orchestra XML Schema to an ecore model, the following Eclipse plugins are required:
+
+* EMF - Eclipse Modeling Framework SDK
+* XSD - XML Schema Definition SDK
+
+### Running
+For a tutorial on how to run the tool, see [Generating an EMF Model using XML Schema (XSD)](https://www.eclipse.org/modeling/emf/docs/2.x/tutorials/xlibmod/xlibmod_emf2.0.html)
+
 ## License
-© Copyright 2018-2019 FIX Protocol Limited
+© Copyright 2018-2021 FIX Protocol Limited
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

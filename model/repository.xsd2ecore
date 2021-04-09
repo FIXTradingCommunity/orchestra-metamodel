@@ -1,0 +1,1326 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xsd2ecore:XSD2EcoreMappingRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsd2ecore="http://www.eclipse.org/emf/2002/XSD2Ecore" inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#/ file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#/ http://www.w3.org/2001/03/xml.xsd#/"
+    outputs="repository.ecore#/ ../../org.eclipse.emf.ecore/model/XMLNamespace.ecore#/"
+    topToBottom="true">
+  <nested inputs="bundleentry://1168.fwk1573754119/cache/www.w3.org/2001/XMLSchema.xsd#//string;XSDSimpleTypeDefinition=9"
+      outputs="http://www.eclipse.org/emf/2003/XMLType#//String"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//expressionType;XSDSimpleTypeDefinition=11"
+      outputs="repository.ecore#//ExpressionType"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//Version_t;XSDSimpleTypeDefinition=34"
+      outputs="repository.ecore#//VersionT"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse"
+      outputs="repository.ecore#//Documentation/added"/>
+  <nested inputs="bundleentry://1168.fwk1573754119/cache/www.w3.org/2001/XMLSchema.xsd#//integer;XSDSimpleTypeDefinition=40"
+      outputs="http://www.eclipse.org/emf/2003/XMLType#//Integer"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//EP_t;XSDSimpleTypeDefinition=10"
+      outputs="repository.ecore#//EPT"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=1"
+      outputs="repository.ecore#//Documentation/addedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//changeType_t;XSDSimpleTypeDefinition=4"
+      outputs="repository.ecore#//ChangeTypeT">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//changeType_t;XSDSimpleTypeDefinition=4/XSDEnumerationFacet"
+        outputs="repository.ecore#//ChangeTypeT/Editorial"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//changeType_t;XSDSimpleTypeDefinition=4/XSDEnumerationFacet=1"
+        outputs="repository.ecore#//ChangeTypeT/Definitional"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=2"
+      outputs="repository.ecore#//Documentation/changeType"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//mime_t;XSDSimpleTypeDefinition=17"
+      outputs="repository.ecore#//MimeT"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=3"
+      outputs="repository.ecore#//Documentation/deprecated"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=4"
+      outputs="repository.ecore#//Documentation/deprecatedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=5"
+      outputs="repository.ecore#//Documentation/issue"/>
+  <nested inputs="bundleentry://1168.fwk1573754119/cache/www.w3.org/2001/XMLSchema.xsd#//language;XSDSimpleTypeDefinition=30"
+      outputs="http://www.eclipse.org/emf/2003/XMLType#//Language"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//language_t;XSDSimpleTypeDefinition=15"
+      outputs="repository.ecore#//LanguageT"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=6"
+      outputs="repository.ecore#//Documentation/lastModified"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//purpose_enum;XSDSimpleTypeDefinition=21"
+      outputs="repository.ecore#//PurposeEnum">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//purpose_enum;XSDSimpleTypeDefinition=21/XSDEnumerationFacet"
+        outputs="repository.ecore#//PurposeEnum/SYNOPSIS"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//purpose_enum;XSDSimpleTypeDefinition=21/XSDEnumerationFacet=1"
+        outputs="repository.ecore#//PurposeEnum/ELABORATION"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//purpose_enum;XSDSimpleTypeDefinition=21/XSDEnumerationFacet=2"
+        outputs="repository.ecore#//PurposeEnum/EXAMPLE"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//purpose_enum;XSDSimpleTypeDefinition=21/XSDEnumerationFacet=3"
+        outputs="repository.ecore#//PurposeEnum/DISPLAY"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//purpose_t;XSDSimpleTypeDefinition=22"
+      outputs="repository.ecore#//PurposeT"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=7"
+      outputs="repository.ecore#//Documentation/replaced"/>
+  <nested inputs="bundleentry://1168.fwk1573754119/cache/www.w3.org/2001/XMLSchema.xsd#//positiveInteger;XSDSimpleTypeDefinition=52"
+      outputs="http://www.eclipse.org/emf/2003/XMLType#//PositiveInteger"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//id_t;XSDSimpleTypeDefinition=13"
+      outputs="repository.ecore#//IdT"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=9"
+      outputs="repository.ecore#//Documentation/replacedByField"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=8"
+      outputs="repository.ecore#//Documentation/replacedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//supportType;XSDSimpleTypeDefinition=26"
+      outputs="repository.ecore#//SupportType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//supportType;XSDSimpleTypeDefinition=26/XSDEnumerationFacet"
+        outputs="repository.ecore#//SupportType/supported"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//supportType;XSDSimpleTypeDefinition=26/XSDEnumerationFacet=1"
+        outputs="repository.ecore#//SupportType/forbidden"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//supportType;XSDSimpleTypeDefinition=26/XSDEnumerationFacet=2"
+        outputs="repository.ecore#//SupportType/ignored"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=10"
+      outputs="repository.ecore#//Documentation/supported"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=11"
+      outputs="repository.ecore#//Documentation/updated"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=12"
+      outputs="repository.ecore#//Documentation/updatedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//documentation;XSDComplexTypeDefinition=12"
+      outputs="repository.ecore#//Documentation">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//documentation;XSDComplexTypeDefinition=12/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//Documentation/any"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//documentation;XSDComplexTypeDefinition=12/XSDAttributeUse=2"
+        outputs="repository.ecore#//Documentation/contentType"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//documentation;XSDComplexTypeDefinition=12/XSDAttributeUse"
+        outputs="repository.ecore#//Documentation/langId"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//documentation;XSDComplexTypeDefinition=12/XSDAttributeUse=1"
+        outputs="repository.ecore#//Documentation/purpose"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse"
+      outputs="repository.ecore#//Appinfo/added"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=1"
+      outputs="repository.ecore#//Appinfo/addedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=2"
+      outputs="repository.ecore#//Appinfo/changeType"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=3"
+      outputs="repository.ecore#//Appinfo/deprecated"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=4"
+      outputs="repository.ecore#//Appinfo/deprecatedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=5"
+      outputs="repository.ecore#//Appinfo/issue"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=6"
+      outputs="repository.ecore#//Appinfo/lastModified"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=7"
+      outputs="repository.ecore#//Appinfo/replaced"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=9"
+      outputs="repository.ecore#//Appinfo/replacedByField"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=8"
+      outputs="repository.ecore#//Appinfo/replacedEP"/>
+  <nested inputs="bundleentry://1168.fwk1573754119/cache/www.w3.org/2001/XMLSchema.xsd#//anyURI;XSDSimpleTypeDefinition=25"
+      outputs="http://www.eclipse.org/emf/2003/XMLType#//AnyURI"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=10"
+      outputs="repository.ecore#//Appinfo/supported"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=11"
+      outputs="repository.ecore#//Appinfo/updated"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=12"
+      outputs="repository.ecore#//Appinfo/updatedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//appinfo;XSDComplexTypeDefinition=3"
+      outputs="repository.ecore#//Appinfo">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//appinfo;XSDComplexTypeDefinition=3/XSDParticle"
+        outputs="repository.ecore#//Appinfo/group"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//appinfo;XSDComplexTypeDefinition=3/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//Appinfo/any"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//appinfo;XSDComplexTypeDefinition=3/XSDAttributeUse=1"
+        outputs="repository.ecore#//Appinfo/langId"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//appinfo;XSDComplexTypeDefinition=3/XSDAttributeUse=2"
+        outputs="repository.ecore#//Appinfo/purpose"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//appinfo;XSDComplexTypeDefinition=3/XSDAttributeUse"
+        outputs="repository.ecore#//Appinfo/specUrl"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//appinfo;XSDComplexTypeDefinition=3/XSDWildcard"
+        outputs="repository.ecore#//Appinfo/anyAttribute"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse"
+      outputs="repository.ecore#//Annotation/added"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=1"
+      outputs="repository.ecore#//Annotation/addedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=2"
+      outputs="repository.ecore#//Annotation/changeType"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=3"
+      outputs="repository.ecore#//Annotation/deprecated"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=4"
+      outputs="repository.ecore#//Annotation/deprecatedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=5"
+      outputs="repository.ecore#//Annotation/issue"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=6"
+      outputs="repository.ecore#//Annotation/lastModified"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=7"
+      outputs="repository.ecore#//Annotation/replaced"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=9"
+      outputs="repository.ecore#//Annotation/replacedByField"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=8"
+      outputs="repository.ecore#//Annotation/replacedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=10"
+      outputs="repository.ecore#//Annotation/supported"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=11"
+      outputs="repository.ecore#//Annotation/updated"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=12"
+      outputs="repository.ecore#//Annotation/updatedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//annotation;XSDComplexTypeDefinition=2"
+      outputs="repository.ecore#//Annotation">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//annotation;XSDComplexTypeDefinition=2/XSDParticle"
+        outputs="repository.ecore#//Annotation/group"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//annotation;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//Annotation/documentation"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//annotation;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="repository.ecore#//Annotation/appinfo"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse"
+      outputs="repository.ecore#//FieldRefType/added"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=1"
+      outputs="repository.ecore#//FieldRefType/addedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=2"
+      outputs="repository.ecore#//FieldRefType/changeType"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=3"
+      outputs="repository.ecore#//FieldRefType/deprecated"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=4"
+      outputs="repository.ecore#//FieldRefType/deprecatedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldAttribGrp;XSDAttributeGroupDefinition=2/XSDAttributeUse=6"
+      outputs="repository.ecore#//FieldRefType/encoding"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//refidGrp;XSDAttributeGroupDefinition=5/XSDAttributeUse"
+      outputs="repository.ecore#//FieldRefType/id"/>
+  <nested inputs="bundleentry://1168.fwk1573754119/cache/www.w3.org/2001/XMLSchema.xsd#//short;XSDSimpleTypeDefinition=45"
+      outputs="http://www.eclipse.org/emf/2003/XMLType#//Short"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldAttribGrp;XSDAttributeGroupDefinition=2/XSDAttributeUse=2"
+      outputs="repository.ecore#//FieldRefType/implLength"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldAttribGrp;XSDAttributeGroupDefinition=2/XSDAttributeUse=4"
+      outputs="repository.ecore#//FieldRefType/implMaxLength"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldAttribGrp;XSDAttributeGroupDefinition=2/XSDAttributeUse=3"
+      outputs="repository.ecore#//FieldRefType/implMinLength"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//Name_t;XSDSimpleTypeDefinition=19"
+      outputs="repository.ecore#//NameT"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=5"
+      outputs="repository.ecore#//FieldRefType/issue"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=6"
+      outputs="repository.ecore#//FieldRefType/lastModified"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldAttribGrp;XSDAttributeGroupDefinition=2/XSDAttributeUse=1"
+      outputs="repository.ecore#//FieldRefType/maxInclusive"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldAttribGrp;XSDAttributeGroupDefinition=2/XSDAttributeUse"
+      outputs="repository.ecore#//FieldRefType/minInclusive"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//presence_t;XSDSimpleTypeDefinition=20"
+      outputs="repository.ecore#//PresenceT">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//presence_t;XSDSimpleTypeDefinition=20/XSDEnumerationFacet"
+        outputs="repository.ecore#//PresenceT/optional"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//presence_t;XSDSimpleTypeDefinition=20/XSDEnumerationFacet=1"
+        outputs="repository.ecore#//PresenceT/required"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//presence_t;XSDSimpleTypeDefinition=20/XSDEnumerationFacet=2"
+        outputs="repository.ecore#//PresenceT/forbidden"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//presence_t;XSDSimpleTypeDefinition=20/XSDEnumerationFacet=3"
+        outputs="repository.ecore#//PresenceT/ignored"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//presence_t;XSDSimpleTypeDefinition=20/XSDEnumerationFacet=4"
+        outputs="repository.ecore#//PresenceT/constant"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldAttribGrp;XSDAttributeGroupDefinition=2/XSDAttributeUse=5"
+      outputs="repository.ecore#//FieldRefType/presence"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldAttribGrp;XSDAttributeGroupDefinition=2/XSDAttributeUse=8"
+      outputs="repository.ecore#//FieldRefType/rendering"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=7"
+      outputs="repository.ecore#//FieldRefType/replaced"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=9"
+      outputs="repository.ecore#//FieldRefType/replacedByField"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=8"
+      outputs="repository.ecore#//FieldRefType/replacedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//Scenario_t;XSDSimpleTypeDefinition=24"
+      outputs="repository.ecore#//ScenarioT"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//refidGrp;XSDAttributeGroupDefinition=5/XSDAttributeUse=1"
+      outputs="repository.ecore#//FieldRefType/scenario"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=10"
+      outputs="repository.ecore#//FieldRefType/supported"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=11"
+      outputs="repository.ecore#//FieldRefType/updated"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=12"
+      outputs="repository.ecore#//FieldRefType/updatedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldAttribGrp;XSDAttributeGroupDefinition=2/XSDAttributeUse=7"
+      outputs="repository.ecore#//FieldRefType/value"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldRefType;XSDComplexTypeDefinition=13"
+      outputs="repository.ecore#//FieldRefType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldRefType;XSDComplexTypeDefinition=13/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//FieldRefType/rule"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldRefType;XSDComplexTypeDefinition=13/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="repository.ecore#//FieldRefType/assign"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldRefType;XSDComplexTypeDefinition=13/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="repository.ecore#//FieldRefType/annotation"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldRefType;XSDComplexTypeDefinition=13/XSDAttributeUse=1"
+        outputs="repository.ecore#//FieldRefType/instanceName"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldRefType;XSDComplexTypeDefinition=13/XSDAttributeUse"
+        outputs="repository.ecore#//FieldRefType/lengthId"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldRuleType;XSDComplexTypeDefinition=14/XSDParticle/XSDModelGroup/XSDParticle/XSDModelGroup/XSDParticle/unique;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="repository.ecore#//UniqueType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldRuleType;XSDComplexTypeDefinition=14/XSDParticle/XSDModelGroup/XSDParticle/XSDModelGroup/XSDParticle/unique;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//UniqueType/fieldRef"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldAttribGrp;XSDAttributeGroupDefinition=2/XSDAttributeUse=6"
+      outputs="repository.ecore#//FieldRuleType/encoding"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldAttribGrp;XSDAttributeGroupDefinition=2/XSDAttributeUse=2"
+      outputs="repository.ecore#//FieldRuleType/implLength"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldAttribGrp;XSDAttributeGroupDefinition=2/XSDAttributeUse=4"
+      outputs="repository.ecore#//FieldRuleType/implMaxLength"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldAttribGrp;XSDAttributeGroupDefinition=2/XSDAttributeUse=3"
+      outputs="repository.ecore#//FieldRuleType/implMinLength"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldAttribGrp;XSDAttributeGroupDefinition=2/XSDAttributeUse=1"
+      outputs="repository.ecore#//FieldRuleType/maxInclusive"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldAttribGrp;XSDAttributeGroupDefinition=2/XSDAttributeUse"
+      outputs="repository.ecore#//FieldRuleType/minInclusive"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldAttribGrp;XSDAttributeGroupDefinition=2/XSDAttributeUse=5"
+      outputs="repository.ecore#//FieldRuleType/presence"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldAttribGrp;XSDAttributeGroupDefinition=2/XSDAttributeUse=8"
+      outputs="repository.ecore#//FieldRuleType/rendering"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldAttribGrp;XSDAttributeGroupDefinition=2/XSDAttributeUse=7"
+      outputs="repository.ecore#//FieldRuleType/value"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldRuleType;XSDComplexTypeDefinition=14"
+      outputs="repository.ecore#//FieldRuleType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldRuleType;XSDComplexTypeDefinition=14/XSDParticle/XSDModelGroup/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//FieldRuleType/unique"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldRuleType;XSDComplexTypeDefinition=14/XSDParticle/XSDModelGroup/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="repository.ecore#//FieldRuleType/assign"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldRuleType;XSDComplexTypeDefinition=14/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="repository.ecore#//FieldRuleType/when"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldRuleType;XSDComplexTypeDefinition=14/XSDAttributeUse"
+        outputs="repository.ecore#//FieldRuleType/name"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldRuleType;XSDComplexTypeDefinition=14/XSDAttributeUse=1"
+        outputs="repository.ecore#//FieldRuleType/type"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//Abbreviation_t;XSDSimpleTypeDefinition"
+      outputs="repository.ecore#//AbbreviationT"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//oidGrp;XSDAttributeGroupDefinition=4/XSDAttributeUse=2"
+      outputs="repository.ecore#//FieldType/abbrName"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse"
+      outputs="repository.ecore#//FieldType/added"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=1"
+      outputs="repository.ecore#//FieldType/addedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=2"
+      outputs="repository.ecore#//FieldType/changeType"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=3"
+      outputs="repository.ecore#//FieldType/deprecated"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=4"
+      outputs="repository.ecore#//FieldType/deprecatedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldAttribGrp;XSDAttributeGroupDefinition=2/XSDAttributeUse=6"
+      outputs="repository.ecore#//FieldType/encoding"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//oidGrp;XSDAttributeGroupDefinition=4/XSDAttributeUse"
+      outputs="repository.ecore#//FieldType/id"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldAttribGrp;XSDAttributeGroupDefinition=2/XSDAttributeUse=2"
+      outputs="repository.ecore#//FieldType/implLength"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldAttribGrp;XSDAttributeGroupDefinition=2/XSDAttributeUse=4"
+      outputs="repository.ecore#//FieldType/implMaxLength"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldAttribGrp;XSDAttributeGroupDefinition=2/XSDAttributeUse=3"
+      outputs="repository.ecore#//FieldType/implMinLength"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=5"
+      outputs="repository.ecore#//FieldType/issue"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=6"
+      outputs="repository.ecore#//FieldType/lastModified"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldAttribGrp;XSDAttributeGroupDefinition=2/XSDAttributeUse=1"
+      outputs="repository.ecore#//FieldType/maxInclusive"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldAttribGrp;XSDAttributeGroupDefinition=2/XSDAttributeUse"
+      outputs="repository.ecore#//FieldType/minInclusive"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//oidGrp;XSDAttributeGroupDefinition=4/XSDAttributeUse=1"
+      outputs="repository.ecore#//FieldType/name"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldAttribGrp;XSDAttributeGroupDefinition=2/XSDAttributeUse=5"
+      outputs="repository.ecore#//FieldType/presence"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldAttribGrp;XSDAttributeGroupDefinition=2/XSDAttributeUse=8"
+      outputs="repository.ecore#//FieldType/rendering"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=7"
+      outputs="repository.ecore#//FieldType/replaced"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=9"
+      outputs="repository.ecore#//FieldType/replacedByField"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=8"
+      outputs="repository.ecore#//FieldType/replacedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//oidGrp;XSDAttributeGroupDefinition=4/XSDAttributeUse=3"
+      outputs="repository.ecore#//FieldType/scenario"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=10"
+      outputs="repository.ecore#//FieldType/supported"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//UnionDataType_t;XSDSimpleTypeDefinition=32"
+      outputs="repository.ecore#//UnionDataTypeT">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//UnionDataType_t;XSDSimpleTypeDefinition=32/XSDEnumerationFacet"
+        outputs="repository.ecore#//UnionDataTypeT/Qty"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//UnionDataType_t;XSDSimpleTypeDefinition=32/XSDEnumerationFacet=1"
+        outputs="repository.ecore#//UnionDataTypeT/Reserved100Plus"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//UnionDataType_t;XSDSimpleTypeDefinition=32/XSDEnumerationFacet=2"
+        outputs="repository.ecore#//UnionDataTypeT/Reserved1000Plus"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//UnionDataType_t;XSDSimpleTypeDefinition=32/XSDEnumerationFacet=3"
+        outputs="repository.ecore#//UnionDataTypeT/Reserved4000Plus"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//UnionDataType_t;XSDSimpleTypeDefinition=32/XSDEnumerationFacet=4"
+        outputs="repository.ecore#//UnionDataTypeT/Tenor"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=11"
+      outputs="repository.ecore#//FieldType/updated"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=12"
+      outputs="repository.ecore#//FieldType/updatedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldAttribGrp;XSDAttributeGroupDefinition=2/XSDAttributeUse=7"
+      outputs="repository.ecore#//FieldType/value"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldType;XSDComplexTypeDefinition=15"
+      outputs="repository.ecore#//FieldType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldType;XSDComplexTypeDefinition=15/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//FieldType/rule"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldType;XSDComplexTypeDefinition=15/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="repository.ecore#//FieldType/assign"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldType;XSDComplexTypeDefinition=15/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="repository.ecore#//FieldType/annotation"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldType;XSDComplexTypeDefinition=15/XSDAttributeUse=3"
+        outputs="repository.ecore#//FieldType/baseCategory"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldType;XSDComplexTypeDefinition=15/XSDAttributeUse=4"
+        outputs="repository.ecore#//FieldType/baseCategoryAbbrName"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldType;XSDComplexTypeDefinition=15/XSDAttributeUse=2"
+        outputs="repository.ecore#//FieldType/discriminatorId"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldType;XSDComplexTypeDefinition=15/XSDAttributeUse=1"
+        outputs="repository.ecore#//FieldType/lengthId"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldType;XSDComplexTypeDefinition=15/XSDAttributeUse"
+        outputs="repository.ecore#//FieldType/type"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//fieldType;XSDComplexTypeDefinition=15/XSDAttributeUse=5"
+        outputs="repository.ecore#//FieldType/unionDataType"/>
+  </nested>
+  <nested inputs="bundleentry://1168.fwk1573754119/cache/www.w3.org/2001/XMLSchema.xsd#//nonNegativeInteger;XSDSimpleTypeDefinition=47"
+      outputs="http://www.eclipse.org/emf/2003/XMLType#//NonNegativeInteger"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//unbounded;XSDSimpleTypeDefinition=30"
+      outputs="repository.ecore#//Unbounded">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//unbounded;XSDSimpleTypeDefinition=30/XSDEnumerationFacet"
+        outputs="repository.ecore#//Unbounded/unbounded"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//unboundedIntType;XSDSimpleTypeDefinition=31"
+      outputs="repository.ecore#//UnboundedIntType"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//groupRefType;XSDComplexTypeDefinition=17"
+      outputs="repository.ecore#//GroupRefType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//groupRefType;XSDComplexTypeDefinition=17/XSDAttributeUse=1"
+        outputs="repository.ecore#//GroupRefType/implMaxOccurs"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//groupRefType;XSDComplexTypeDefinition=17/XSDAttributeUse"
+        outputs="repository.ecore#//GroupRefType/implMinOccurs"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//blockAssignmentType;XSDComplexTypeDefinition=4"
+      outputs="repository.ecore#//BlockAssignmentType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//blockAssignmentType;XSDComplexTypeDefinition=4/XSDParticle"
+        outputs="repository.ecore#//BlockAssignmentType/group"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//blockAssignmentType;XSDComplexTypeDefinition=4/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//BlockAssignmentType/componentRef"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//blockAssignmentType;XSDComplexTypeDefinition=4/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="repository.ecore#//BlockAssignmentType/groupRef"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//blockAssignmentType;XSDComplexTypeDefinition=4/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="repository.ecore#//BlockAssignmentType/fieldRef"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//componentRuleType;XSDComplexTypeDefinition=9"
+      outputs="repository.ecore#//ComponentRuleType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//componentRuleType;XSDComplexTypeDefinition=9/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//ComponentRuleType/when"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//componentRuleType;XSDComplexTypeDefinition=9/XSDAttributeUse"
+        outputs="repository.ecore#//ComponentRuleType/name"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//componentRuleType;XSDComplexTypeDefinition=9/XSDAttributeUse=1"
+        outputs="repository.ecore#//ComponentRuleType/presence"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse"
+      outputs="repository.ecore#//ComponentRefType/added"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=1"
+      outputs="repository.ecore#//ComponentRefType/addedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=2"
+      outputs="repository.ecore#//ComponentRefType/changeType"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=3"
+      outputs="repository.ecore#//ComponentRefType/deprecated"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=4"
+      outputs="repository.ecore#//ComponentRefType/deprecatedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//refidGrp;XSDAttributeGroupDefinition=5/XSDAttributeUse"
+      outputs="repository.ecore#//ComponentRefType/id"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//ComponentName_t;XSDSimpleTypeDefinition=6"
+      outputs="repository.ecore#//ComponentNameT"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=5"
+      outputs="repository.ecore#//ComponentRefType/issue"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=6"
+      outputs="repository.ecore#//ComponentRefType/lastModified"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=7"
+      outputs="repository.ecore#//ComponentRefType/replaced"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=9"
+      outputs="repository.ecore#//ComponentRefType/replacedByField"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=8"
+      outputs="repository.ecore#//ComponentRefType/replacedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//refidGrp;XSDAttributeGroupDefinition=5/XSDAttributeUse=1"
+      outputs="repository.ecore#//ComponentRefType/scenario"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=10"
+      outputs="repository.ecore#//ComponentRefType/supported"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=11"
+      outputs="repository.ecore#//ComponentRefType/updated"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=12"
+      outputs="repository.ecore#//ComponentRefType/updatedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//componentRefType;XSDComplexTypeDefinition=8"
+      outputs="repository.ecore#//ComponentRefType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//componentRefType;XSDComplexTypeDefinition=8/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//ComponentRefType/blockAssignment"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//componentRefType;XSDComplexTypeDefinition=8/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="repository.ecore#//ComponentRefType/rule"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//componentRefType;XSDComplexTypeDefinition=8/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="repository.ecore#//ComponentRefType/annotation"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//componentRefType;XSDComplexTypeDefinition=8/XSDAttributeUse=1"
+        outputs="repository.ecore#//ComponentRefType/instanceName"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//componentRefType;XSDComplexTypeDefinition=8/XSDAttributeUse"
+        outputs="repository.ecore#//ComponentRefType/presence"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//oidGrp;XSDAttributeGroupDefinition=4/XSDAttributeUse=2"
+      outputs="repository.ecore#//ComponentType/abbrName"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse"
+      outputs="repository.ecore#//ComponentType/added"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=1"
+      outputs="repository.ecore#//ComponentType/addedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=2"
+      outputs="repository.ecore#//ComponentType/changeType"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=3"
+      outputs="repository.ecore#//ComponentType/deprecated"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=4"
+      outputs="repository.ecore#//ComponentType/deprecatedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//oidGrp;XSDAttributeGroupDefinition=4/XSDAttributeUse"
+      outputs="repository.ecore#//ComponentType/id"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=5"
+      outputs="repository.ecore#//ComponentType/issue"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=6"
+      outputs="repository.ecore#//ComponentType/lastModified"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//oidGrp;XSDAttributeGroupDefinition=4/XSDAttributeUse=1"
+      outputs="repository.ecore#//ComponentType/name"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=7"
+      outputs="repository.ecore#//ComponentType/replaced"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=9"
+      outputs="repository.ecore#//ComponentType/replacedByField"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=8"
+      outputs="repository.ecore#//ComponentType/replacedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//oidGrp;XSDAttributeGroupDefinition=4/XSDAttributeUse=3"
+      outputs="repository.ecore#//ComponentType/scenario"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=10"
+      outputs="repository.ecore#//ComponentType/supported"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=11"
+      outputs="repository.ecore#//ComponentType/updated"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=12"
+      outputs="repository.ecore#//ComponentType/updatedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//memberType;XSDSimpleTypeDefinition=16"
+      outputs="repository.ecore#//MemberType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//memberType;XSDSimpleTypeDefinition=16/XSDEnumerationFacet"
+        outputs="repository.ecore#//MemberType/oneOf"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//memberType;XSDSimpleTypeDefinition=16/XSDEnumerationFacet=1"
+        outputs="repository.ecore#//MemberType/anyOf"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//componentType;XSDComplexTypeDefinition=10"
+      outputs="repository.ecore#//ComponentType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//componentType;XSDComplexTypeDefinition=10/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//ComponentType/group"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//componentType;XSDComplexTypeDefinition=10/XSDParticle/XSDModelGroup/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//ComponentType/componentRef"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//componentType;XSDComplexTypeDefinition=10/XSDParticle/XSDModelGroup/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="repository.ecore#//ComponentType/groupRef"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//componentType;XSDComplexTypeDefinition=10/XSDParticle/XSDModelGroup/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="repository.ecore#//ComponentType/fieldRef"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//componentType;XSDComplexTypeDefinition=10/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="repository.ecore#//ComponentType/annotation"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//componentType;XSDComplexTypeDefinition=10/XSDAttributeUse"
+        outputs="repository.ecore#//ComponentType/category"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//componentType;XSDComplexTypeDefinition=10/XSDAttributeUse=1"
+        outputs="repository.ecore#//ComponentType/rendering"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//componentType;XSDComplexTypeDefinition=10/XSDAttributeUse=2"
+        outputs="repository.ecore#//ComponentType/which"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//oidGrp;XSDAttributeGroupDefinition=4/XSDAttributeUse=2"
+      outputs="repository.ecore#//GroupType/abbrName"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse"
+      outputs="repository.ecore#//GroupType/added"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=1"
+      outputs="repository.ecore#//GroupType/addedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=2"
+      outputs="repository.ecore#//GroupType/changeType"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=3"
+      outputs="repository.ecore#//GroupType/deprecated"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=4"
+      outputs="repository.ecore#//GroupType/deprecatedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//oidGrp;XSDAttributeGroupDefinition=4/XSDAttributeUse"
+      outputs="repository.ecore#//GroupType/id"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=5"
+      outputs="repository.ecore#//GroupType/issue"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=6"
+      outputs="repository.ecore#//GroupType/lastModified"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//oidGrp;XSDAttributeGroupDefinition=4/XSDAttributeUse=1"
+      outputs="repository.ecore#//GroupType/name"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=7"
+      outputs="repository.ecore#//GroupType/replaced"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=9"
+      outputs="repository.ecore#//GroupType/replacedByField"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=8"
+      outputs="repository.ecore#//GroupType/replacedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//oidGrp;XSDAttributeGroupDefinition=4/XSDAttributeUse=3"
+      outputs="repository.ecore#//GroupType/scenario"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=10"
+      outputs="repository.ecore#//GroupType/supported"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=11"
+      outputs="repository.ecore#//GroupType/updated"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=12"
+      outputs="repository.ecore#//GroupType/updatedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//groupType;XSDComplexTypeDefinition=18"
+      outputs="repository.ecore#//GroupType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//groupType;XSDComplexTypeDefinition=18/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//GroupType/numInGroup"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//groupType;XSDComplexTypeDefinition=18/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="repository.ecore#//GroupType/group"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//groupType;XSDComplexTypeDefinition=18/XSDParticle/XSDModelGroup/XSDParticle=1/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//GroupType/componentRef"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//groupType;XSDComplexTypeDefinition=18/XSDParticle/XSDModelGroup/XSDParticle=1/XSDModelGroup/XSDParticle=1"
+        outputs="repository.ecore#//GroupType/groupRef"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//groupType;XSDComplexTypeDefinition=18/XSDParticle/XSDModelGroup/XSDParticle=1/XSDModelGroup/XSDParticle=2"
+        outputs="repository.ecore#//GroupType/fieldRef"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//groupType;XSDComplexTypeDefinition=18/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="repository.ecore#//GroupType/annotation"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//groupType;XSDComplexTypeDefinition=18/XSDAttributeUse"
+        outputs="repository.ecore#//GroupType/category"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//groupType;XSDComplexTypeDefinition=18/XSDAttributeUse=3"
+        outputs="repository.ecore#//GroupType/implMaxOccurs"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//groupType;XSDComplexTypeDefinition=18/XSDAttributeUse=2"
+        outputs="repository.ecore#//GroupType/implMinOccurs"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//groupType;XSDComplexTypeDefinition=18/XSDAttributeUse=1"
+        outputs="repository.ecore#//GroupType/rendering"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//groupType;XSDComplexTypeDefinition=18/XSDAttributeUse=4"
+        outputs="repository.ecore#//GroupType/which"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//transitionType;XSDComplexTypeDefinition=30"
+      outputs="repository.ecore#//TransitionType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//transitionType;XSDComplexTypeDefinition=30/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//TransitionType/when"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//transitionType;XSDComplexTypeDefinition=30/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="repository.ecore#//TransitionType/annotation"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//transitionType;XSDComplexTypeDefinition=30/XSDAttributeUse"
+        outputs="repository.ecore#//TransitionType/name"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//transitionType;XSDComplexTypeDefinition=30/XSDAttributeUse=1"
+        outputs="repository.ecore#//TransitionType/target"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//identifierType;XSDComplexTypeDefinition=20"
+      outputs="repository.ecore#//IdentifierType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//identifierType;XSDComplexTypeDefinition=20/XSDAttributeUse"
+        outputs="repository.ecore#//IdentifierType/id"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//identifierType;XSDComplexTypeDefinition=20/XSDAttributeUse=1"
+        outputs="repository.ecore#//IdentifierType/sourceId"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//identifiersType;XSDComplexTypeDefinition=19"
+      outputs="repository.ecore#//IdentifiersType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//identifiersType;XSDComplexTypeDefinition=19/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//IdentifiersType/group"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//identifiersType;XSDComplexTypeDefinition=19/XSDParticle/XSDModelGroup/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//IdentifiersType/correlate"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//identifiersType;XSDComplexTypeDefinition=19/XSDParticle/XSDModelGroup/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="repository.ecore#//IdentifiersType/assign"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//identifiersType;XSDComplexTypeDefinition=19/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="repository.ecore#//IdentifiersType/annotation"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//refidGrp;XSDAttributeGroupDefinition=5/XSDAttributeUse"
+      outputs="repository.ecore#//MessageRefType/id"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//MsgType_t;XSDSimpleTypeDefinition=18"
+      outputs="repository.ecore#//MsgTypeT"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//refidGrp;XSDAttributeGroupDefinition=5/XSDAttributeUse=1"
+      outputs="repository.ecore#//MessageRefType/scenario"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//messageRefType;XSDComplexTypeDefinition=22"
+      outputs="repository.ecore#//MessageRefType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//messageRefType;XSDComplexTypeDefinition=22/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//MessageRefType/identifiers"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//messageRefType;XSDComplexTypeDefinition=22/XSDAttributeUse=3"
+        outputs="repository.ecore#//MessageRefType/implMaxOccurs"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//messageRefType;XSDComplexTypeDefinition=22/XSDAttributeUse=2"
+        outputs="repository.ecore#//MessageRefType/implMinOccurs"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//messageRefType;XSDComplexTypeDefinition=22/XSDAttributeUse=1"
+        outputs="repository.ecore#//MessageRefType/msgType"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//messageRefType;XSDComplexTypeDefinition=22/XSDAttributeUse"
+        outputs="repository.ecore#//MessageRefType/name"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//triggerType;XSDComplexTypeDefinition=31"
+      outputs="repository.ecore#//TriggerType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//triggerType;XSDComplexTypeDefinition=31/XSDAttributeUse=1"
+        outputs="repository.ecore#//TriggerType/actor"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//triggerType;XSDComplexTypeDefinition=31/XSDAttributeUse=2"
+        outputs="repository.ecore#//TriggerType/name"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//triggerType;XSDComplexTypeDefinition=31/XSDAttributeUse"
+        outputs="repository.ecore#//TriggerType/stateMachine"/>
+  </nested>
+  <nested inputs="bundleentry://1168.fwk1573754119/cache/www.w3.org/2001/XMLSchema.xsd#//duration;XSDSimpleTypeDefinition=14"
+      outputs="http://www.eclipse.org/emf/2003/XMLType#//Duration"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//timerOperation;XSDSimpleTypeDefinition=29"
+      outputs="repository.ecore#//TimerOperation">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//timerOperation;XSDSimpleTypeDefinition=29/XSDEnumerationFacet"
+        outputs="repository.ecore#//TimerOperation/START"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//timerOperation;XSDSimpleTypeDefinition=29/XSDEnumerationFacet=1"
+        outputs="repository.ecore#//TimerOperation/CANCEL"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//timerOperation;XSDSimpleTypeDefinition=29/XSDEnumerationFacet=2"
+        outputs="repository.ecore#//TimerOperation/RESET"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//timerSchedule;XSDComplexTypeDefinition=28"
+      outputs="repository.ecore#//TimerSchedule">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//timerSchedule;XSDComplexTypeDefinition=28/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//TimerSchedule/activity"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//timerSchedule;XSDComplexTypeDefinition=28/XSDAttributeUse"
+        outputs="repository.ecore#//TimerSchedule/actor"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//timerSchedule;XSDComplexTypeDefinition=28/XSDAttributeUse=3"
+        outputs="repository.ecore#//TimerSchedule/interval"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//timerSchedule;XSDComplexTypeDefinition=28/XSDAttributeUse=1"
+        outputs="repository.ecore#//TimerSchedule/name"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//timerSchedule;XSDComplexTypeDefinition=28/XSDAttributeUse=2"
+        outputs="repository.ecore#//TimerSchedule/operation"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//actionType;XSDComplexTypeDefinition"
+      outputs="repository.ecore#//ActionType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//actionType;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//ActionType/group"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//actionType;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//ActionType/field"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//actionType;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="repository.ecore#//ActionType/fieldRef"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//actionType;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="repository.ecore#//ActionType/component"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//actionType;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="repository.ecore#//ActionType/componentRef"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//actionType;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="repository.ecore#//ActionType/group1"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//actionType;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/XSDModelGroup/XSDParticle=5"
+        outputs="repository.ecore#//ActionType/groupRef"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//actionType;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="repository.ecore#//ActionType/group2"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//actionType;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//ActionType/messageRef"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//actionType;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/XSDModelGroup/XSDParticle=1"
+        outputs="repository.ecore#//ActionType/assign"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//actionType;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/XSDModelGroup/XSDParticle=2"
+        outputs="repository.ecore#//ActionType/trigger"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//actionType;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/XSDModelGroup/XSDParticle=3"
+        outputs="repository.ecore#//ActionType/timerSchedule"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//stateType;XSDComplexTypeDefinition=27"
+      outputs="repository.ecore#//StateType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//stateType;XSDComplexTypeDefinition=27/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//StateType/transition"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//stateType;XSDComplexTypeDefinition=27/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="repository.ecore#//StateType/onentry"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//stateType;XSDComplexTypeDefinition=27/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="repository.ecore#//StateType/activity"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//stateType;XSDComplexTypeDefinition=27/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="repository.ecore#//StateType/onexit"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//stateType;XSDComplexTypeDefinition=27/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="repository.ecore#//StateType/annotation"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//stateType;XSDComplexTypeDefinition=27/XSDAttributeUse"
+        outputs="repository.ecore#//StateType/name"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//stateMachineType;XSDComplexTypeDefinition=26"
+      outputs="repository.ecore#//StateMachineType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//stateMachineType;XSDComplexTypeDefinition=26/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//StateMachineType/initial"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//stateMachineType;XSDComplexTypeDefinition=26/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="repository.ecore#//StateMachineType/state"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//stateMachineType;XSDComplexTypeDefinition=26/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="repository.ecore#//StateMachineType/annotation"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//stateMachineType;XSDComplexTypeDefinition=26/XSDAttributeUse"
+        outputs="repository.ecore#//StateMachineType/name"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//timerType;XSDComplexTypeDefinition=29"
+      outputs="repository.ecore#//TimerType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//timerType;XSDComplexTypeDefinition=29/XSDAttributeUse"
+        outputs="repository.ecore#//TimerType/name"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//actorType;XSDComplexTypeDefinition=1"
+      outputs="repository.ecore#//ActorType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//actorType;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//ActorType/group"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//actorType;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//ActorType/field"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//actorType;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="repository.ecore#//ActorType/fieldRef"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//actorType;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="repository.ecore#//ActorType/component"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//actorType;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="repository.ecore#//ActorType/componentRef"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//actorType;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="repository.ecore#//ActorType/group1"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//actorType;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle/XSDModelGroup/XSDParticle=5"
+        outputs="repository.ecore#//ActorType/groupRef"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//actorType;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle/XSDModelGroup/XSDParticle=6"
+        outputs="repository.ecore#//ActorType/states"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//actorType;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle/XSDModelGroup/XSDParticle=7"
+        outputs="repository.ecore#//ActorType/timer"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//actorType;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="repository.ecore#//ActorType/annotation"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//actorType;XSDComplexTypeDefinition=1/XSDAttributeUse"
+        outputs="repository.ecore#//ActorType/name"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//reliability_t;XSDSimpleTypeDefinition=23"
+      outputs="repository.ecore#//ReliabilityT">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//reliability_t;XSDSimpleTypeDefinition=23/XSDEnumerationFacet"
+        outputs="repository.ecore#//ReliabilityT/bestEffort"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//reliability_t;XSDSimpleTypeDefinition=23/XSDEnumerationFacet=1"
+        outputs="repository.ecore#//ReliabilityT/idempotent"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//reliability_t;XSDSimpleTypeDefinition=23/XSDEnumerationFacet=2"
+        outputs="repository.ecore#//ReliabilityT/recoverable"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//flowType;XSDComplexTypeDefinition=16"
+      outputs="repository.ecore#//FlowType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//flowType;XSDComplexTypeDefinition=16/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//FlowType/annotation"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//flowType;XSDComplexTypeDefinition=16/XSDAttributeUse=2"
+        outputs="repository.ecore#//FlowType/destination"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//flowType;XSDComplexTypeDefinition=16/XSDAttributeUse"
+        outputs="repository.ecore#//FlowType/name"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//flowType;XSDComplexTypeDefinition=16/XSDAttributeUse=3"
+        outputs="repository.ecore#//FlowType/reliability"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//flowType;XSDComplexTypeDefinition=16/XSDAttributeUse=1"
+        outputs="repository.ecore#//FlowType/source"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//actors;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="repository.ecore#//ActorsType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//actors;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//ActorsType/group"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//actors;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//ActorsType/actor"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//actors;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="repository.ecore#//ActorsType/flow"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//actors;XSDElementDeclaration/XSDComplexTypeDefinition/XSDAttributeUse"
+        outputs="repository.ecore#//ActorsType/base"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//actors;XSDElementDeclaration"
+      outputs="repository.ecore#//DocumentRoot/actors"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse"
+      outputs="repository.ecore#//CategoryType/added"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=1"
+      outputs="repository.ecore#//CategoryType/addedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=2"
+      outputs="repository.ecore#//CategoryType/changeType"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//CatComponentType_t;XSDSimpleTypeDefinition=1"
+      outputs="repository.ecore#//CatComponentTypeT">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//CatComponentType_t;XSDSimpleTypeDefinition=1/XSDEnumerationFacet"
+        outputs="repository.ecore#//CatComponentTypeT/Field"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//CatComponentType_t;XSDSimpleTypeDefinition=1/XSDEnumerationFacet=1"
+        outputs="repository.ecore#//CatComponentTypeT/Message"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=3"
+      outputs="repository.ecore#//CategoryType/deprecated"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=4"
+      outputs="repository.ecore#//CategoryType/deprecatedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//CatIncludeFile_t;XSDSimpleTypeDefinition=3"
+      outputs="repository.ecore#//CatIncludeFileT">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//CatIncludeFile_t;XSDSimpleTypeDefinition=3/XSDEnumerationFacet"
+        outputs="repository.ecore#//CatIncludeFileT/components"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//CatIncludeFile_t;XSDSimpleTypeDefinition=3/XSDEnumerationFacet=1"
+        outputs="repository.ecore#//CatIncludeFileT/fields"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=5"
+      outputs="repository.ecore#//CategoryType/issue"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=6"
+      outputs="repository.ecore#//CategoryType/lastModified"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=7"
+      outputs="repository.ecore#//CategoryType/replaced"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=9"
+      outputs="repository.ecore#//CategoryType/replacedByField"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=8"
+      outputs="repository.ecore#//CategoryType/replacedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=10"
+      outputs="repository.ecore#//CategoryType/supported"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=11"
+      outputs="repository.ecore#//CategoryType/updated"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=12"
+      outputs="repository.ecore#//CategoryType/updatedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//categoryType;XSDComplexTypeDefinition=5"
+      outputs="repository.ecore#//CategoryType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//categoryType;XSDComplexTypeDefinition=5/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//CategoryType/annotation"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//categoryType;XSDComplexTypeDefinition=5/XSDAttributeUse=2"
+        outputs="repository.ecore#//CategoryType/componentType"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//categoryType;XSDComplexTypeDefinition=5/XSDAttributeUse=1"
+        outputs="repository.ecore#//CategoryType/fIXMLFileName"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//categoryType;XSDComplexTypeDefinition=5/XSDAttributeUse=4"
+        outputs="repository.ecore#//CategoryType/includeFile"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//categoryType;XSDComplexTypeDefinition=5/XSDAttributeUse"
+        outputs="repository.ecore#//CategoryType/name"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//categoryType;XSDComplexTypeDefinition=5/XSDAttributeUse=3"
+        outputs="repository.ecore#//CategoryType/section"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//containerAttribGrp;XSDAttributeGroupDefinition/XSDAttributeUse"
+      outputs="repository.ecore#//CategoriesType/latestEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//categories;XSDElementDeclaration=1/XSDComplexTypeDefinition"
+      outputs="repository.ecore#//CategoriesType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//categories;XSDElementDeclaration=1/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//CategoriesType/category"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//categories;XSDElementDeclaration=1/XSDComplexTypeDefinition/XSDAttributeUse"
+        outputs="repository.ecore#//CategoriesType/base"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//categories;XSDElementDeclaration=1"
+      outputs="repository.ecore#//DocumentRoot/categories"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//oidGrp;XSDAttributeGroupDefinition=4/XSDAttributeUse=2"
+      outputs="repository.ecore#//CodeType/abbrName"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse"
+      outputs="repository.ecore#//CodeType/added"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=1"
+      outputs="repository.ecore#//CodeType/addedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=2"
+      outputs="repository.ecore#//CodeType/changeType"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=3"
+      outputs="repository.ecore#//CodeType/deprecated"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=4"
+      outputs="repository.ecore#//CodeType/deprecatedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//oidGrp;XSDAttributeGroupDefinition=4/XSDAttributeUse"
+      outputs="repository.ecore#//CodeType/id"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=5"
+      outputs="repository.ecore#//CodeType/issue"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=6"
+      outputs="repository.ecore#//CodeType/lastModified"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//oidGrp;XSDAttributeGroupDefinition=4/XSDAttributeUse=1"
+      outputs="repository.ecore#//CodeType/name"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=7"
+      outputs="repository.ecore#//CodeType/replaced"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=9"
+      outputs="repository.ecore#//CodeType/replacedByField"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=8"
+      outputs="repository.ecore#//CodeType/replacedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//oidGrp;XSDAttributeGroupDefinition=4/XSDAttributeUse=3"
+      outputs="repository.ecore#//CodeType/scenario"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=10"
+      outputs="repository.ecore#//CodeType/supported"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=11"
+      outputs="repository.ecore#//CodeType/updated"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=12"
+      outputs="repository.ecore#//CodeType/updatedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//codeType;XSDComplexTypeDefinition=7"
+      outputs="repository.ecore#//CodeType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//codeType;XSDComplexTypeDefinition=7/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//CodeType/annotation"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//codeType;XSDComplexTypeDefinition=7/XSDAttributeUse=2"
+        outputs="repository.ecore#//CodeType/group"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//codeType;XSDComplexTypeDefinition=7/XSDAttributeUse=1"
+        outputs="repository.ecore#//CodeType/sort"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//codeType;XSDComplexTypeDefinition=7/XSDAttributeUse"
+        outputs="repository.ecore#//CodeType/value"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//oidGrp;XSDAttributeGroupDefinition=4/XSDAttributeUse=2"
+      outputs="repository.ecore#//CodeSetType/abbrName"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse"
+      outputs="repository.ecore#//CodeSetType/added"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=1"
+      outputs="repository.ecore#//CodeSetType/addedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=2"
+      outputs="repository.ecore#//CodeSetType/changeType"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=3"
+      outputs="repository.ecore#//CodeSetType/deprecated"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=4"
+      outputs="repository.ecore#//CodeSetType/deprecatedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//oidGrp;XSDAttributeGroupDefinition=4/XSDAttributeUse"
+      outputs="repository.ecore#//CodeSetType/id"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=5"
+      outputs="repository.ecore#//CodeSetType/issue"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=6"
+      outputs="repository.ecore#//CodeSetType/lastModified"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//oidGrp;XSDAttributeGroupDefinition=4/XSDAttributeUse=1"
+      outputs="repository.ecore#//CodeSetType/name"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=7"
+      outputs="repository.ecore#//CodeSetType/replaced"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=9"
+      outputs="repository.ecore#//CodeSetType/replacedByField"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=8"
+      outputs="repository.ecore#//CodeSetType/replacedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//oidGrp;XSDAttributeGroupDefinition=4/XSDAttributeUse=3"
+      outputs="repository.ecore#//CodeSetType/scenario"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=10"
+      outputs="repository.ecore#//CodeSetType/supported"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=11"
+      outputs="repository.ecore#//CodeSetType/updated"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=12"
+      outputs="repository.ecore#//CodeSetType/updatedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//codeSetType;XSDComplexTypeDefinition=6"
+      outputs="repository.ecore#//CodeSetType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//codeSetType;XSDComplexTypeDefinition=6/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//CodeSetType/code"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//codeSetType;XSDComplexTypeDefinition=6/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="repository.ecore#//CodeSetType/annotation"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//codeSetType;XSDComplexTypeDefinition=6/XSDAttributeUse=1"
+        outputs="repository.ecore#//CodeSetType/default"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//codeSetType;XSDComplexTypeDefinition=6/XSDAttributeUse=2"
+        outputs="repository.ecore#//CodeSetType/specUrl"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//codeSetType;XSDComplexTypeDefinition=6/XSDAttributeUse"
+        outputs="repository.ecore#//CodeSetType/type"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//codeSets;XSDElementDeclaration=2/XSDComplexTypeDefinition"
+      outputs="repository.ecore#//CodeSetsType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//codeSets;XSDElementDeclaration=2/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//CodeSetsType/codeSet"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//codeSets;XSDElementDeclaration=2/XSDComplexTypeDefinition/XSDAttributeUse"
+        outputs="repository.ecore#//CodeSetsType/base"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//codeSets;XSDElementDeclaration=2"
+      outputs="repository.ecore#//DocumentRoot/codeSets"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//containerAttribGrp;XSDAttributeGroupDefinition/XSDAttributeUse"
+      outputs="repository.ecore#//ComponentsType/latestEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//components;XSDElementDeclaration=3/XSDComplexTypeDefinition"
+      outputs="repository.ecore#//ComponentsType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//components;XSDElementDeclaration=3/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//ComponentsType/component"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//components;XSDElementDeclaration=3/XSDComplexTypeDefinition/XSDAttributeUse"
+        outputs="repository.ecore#//ComponentsType/base"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//components;XSDElementDeclaration=3"
+      outputs="repository.ecore#//DocumentRoot/components"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//conceptType;XSDComplexTypeDefinition=11"
+      outputs="repository.ecore#//ConceptType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//conceptType;XSDComplexTypeDefinition=11/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//ConceptType/group"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//conceptType;XSDComplexTypeDefinition=11/XSDParticle/XSDModelGroup/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//ConceptType/componentRef"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//conceptType;XSDComplexTypeDefinition=11/XSDParticle/XSDModelGroup/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="repository.ecore#//ConceptType/groupRef"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//conceptType;XSDComplexTypeDefinition=11/XSDParticle/XSDModelGroup/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="repository.ecore#//ConceptType/fieldRef"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//conceptType;XSDComplexTypeDefinition=11/XSDParticle/XSDModelGroup/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="repository.ecore#//ConceptType/messageRef"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//conceptType;XSDComplexTypeDefinition=11/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="repository.ecore#//ConceptType/annotation"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//conceptType;XSDComplexTypeDefinition=11/XSDAttributeUse"
+        outputs="repository.ecore#//ConceptType/name"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//concepts;XSDElementDeclaration=4/XSDComplexTypeDefinition"
+      outputs="repository.ecore#//ConceptsType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//concepts;XSDElementDeclaration=4/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//ConceptsType/concept"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//concepts;XSDElementDeclaration=4/XSDComplexTypeDefinition/XSDAttributeUse"
+        outputs="repository.ecore#//ConceptsType/base"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//concepts;XSDElementDeclaration=4"
+      outputs="repository.ecore#//DocumentRoot/concepts"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//mappedDatatype;XSDComplexTypeDefinition=21/XSDParticle/XSDModelGroup/XSDParticle/extension;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="repository.ecore#//ExtensionType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//mappedDatatype;XSDComplexTypeDefinition=21/XSDParticle/XSDModelGroup/XSDParticle/extension;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//ExtensionType/any"/>
+  </nested>
+  <nested inputs="bundleentry://1168.fwk1573754119/cache/www.w3.org/2001/XMLSchema.xsd#//boolean;XSDSimpleTypeDefinition=10"
+      outputs="http://www.eclipse.org/emf/2003/XMLType#//Boolean"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//datatypeStandard_enum;XSDSimpleTypeDefinition=7"
+      outputs="repository.ecore#//DatatypeStandardEnum">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//datatypeStandard_enum;XSDSimpleTypeDefinition=7/XSDEnumerationFacet"
+        outputs="repository.ecore#//DatatypeStandardEnum/ISO11404"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//datatypeStandard_enum;XSDSimpleTypeDefinition=7/XSDEnumerationFacet=1"
+        outputs="repository.ecore#//DatatypeStandardEnum/GPB"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//datatypeStandard_enum;XSDSimpleTypeDefinition=7/XSDEnumerationFacet=2"
+        outputs="repository.ecore#//DatatypeStandardEnum/JSON"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//datatypeStandard_enum;XSDSimpleTypeDefinition=7/XSDEnumerationFacet=3"
+        outputs="repository.ecore#//DatatypeStandardEnum/SBE"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//datatypeStandard_enum;XSDSimpleTypeDefinition=7/XSDEnumerationFacet=4"
+        outputs="repository.ecore#//DatatypeStandardEnum/XML"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//datatypeStandard_enum;XSDSimpleTypeDefinition=7/XSDEnumerationFacet=5"
+        outputs="repository.ecore#//DatatypeStandardEnum/TAGVALUE"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//datatypeStandard_t;XSDSimpleTypeDefinition=8"
+      outputs="repository.ecore#//DatatypeStandardT"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//mappedDatatype;XSDComplexTypeDefinition=21"
+      outputs="repository.ecore#//MappedDatatype">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//mappedDatatype;XSDComplexTypeDefinition=21/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//MappedDatatype/extension"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//mappedDatatype;XSDComplexTypeDefinition=21/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="repository.ecore#//MappedDatatype/annotation"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//mappedDatatype;XSDComplexTypeDefinition=21/XSDAttributeUse=2"
+        outputs="repository.ecore#//MappedDatatype/base"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//mappedDatatype;XSDComplexTypeDefinition=21/XSDAttributeUse=1"
+        outputs="repository.ecore#//MappedDatatype/builtin"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//mappedDatatype;XSDComplexTypeDefinition=21/XSDAttributeUse=4"
+        outputs="repository.ecore#//MappedDatatype/element"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//mappedDatatype;XSDComplexTypeDefinition=21/XSDAttributeUse=7"
+        outputs="repository.ecore#//MappedDatatype/maxInclusive"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//mappedDatatype;XSDComplexTypeDefinition=21/XSDAttributeUse=6"
+        outputs="repository.ecore#//MappedDatatype/minInclusive"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//mappedDatatype;XSDComplexTypeDefinition=21/XSDAttributeUse=5"
+        outputs="repository.ecore#//MappedDatatype/parameter"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//mappedDatatype;XSDComplexTypeDefinition=21/XSDAttributeUse=3"
+        outputs="repository.ecore#//MappedDatatype/pattern"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//mappedDatatype;XSDComplexTypeDefinition=21/XSDAttributeUse"
+        outputs="repository.ecore#//MappedDatatype/standard"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse"
+      outputs="repository.ecore#//DatatypeType/added"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=1"
+      outputs="repository.ecore#//DatatypeType/addedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=2"
+      outputs="repository.ecore#//DatatypeType/changeType"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=3"
+      outputs="repository.ecore#//DatatypeType/deprecated"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=4"
+      outputs="repository.ecore#//DatatypeType/deprecatedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=5"
+      outputs="repository.ecore#//DatatypeType/issue"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=6"
+      outputs="repository.ecore#//DatatypeType/lastModified"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=7"
+      outputs="repository.ecore#//DatatypeType/replaced"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=9"
+      outputs="repository.ecore#//DatatypeType/replacedByField"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=8"
+      outputs="repository.ecore#//DatatypeType/replacedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=10"
+      outputs="repository.ecore#//DatatypeType/supported"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=11"
+      outputs="repository.ecore#//DatatypeType/updated"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=12"
+      outputs="repository.ecore#//DatatypeType/updatedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//datatype;XSDElementDeclaration=5/XSDComplexTypeDefinition"
+      outputs="repository.ecore#//DatatypeType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//datatype;XSDElementDeclaration=5/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//DatatypeType/mappedDatatype"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//datatype;XSDElementDeclaration=5/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="repository.ecore#//DatatypeType/annotation"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//datatype;XSDElementDeclaration=5/XSDComplexTypeDefinition/XSDAttributeUse=1"
+        outputs="repository.ecore#//DatatypeType/baseType"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//datatype;XSDElementDeclaration=5/XSDComplexTypeDefinition/XSDAttributeUse"
+        outputs="repository.ecore#//DatatypeType/name"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//datatype;XSDElementDeclaration=5"
+      outputs="repository.ecore#//DocumentRoot/datatype"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//containerAttribGrp;XSDAttributeGroupDefinition/XSDAttributeUse"
+      outputs="repository.ecore#//DatatypesType/latestEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//datatypes;XSDElementDeclaration=6/XSDComplexTypeDefinition"
+      outputs="repository.ecore#//DatatypesType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//datatypes;XSDElementDeclaration=6/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//DatatypesType/datatype"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//datatypes;XSDElementDeclaration=6/XSDComplexTypeDefinition/XSDAttributeUse"
+        outputs="repository.ecore#//DatatypesType/base"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//datatypes;XSDElementDeclaration=6"
+      outputs="repository.ecore#//DocumentRoot/datatypes"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//fields;XSDElementDeclaration=7/XSDComplexTypeDefinition"
+      outputs="repository.ecore#//FieldsType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//fields;XSDElementDeclaration=7/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//FieldsType/field"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//fields;XSDElementDeclaration=7/XSDComplexTypeDefinition/XSDAttributeUse=1"
+        outputs="repository.ecore#//FieldsType/base"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//fields;XSDElementDeclaration=7/XSDComplexTypeDefinition/XSDAttributeUse"
+        outputs="repository.ecore#//FieldsType/latestEP"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//fields;XSDElementDeclaration=7"
+      outputs="repository.ecore#//DocumentRoot/fields"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//containerAttribGrp;XSDAttributeGroupDefinition/XSDAttributeUse"
+      outputs="repository.ecore#//GroupsType/latestEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//groups;XSDElementDeclaration=8/XSDComplexTypeDefinition"
+      outputs="repository.ecore#//GroupsType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//groups;XSDElementDeclaration=8/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//GroupsType/group"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//groups;XSDElementDeclaration=8/XSDComplexTypeDefinition/XSDAttributeUse"
+        outputs="repository.ecore#//GroupsType/base"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//groups;XSDElementDeclaration=8"
+      outputs="repository.ecore#//DocumentRoot/groups"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//messageType;XSDComplexTypeDefinition=23/XSDParticle/XSDModelGroup/XSDParticle/structure;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="repository.ecore#//StructureType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//messageType;XSDComplexTypeDefinition=23/XSDParticle/XSDModelGroup/XSDParticle/structure;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle"
+        outputs="repository.ecore#//StructureType/group"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//messageType;XSDComplexTypeDefinition=23/XSDParticle/XSDModelGroup/XSDParticle/structure;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//StructureType/componentRef"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//messageType;XSDComplexTypeDefinition=23/XSDParticle/XSDModelGroup/XSDParticle/structure;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="repository.ecore#//StructureType/groupRef"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//messageType;XSDComplexTypeDefinition=23/XSDParticle/XSDModelGroup/XSDParticle/structure;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="repository.ecore#//StructureType/fieldRef"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//messageType;XSDComplexTypeDefinition=23/XSDParticle/XSDModelGroup/XSDParticle/structure;XSDElementDeclaration/XSDComplexTypeDefinition/XSDAttributeUse"
+        outputs="repository.ecore#//StructureType/which"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//synchronization;XSDSimpleTypeDefinition=27"
+      outputs="repository.ecore#//Synchronization">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//synchronization;XSDSimpleTypeDefinition=27/XSDEnumerationFacet"
+        outputs="repository.ecore#//Synchronization/asynchronous"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//synchronization;XSDSimpleTypeDefinition=27/XSDEnumerationFacet=1"
+        outputs="repository.ecore#//Synchronization/synchronous"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//synchronization;XSDSimpleTypeDefinition=27/XSDEnumerationFacet=2"
+        outputs="repository.ecore#//Synchronization/pipelined"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//responseType;XSDComplexTypeDefinition=24"
+      outputs="repository.ecore#//ResponseType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//responseType;XSDComplexTypeDefinition=24/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//ResponseType/when"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//responseType;XSDComplexTypeDefinition=24/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="repository.ecore#//ResponseType/annotation"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//responseType;XSDComplexTypeDefinition=24/XSDAttributeUse"
+        outputs="repository.ecore#//ResponseType/name"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//responseType;XSDComplexTypeDefinition=24/XSDAttributeUse=1"
+        outputs="repository.ecore#//ResponseType/sync"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//messageType;XSDComplexTypeDefinition=23/XSDParticle/XSDModelGroup/XSDParticle=1/responses;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="repository.ecore#//ResponsesType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//messageType;XSDComplexTypeDefinition=23/XSDParticle/XSDModelGroup/XSDParticle=1/responses;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//ResponsesType/response"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//oidGrp;XSDAttributeGroupDefinition=4/XSDAttributeUse=2"
+      outputs="repository.ecore#//MessageType/abbrName"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse"
+      outputs="repository.ecore#//MessageType/added"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=1"
+      outputs="repository.ecore#//MessageType/addedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=2"
+      outputs="repository.ecore#//MessageType/changeType"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=3"
+      outputs="repository.ecore#//MessageType/deprecated"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=4"
+      outputs="repository.ecore#//MessageType/deprecatedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//oidGrp;XSDAttributeGroupDefinition=4/XSDAttributeUse"
+      outputs="repository.ecore#//MessageType/id"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=5"
+      outputs="repository.ecore#//MessageType/issue"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=6"
+      outputs="repository.ecore#//MessageType/lastModified"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//oidGrp;XSDAttributeGroupDefinition=4/XSDAttributeUse=1"
+      outputs="repository.ecore#//MessageType/name"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=7"
+      outputs="repository.ecore#//MessageType/replaced"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=9"
+      outputs="repository.ecore#//MessageType/replacedByField"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=8"
+      outputs="repository.ecore#//MessageType/replacedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//oidGrp;XSDAttributeGroupDefinition=4/XSDAttributeUse=3"
+      outputs="repository.ecore#//MessageType/scenario"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=10"
+      outputs="repository.ecore#//MessageType/supported"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=11"
+      outputs="repository.ecore#//MessageType/updated"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=12"
+      outputs="repository.ecore#//MessageType/updatedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//messageType;XSDComplexTypeDefinition=23"
+      outputs="repository.ecore#//MessageType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//messageType;XSDComplexTypeDefinition=23/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//MessageType/structure"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//messageType;XSDComplexTypeDefinition=23/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="repository.ecore#//MessageType/responses"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//messageType;XSDComplexTypeDefinition=23/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="repository.ecore#//MessageType/annotation"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//messageType;XSDComplexTypeDefinition=23/XSDAttributeUse=1"
+        outputs="repository.ecore#//MessageType/category"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//messageType;XSDComplexTypeDefinition=23/XSDAttributeUse=2"
+        outputs="repository.ecore#//MessageType/flow"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//messageType;XSDComplexTypeDefinition=23/XSDAttributeUse"
+        outputs="repository.ecore#//MessageType/msgType"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//containerAttribGrp;XSDAttributeGroupDefinition/XSDAttributeUse"
+      outputs="repository.ecore#//MessagesType/latestEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//messages;XSDElementDeclaration=9/XSDComplexTypeDefinition"
+      outputs="repository.ecore#//MessagesType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//messages;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//MessagesType/message"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//messages;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDAttributeUse"
+        outputs="repository.ecore#//MessagesType/base"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//messages;XSDElementDeclaration=9"
+      outputs="repository.ecore#//DocumentRoot/messages"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse"
+      outputs="repository.ecore#//SectionType/added"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=1"
+      outputs="repository.ecore#//SectionType/addedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=2"
+      outputs="repository.ecore#//SectionType/changeType"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=3"
+      outputs="repository.ecore#//SectionType/deprecated"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=4"
+      outputs="repository.ecore#//SectionType/deprecatedEP"/>
+  <nested inputs="bundleentry://1168.fwk1573754119/cache/www.w3.org/2001/XMLSchema.xsd#//int;XSDSimpleTypeDefinition=44"
+      outputs="http://www.eclipse.org/emf/2003/XMLType#//Int"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=5"
+      outputs="repository.ecore#//SectionType/issue"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=6"
+      outputs="repository.ecore#//SectionType/lastModified"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=7"
+      outputs="repository.ecore#//SectionType/replaced"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=9"
+      outputs="repository.ecore#//SectionType/replacedByField"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=8"
+      outputs="repository.ecore#//SectionType/replacedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=10"
+      outputs="repository.ecore#//SectionType/supported"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=11"
+      outputs="repository.ecore#//SectionType/updated"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//entityAttribGrp;XSDAttributeGroupDefinition=1/XSDAttributeUse=12"
+      outputs="repository.ecore#//SectionType/updatedEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//sectionType;XSDComplexTypeDefinition=25"
+      outputs="repository.ecore#//SectionType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//sectionType;XSDComplexTypeDefinition=25/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//SectionType/annotation"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//sectionType;XSDComplexTypeDefinition=25/XSDAttributeUse=1"
+        outputs="repository.ecore#//SectionType/displayOrder"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//sectionType;XSDComplexTypeDefinition=25/XSDAttributeUse=2"
+        outputs="repository.ecore#//SectionType/fIXMLFileName"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//sectionType;XSDComplexTypeDefinition=25/XSDAttributeUse"
+        outputs="repository.ecore#//SectionType/name"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//containerAttribGrp;XSDAttributeGroupDefinition/XSDAttributeUse"
+      outputs="repository.ecore#//SectionsType/latestEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//sections;XSDElementDeclaration=11/XSDComplexTypeDefinition"
+      outputs="repository.ecore#//SectionsType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//sections;XSDElementDeclaration=11/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//SectionsType/section"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//sections;XSDElementDeclaration=11/XSDComplexTypeDefinition/XSDAttributeUse"
+        outputs="repository.ecore#//SectionsType/base"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//containerAttribGrp;XSDAttributeGroupDefinition/XSDAttributeUse"
+      outputs="repository.ecore#//RepositoryType/latestEP"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//repository;XSDElementDeclaration=10/XSDComplexTypeDefinition"
+      outputs="repository.ecore#//RepositoryType">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//repository;XSDElementDeclaration=10/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="repository.ecore#//RepositoryType/categories"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//repository;XSDElementDeclaration=10/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="repository.ecore#//RepositoryType/sections"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//repository;XSDElementDeclaration=10/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="repository.ecore#//RepositoryType/datatypes"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//repository;XSDElementDeclaration=10/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="repository.ecore#//RepositoryType/codeSets"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//repository;XSDElementDeclaration=10/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="repository.ecore#//RepositoryType/fields"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//repository;XSDElementDeclaration=10/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=5"
+        outputs="repository.ecore#//RepositoryType/actors"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//repository;XSDElementDeclaration=10/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=6"
+        outputs="repository.ecore#//RepositoryType/components"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//repository;XSDElementDeclaration=10/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=7"
+        outputs="repository.ecore#//RepositoryType/groups"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//repository;XSDElementDeclaration=10/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=8"
+        outputs="repository.ecore#//RepositoryType/messages"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//repository;XSDElementDeclaration=10/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=9"
+        outputs="repository.ecore#//RepositoryType/concepts"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//repository;XSDElementDeclaration=10/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=10"
+        outputs="repository.ecore#//RepositoryType/annotation"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//repository;XSDElementDeclaration=10/XSDComplexTypeDefinition/XSDAttributeUse=5"
+        outputs="repository.ecore#//RepositoryType/applVerId"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//repository;XSDElementDeclaration=10/XSDComplexTypeDefinition/XSDAttributeUse=6"
+        outputs="repository.ecore#//RepositoryType/expressionLanguage"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//repository;XSDElementDeclaration=10/XSDComplexTypeDefinition/XSDAttributeUse=2"
+        outputs="repository.ecore#//RepositoryType/guid"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//repository;XSDElementDeclaration=10/XSDComplexTypeDefinition/XSDAttributeUse"
+        outputs="repository.ecore#//RepositoryType/name"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//repository;XSDElementDeclaration=10/XSDComplexTypeDefinition/XSDAttributeUse=4"
+        outputs="repository.ecore#//RepositoryType/namespace"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//repository;XSDElementDeclaration=10/XSDComplexTypeDefinition/XSDAttributeUse=3"
+        outputs="repository.ecore#//RepositoryType/specUrl"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//repository;XSDElementDeclaration=10/XSDComplexTypeDefinition/XSDAttributeUse=1"
+        outputs="repository.ecore#//RepositoryType/version"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//repository;XSDElementDeclaration=10"
+      outputs="repository.ecore#//DocumentRoot/repository"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd#//sections;XSDElementDeclaration=11"
+      outputs="repository.ecore#//DocumentRoot/sections"/>
+  <nested inputs="http://www.w3.org/2001/03/xml.xsd#//base;XSDAttributeDeclaration=2"
+      outputs="../../org.eclipse.emf.ecore/model/XMLNamespace.ecore#//DocumentRoot/base"/>
+  <nested inputs="http://www.w3.org/2001/03/xml.xsd#//lang;XSDAttributeDeclaration"
+      outputs="../../org.eclipse.emf.ecore/model/XMLNamespace.ecore#//DocumentRoot/lang"/>
+  <nested inputs="http://www.w3.org/2001/03/xml.xsd#//space;XSDAttributeDeclaration=1/XSDSimpleTypeDefinition"
+      outputs="../../org.eclipse.emf.ecore/model/XMLNamespace.ecore#//SpaceType">
+    <nested inputs="http://www.w3.org/2001/03/xml.xsd#//space;XSDAttributeDeclaration=1/XSDSimpleTypeDefinition/XSDEnumerationFacet"
+        outputs="../../org.eclipse.emf.ecore/model/XMLNamespace.ecore#//SpaceType/default"/>
+    <nested inputs="http://www.w3.org/2001/03/xml.xsd#//space;XSDAttributeDeclaration=1/XSDSimpleTypeDefinition/XSDEnumerationFacet=1"
+        outputs="../../org.eclipse.emf.ecore/model/XMLNamespace.ecore#//SpaceType/preserve"/>
+  </nested>
+  <nested inputs="http://www.w3.org/2001/03/xml.xsd#//space;XSDAttributeDeclaration=1"
+      outputs="../../org.eclipse.emf.ecore/model/XMLNamespace.ecore#//DocumentRoot/space"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//CategoryComponentType_t;XSDSimpleTypeDefinition=2"
+      outputs="repository.ecore#//CategoryComponentTypeT">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//CategoryComponentType_t;XSDSimpleTypeDefinition=2/XSDEnumerationFacet"
+        outputs="repository.ecore#//CategoryComponentTypeT/Field"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//CategoryComponentType_t;XSDSimpleTypeDefinition=2/XSDEnumerationFacet=1"
+        outputs="repository.ecore#//CategoryComponentTypeT/Message"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//CompID_t;XSDSimpleTypeDefinition=5"
+      outputs="repository.ecore#//CompIDT"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//Edition_t;XSDSimpleTypeDefinition=9"
+      outputs="repository.ecore#//EditionT"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//GroupName_t;XSDSimpleTypeDefinition=12"
+      outputs="repository.ecore#//GroupNameT"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//IncludeFile_t;XSDSimpleTypeDefinition=14"
+      outputs="repository.ecore#//IncludeFileT">
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//IncludeFile_t;XSDSimpleTypeDefinition=14/XSDEnumerationFacet"
+        outputs="repository.ecore#//IncludeFileT/components"/>
+    <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//IncludeFile_t;XSDSimpleTypeDefinition=14/XSDEnumerationFacet=1"
+        outputs="repository.ecore#//IncludeFileT/fields"/>
+  </nested>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//Sort_t;XSDSimpleTypeDefinition=25"
+      outputs="repository.ecore#//SortT"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//Term_t;XSDSimpleTypeDefinition=28"
+      outputs="repository.ecore#//TermT"/>
+  <nested inputs="file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repositorytypes.xsd#//Usage_t;XSDSimpleTypeDefinition=33"
+      outputs="repository.ecore#//UsageT"/>
+</xsd2ecore:XSD2EcoreMappingRoot>

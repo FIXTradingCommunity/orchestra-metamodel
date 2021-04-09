@@ -1,26 +1,17 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
-Bundle-SymbolicName: orchestrametamodel;singleton:=true
-Bundle-Version: 0.1.0.qualifier
+Bundle-SymbolicName: orchestra-metamodel;singleton:=true
+Automatic-Module-Name: orchestra-metamodel
+Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Export-Package: io.fixprotocol._2016.fixrepository,
- io.fixprotocol._2016.fixrepository.impl,
- io.fixprotocol._2016.fixrepository.util,
- org.purl.dc.dcmitype,
- org.purl.dc.dcmitype.impl,
- org.purl.dc.dcmitype.util,
- org.purl.dc.elements._1._1,
- org.purl.dc.elements._1._1.impl,
- org.purl.dc.elements._1._1.util,
- org.purl.dc.terms,
- org.purl.dc.terms.impl,
- org.purl.dc.terms.util
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: io.fixprotocol._2020.orchestra.repository,
+ io.fixprotocol._2020.orchestra.repository.impl,
+ io.fixprotocol._2020.orchestra.repository.util
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport,
  org.eclipse.emf.ecore.xmi;visibility:=reexport
 Bundle-ActivationPolicy: lazy
-Automatic-Module-Name: orchestrametamodel

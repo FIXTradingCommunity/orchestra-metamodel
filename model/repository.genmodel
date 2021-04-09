@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/orchestra-metamodel/src" modelPluginID="orchestra-metamodel"
+    modelName="Repository" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.xsd.ecore.importer" complianceLevel="5.0" copyrightFields="false"
+    usedGenPackages="../../org.eclipse.emf.ecore/model/XMLNamespace.genmodel#//namespace"
+    operationReflection="true" importOrganizing="true">
+  <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.xsd.ecore.importer">
+    <details key="createMap" value="true"/>
+  </genAnnotations>
+  <foreignModel>file:/C:/Users/donme/GitHub/orchestra-metamodel/xsd/repository.xsd</foreignModel>
+  <foreignModel>../xsd/repository.xsd</foreignModel>
+  <genPackages prefix="Repository" basePackage="io.fixprotocol._2020.orchestra" resource="XML"
+      disposableProviderFactory="true" loadInitialization="true" literalsInterface="false"
+      ecorePackage="repository.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="repository.ecore#//CatComponentTypeT">
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//CatComponentTypeT/Field"/>
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//CatComponentTypeT/Message"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="repository.ecore#//CategoryComponentTypeT">
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//CategoryComponentTypeT/Field"/>
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//CategoryComponentTypeT/Message"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="repository.ecore#//CatIncludeFileT">
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//CatIncludeFileT/components"/>
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//CatIncludeFileT/fields"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="repository.ecore#//ChangeTypeT">
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//ChangeTypeT/Editorial"/>
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//ChangeTypeT/Definitional"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="repository.ecore#//DatatypeStandardEnum">
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//DatatypeStandardEnum/ISO11404"/>
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//DatatypeStandardEnum/GPB"/>
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//DatatypeStandardEnum/JSON"/>
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//DatatypeStandardEnum/SBE"/>
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//DatatypeStandardEnum/XML"/>
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//DatatypeStandardEnum/TAGVALUE"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="repository.ecore#//IncludeFileT">
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//IncludeFileT/components"/>
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//IncludeFileT/fields"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="repository.ecore#//MemberType">
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//MemberType/oneOf"/>
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//MemberType/anyOf"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="repository.ecore#//PresenceT">
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//PresenceT/optional"/>
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//PresenceT/required"/>
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//PresenceT/forbidden"/>
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//PresenceT/ignored"/>
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//PresenceT/constant"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="repository.ecore#//PurposeEnum">
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//PurposeEnum/SYNOPSIS"/>
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//PurposeEnum/ELABORATION"/>
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//PurposeEnum/EXAMPLE"/>
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//PurposeEnum/DISPLAY"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="repository.ecore#//ReliabilityT">
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//ReliabilityT/bestEffort"/>
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//ReliabilityT/idempotent"/>
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//ReliabilityT/recoverable"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="repository.ecore#//SupportType">
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//SupportType/supported"/>
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//SupportType/forbidden"/>
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//SupportType/ignored"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="repository.ecore#//Synchronization">
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//Synchronization/asynchronous"/>
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//Synchronization/synchronous"/>
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//Synchronization/pipelined"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="repository.ecore#//TimerOperation">
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//TimerOperation/START"/>
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//TimerOperation/CANCEL"/>
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//TimerOperation/RESET"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="repository.ecore#//Unbounded">
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//Unbounded/unbounded"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="repository.ecore#//UnionDataTypeT">
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//UnionDataTypeT/Qty"/>
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//UnionDataTypeT/Reserved100Plus"/>
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//UnionDataTypeT/Reserved1000Plus"/>
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//UnionDataTypeT/Reserved4000Plus"/>
+      <genEnumLiterals ecoreEnumLiteral="repository.ecore#//UnionDataTypeT/Tenor"/>
+    </genEnums>
+    <genDataTypes ecoreDataType="repository.ecore#//AbbreviationT"/>
+    <genDataTypes ecoreDataType="repository.ecore#//CatComponentTypeTObject"/>
+    <genDataTypes ecoreDataType="repository.ecore#//CategoryComponentTypeTObject"/>
+    <genDataTypes ecoreDataType="repository.ecore#//CatIncludeFileTObject"/>
+    <genDataTypes ecoreDataType="repository.ecore#//ChangeTypeTObject"/>
+    <genDataTypes ecoreDataType="repository.ecore#//CompIDT"/>
+    <genDataTypes ecoreDataType="repository.ecore#//ComponentNameT"/>
+    <genDataTypes ecoreDataType="repository.ecore#//DatatypeStandardEnumObject"/>
+    <genDataTypes ecoreDataType="repository.ecore#//DatatypeStandardT"/>
+    <genDataTypes ecoreDataType="repository.ecore#//EditionT"/>
+    <genDataTypes ecoreDataType="repository.ecore#//EPT"/>
+    <genDataTypes ecoreDataType="repository.ecore#//ExpressionType"/>
+    <genDataTypes ecoreDataType="repository.ecore#//GroupNameT"/>
+    <genDataTypes ecoreDataType="repository.ecore#//IdT"/>
+    <genDataTypes ecoreDataType="repository.ecore#//IncludeFileTObject"/>
+    <genDataTypes ecoreDataType="repository.ecore#//LanguageT"/>
+    <genDataTypes ecoreDataType="repository.ecore#//MemberTypeObject"/>
+    <genDataTypes ecoreDataType="repository.ecore#//MimeT"/>
+    <genDataTypes ecoreDataType="repository.ecore#//MsgTypeT"/>
+    <genDataTypes ecoreDataType="repository.ecore#//NameT"/>
+    <genDataTypes ecoreDataType="repository.ecore#//PresenceTObject"/>
+    <genDataTypes ecoreDataType="repository.ecore#//PurposeEnumObject"/>
+    <genDataTypes ecoreDataType="repository.ecore#//PurposeT"/>
+    <genDataTypes ecoreDataType="repository.ecore#//ReliabilityTObject"/>
+    <genDataTypes ecoreDataType="repository.ecore#//ScenarioT"/>
+    <genDataTypes ecoreDataType="repository.ecore#//SortT"/>
+    <genDataTypes ecoreDataType="repository.ecore#//SupportTypeObject"/>
+    <genDataTypes ecoreDataType="repository.ecore#//SynchronizationObject"/>
+    <genDataTypes ecoreDataType="repository.ecore#//TermT"/>
+    <genDataTypes ecoreDataType="repository.ecore#//TimerOperationObject"/>
+    <genDataTypes ecoreDataType="repository.ecore#//UnboundedIntType"/>
+    <genDataTypes ecoreDataType="repository.ecore#//UnboundedObject"/>
+    <genDataTypes ecoreDataType="repository.ecore#//UnionDataTypeTObject"/>
+    <genDataTypes ecoreDataType="repository.ecore#//UsageT"/>
+    <genDataTypes ecoreDataType="repository.ecore#//VersionT"/>
+    <genClasses ecoreClass="repository.ecore#//ActionType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute repository.ecore#//ActionType/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference repository.ecore#//ActionType/field"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference repository.ecore#//ActionType/fieldRef"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference repository.ecore#//ActionType/component"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference repository.ecore#//ActionType/componentRef"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference repository.ecore#//ActionType/group1"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference repository.ecore#//ActionType/groupRef"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute repository.ecore#//ActionType/group2"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference repository.ecore#//ActionType/messageRef"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ActionType/assign"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference repository.ecore#//ActionType/trigger"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference repository.ecore#//ActionType/timerSchedule"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//ActorsType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute repository.ecore#//ActorsType/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference repository.ecore#//ActorsType/actor"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference repository.ecore#//ActorsType/flow"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ActorsType/base"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//ActorType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute repository.ecore#//ActorType/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference repository.ecore#//ActorType/field"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference repository.ecore#//ActorType/fieldRef"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference repository.ecore#//ActorType/component"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference repository.ecore#//ActorType/componentRef"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference repository.ecore#//ActorType/group1"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference repository.ecore#//ActorType/groupRef"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference repository.ecore#//ActorType/states"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference repository.ecore#//ActorType/timer"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//ActorType/annotation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ActorType/name"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//Annotation">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute repository.ecore#//Annotation/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference repository.ecore#//Annotation/documentation"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference repository.ecore#//Annotation/appinfo"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Annotation/added"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Annotation/addedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Annotation/changeType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Annotation/deprecated"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Annotation/deprecatedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Annotation/issue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Annotation/lastModified"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Annotation/replaced"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Annotation/replacedByField"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Annotation/replacedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Annotation/supported"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Annotation/updated"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Annotation/updatedEP"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//Appinfo">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute repository.ecore#//Appinfo/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Appinfo/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Appinfo/any"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Appinfo/added"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Appinfo/addedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Appinfo/changeType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Appinfo/deprecated"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Appinfo/deprecatedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Appinfo/issue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Appinfo/langId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Appinfo/lastModified"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Appinfo/purpose"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Appinfo/replaced"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Appinfo/replacedByField"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Appinfo/replacedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Appinfo/specUrl"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Appinfo/supported"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Appinfo/updated"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Appinfo/updatedEP"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute repository.ecore#//Appinfo/anyAttribute"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//BlockAssignmentType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute repository.ecore#//BlockAssignmentType/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference repository.ecore#//BlockAssignmentType/componentRef"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference repository.ecore#//BlockAssignmentType/groupRef"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference repository.ecore#//BlockAssignmentType/fieldRef"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//CategoriesType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//CategoriesType/category"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CategoriesType/base"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CategoriesType/latestEP"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//CategoryType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//CategoryType/annotation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CategoryType/added"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CategoryType/addedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CategoryType/changeType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CategoryType/componentType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CategoryType/deprecated"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CategoryType/deprecatedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CategoryType/fIXMLFileName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CategoryType/includeFile"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CategoryType/issue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CategoryType/lastModified"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CategoryType/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CategoryType/replaced"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CategoryType/replacedByField"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CategoryType/replacedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CategoryType/section"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CategoryType/supported"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CategoryType/updated"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CategoryType/updatedEP"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//CodeSetsType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//CodeSetsType/codeSet"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CodeSetsType/base"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//CodeSetType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//CodeSetType/code"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//CodeSetType/annotation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CodeSetType/abbrName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CodeSetType/added"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CodeSetType/addedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CodeSetType/changeType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CodeSetType/default"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CodeSetType/deprecated"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CodeSetType/deprecatedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CodeSetType/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CodeSetType/issue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CodeSetType/lastModified"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CodeSetType/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CodeSetType/replaced"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CodeSetType/replacedByField"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CodeSetType/replacedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CodeSetType/scenario"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CodeSetType/specUrl"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CodeSetType/supported"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CodeSetType/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CodeSetType/updated"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CodeSetType/updatedEP"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//CodeType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//CodeType/annotation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CodeType/abbrName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CodeType/added"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CodeType/addedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CodeType/changeType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CodeType/deprecated"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CodeType/deprecatedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CodeType/group"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CodeType/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CodeType/issue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CodeType/lastModified"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CodeType/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CodeType/replaced"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CodeType/replacedByField"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CodeType/replacedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CodeType/scenario"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CodeType/sort"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CodeType/supported"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CodeType/updated"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CodeType/updatedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//CodeType/value"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//ComponentRefType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//ComponentRefType/blockAssignment"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//ComponentRefType/rule"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//ComponentRefType/annotation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentRefType/added"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentRefType/addedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentRefType/changeType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentRefType/deprecated"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentRefType/deprecatedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentRefType/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentRefType/instanceName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentRefType/issue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentRefType/lastModified"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentRefType/presence"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentRefType/replaced"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentRefType/replacedByField"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentRefType/replacedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentRefType/scenario"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentRefType/supported"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentRefType/updated"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentRefType/updatedEP"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//ComponentRuleType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentRuleType/when"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentRuleType/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentRuleType/presence"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//ComponentsType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//ComponentsType/component"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentsType/base"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentsType/latestEP"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//ComponentType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentType/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference repository.ecore#//ComponentType/componentRef"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference repository.ecore#//ComponentType/groupRef"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference repository.ecore#//ComponentType/fieldRef"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//ComponentType/annotation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentType/abbrName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentType/added"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentType/addedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentType/category"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentType/changeType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentType/deprecated"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentType/deprecatedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentType/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentType/issue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentType/lastModified"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentType/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentType/rendering"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentType/replaced"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentType/replacedByField"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentType/replacedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentType/scenario"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentType/supported"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentType/updated"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentType/updatedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ComponentType/which"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//ConceptsType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//ConceptsType/concept"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ConceptsType/base"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//ConceptType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute repository.ecore#//ConceptType/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference repository.ecore#//ConceptType/componentRef"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference repository.ecore#//ConceptType/groupRef"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference repository.ecore#//ConceptType/fieldRef"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference repository.ecore#//ConceptType/messageRef"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//ConceptType/annotation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ConceptType/name"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//DatatypesType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//DatatypesType/datatype"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//DatatypesType/base"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//DatatypesType/latestEP"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//DatatypeType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//DatatypeType/mappedDatatype"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//DatatypeType/annotation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//DatatypeType/added"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//DatatypeType/addedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//DatatypeType/baseType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//DatatypeType/changeType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//DatatypeType/deprecated"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//DatatypeType/deprecatedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//DatatypeType/issue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//DatatypeType/lastModified"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//DatatypeType/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//DatatypeType/replaced"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//DatatypeType/replacedByField"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//DatatypeType/replacedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//DatatypeType/supported"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//DatatypeType/updated"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//DatatypeType/updatedEP"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//Documentation">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute repository.ecore#//Documentation/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Documentation/any"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Documentation/added"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Documentation/addedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Documentation/changeType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Documentation/contentType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Documentation/deprecated"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Documentation/deprecatedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Documentation/issue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Documentation/langId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Documentation/lastModified"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Documentation/purpose"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Documentation/replaced"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Documentation/replacedByField"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Documentation/replacedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Documentation/supported"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Documentation/updated"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//Documentation/updatedEP"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//DocumentRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//DocumentRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference repository.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference repository.ecore#//DocumentRoot/xSISchemaLocation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//DocumentRoot/actors"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//DocumentRoot/categories"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//DocumentRoot/codeSets"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//DocumentRoot/components"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//DocumentRoot/concepts"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//DocumentRoot/datatype"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//DocumentRoot/datatypes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//DocumentRoot/fields"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//DocumentRoot/groups"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//DocumentRoot/messages"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//DocumentRoot/repository"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//DocumentRoot/sections"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//ExtensionType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute repository.ecore#//ExtensionType/any"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//FieldRefType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//FieldRefType/rule"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldRefType/assign"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//FieldRefType/annotation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldRefType/added"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldRefType/addedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldRefType/changeType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldRefType/deprecated"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldRefType/deprecatedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldRefType/encoding"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldRefType/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldRefType/implLength"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldRefType/implMaxLength"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldRefType/implMinLength"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldRefType/instanceName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldRefType/issue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldRefType/lastModified"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldRefType/lengthId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldRefType/maxInclusive"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldRefType/minInclusive"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldRefType/presence"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldRefType/rendering"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldRefType/replaced"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldRefType/replacedByField"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldRefType/replacedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldRefType/scenario"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldRefType/supported"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldRefType/updated"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldRefType/updatedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldRefType/value"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//FieldRuleType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//FieldRuleType/unique"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldRuleType/assign"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldRuleType/when"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldRuleType/encoding"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldRuleType/implLength"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldRuleType/implMaxLength"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldRuleType/implMinLength"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldRuleType/maxInclusive"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldRuleType/minInclusive"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldRuleType/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldRuleType/presence"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldRuleType/rendering"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldRuleType/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldRuleType/value"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//FieldsType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//FieldsType/field"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldsType/base"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldsType/latestEP"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//FieldType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//FieldType/rule"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldType/assign"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//FieldType/annotation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldType/abbrName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldType/added"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldType/addedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldType/baseCategory"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldType/baseCategoryAbbrName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldType/changeType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldType/deprecated"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldType/deprecatedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldType/discriminatorId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldType/encoding"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldType/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldType/implLength"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldType/implMaxLength"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldType/implMinLength"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldType/issue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldType/lastModified"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldType/lengthId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldType/maxInclusive"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldType/minInclusive"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldType/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldType/presence"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldType/rendering"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldType/replaced"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldType/replacedByField"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldType/replacedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldType/scenario"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldType/supported"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldType/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldType/unionDataType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldType/updated"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldType/updatedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FieldType/value"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//FlowType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//FlowType/annotation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FlowType/destination"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FlowType/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FlowType/reliability"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//FlowType/source"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//GroupRefType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//GroupRefType/implMaxOccurs"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//GroupRefType/implMinOccurs"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//GroupsType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//GroupsType/group"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//GroupsType/base"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//GroupsType/latestEP"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//GroupType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//GroupType/numInGroup"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute repository.ecore#//GroupType/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference repository.ecore#//GroupType/componentRef"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference repository.ecore#//GroupType/groupRef"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference repository.ecore#//GroupType/fieldRef"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//GroupType/annotation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//GroupType/abbrName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//GroupType/added"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//GroupType/addedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//GroupType/category"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//GroupType/changeType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//GroupType/deprecated"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//GroupType/deprecatedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//GroupType/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//GroupType/implMaxOccurs"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//GroupType/implMinOccurs"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//GroupType/issue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//GroupType/lastModified"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//GroupType/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//GroupType/rendering"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//GroupType/replaced"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//GroupType/replacedByField"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//GroupType/replacedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//GroupType/scenario"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//GroupType/supported"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//GroupType/updated"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//GroupType/updatedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//GroupType/which"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//IdentifiersType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute repository.ecore#//IdentifiersType/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference repository.ecore#//IdentifiersType/correlate"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference repository.ecore#//IdentifiersType/assign"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//IdentifiersType/annotation"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//IdentifierType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//IdentifierType/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//IdentifierType/sourceId"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//MappedDatatype">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//MappedDatatype/extension"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//MappedDatatype/annotation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//MappedDatatype/base"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//MappedDatatype/builtin"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//MappedDatatype/element"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//MappedDatatype/maxInclusive"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//MappedDatatype/minInclusive"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//MappedDatatype/parameter"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//MappedDatatype/pattern"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//MappedDatatype/standard"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//MessageRefType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//MessageRefType/identifiers"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//MessageRefType/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//MessageRefType/implMaxOccurs"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//MessageRefType/implMinOccurs"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//MessageRefType/msgType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//MessageRefType/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//MessageRefType/scenario"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//MessagesType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//MessagesType/message"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//MessagesType/base"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//MessagesType/latestEP"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//MessageType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//MessageType/structure"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//MessageType/responses"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//MessageType/annotation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//MessageType/abbrName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//MessageType/added"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//MessageType/addedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//MessageType/category"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//MessageType/changeType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//MessageType/deprecated"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//MessageType/deprecatedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//MessageType/flow"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//MessageType/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//MessageType/issue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//MessageType/lastModified"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//MessageType/msgType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//MessageType/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//MessageType/replaced"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//MessageType/replacedByField"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//MessageType/replacedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//MessageType/scenario"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//MessageType/supported"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//MessageType/updated"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//MessageType/updatedEP"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//RepositoryType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//RepositoryType/categories"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//RepositoryType/sections"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//RepositoryType/datatypes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//RepositoryType/codeSets"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//RepositoryType/fields"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//RepositoryType/actors"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//RepositoryType/components"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//RepositoryType/groups"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//RepositoryType/messages"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//RepositoryType/concepts"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//RepositoryType/annotation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//RepositoryType/applVerId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//RepositoryType/expressionLanguage"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//RepositoryType/guid"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//RepositoryType/latestEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//RepositoryType/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//RepositoryType/namespace"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//RepositoryType/specUrl"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//RepositoryType/version"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//ResponsesType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//ResponsesType/response"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//ResponseType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ResponseType/when"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//ResponseType/annotation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ResponseType/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//ResponseType/sync"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//SectionsType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//SectionsType/section"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//SectionsType/base"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//SectionsType/latestEP"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//SectionType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//SectionType/annotation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//SectionType/added"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//SectionType/addedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//SectionType/changeType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//SectionType/deprecated"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//SectionType/deprecatedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//SectionType/displayOrder"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//SectionType/fIXMLFileName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//SectionType/issue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//SectionType/lastModified"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//SectionType/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//SectionType/replaced"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//SectionType/replacedByField"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//SectionType/replacedEP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//SectionType/supported"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//SectionType/updated"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//SectionType/updatedEP"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//StateMachineType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//StateMachineType/initial"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//StateMachineType/state"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//StateMachineType/annotation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//StateMachineType/name"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//StateType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//StateType/transition"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//StateType/onentry"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//StateType/activity"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//StateType/onexit"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//StateType/annotation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//StateType/name"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//StructureType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute repository.ecore#//StructureType/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference repository.ecore#//StructureType/componentRef"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference repository.ecore#//StructureType/groupRef"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference repository.ecore#//StructureType/fieldRef"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//StructureType/which"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//TimerSchedule">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//TimerSchedule/activity"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//TimerSchedule/actor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//TimerSchedule/interval"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//TimerSchedule/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//TimerSchedule/operation"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//TimerType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//TimerType/name"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//TransitionType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//TransitionType/when"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//TransitionType/annotation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//TransitionType/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//TransitionType/target"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//TriggerType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//TriggerType/actor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//TriggerType/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute repository.ecore#//TriggerType/stateMachine"/>
+    </genClasses>
+    <genClasses ecoreClass="repository.ecore#//UniqueType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference repository.ecore#//UniqueType/fieldRef"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
